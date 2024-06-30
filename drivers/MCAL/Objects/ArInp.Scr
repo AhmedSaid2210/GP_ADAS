@@ -1,0 +1,14 @@
+--create .\Objects\MCAL.lib
+.\objects\delay.o
+.\objects\gpio.o
+.\objects\gpio_config.o
+.\objects\rcc.o
+.\objects\rcc_config.o
+.\objects\systick.o
+.\objects\timer.o
+.\objects\timer_config.o
+.\objects\spi.o
+.\objects\spi_config.o
+.\objects\pwm.o
+.\objects\pwm_config.o
+C:\ti\TivaWare_C_Series-2.2.0.295\driverlib\ccs\Debug\driverlib.lib

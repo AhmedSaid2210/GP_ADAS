@@ -1,0 +1,2456 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Ahmed Said, mosa, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.39.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      lmidk-agdi.dll V???
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\Tiva_C_projects\pwm_test\test.uvprojx
+Project File Date:  02/02/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'app'
+../drivers/MCAL/PWM_Config.c(175): warning: no previous extern declaration for non-static variable 'pwm_out' [-Wmissing-variable-declarations]
+  175 | PWM_t pwm_out = {
+      |       ^
+../drivers/MCAL/PWM_Config.c(175): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  175 | PWM_t pwm_out = {
+      | ^
+../drivers/MCAL/PWM_Config.c(189): warning: no previous extern declaration for non-static variable 'PA6_M1PWM2' [-Wmissing-variable-declarations]
+  189 | PWM_t PA6_M1PWM2 = {
+      |       ^
+../drivers/MCAL/PWM_Config.c(189): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  189 | PWM_t PA6_M1PWM2 = {
+      | ^
+../drivers/MCAL/PWM_Config.c(202): warning: no previous extern declaration for non-static variable 'PA7_M1PWM3' [-Wmissing-variable-declarations]
+  202 | PWM_t PA7_M1PWM3 = {
+      |       ^
+../drivers/MCAL/PWM_Config.c(202): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  202 | PWM_t PA7_M1PWM3 = {
+      | ^
+../drivers/MCAL/PWM_Config.c(216): warning: no previous extern declaration for non-static variable 'PB4_M0PWM2' [-Wmissing-variable-declarations]
+  216 | PWM_t PB4_M0PWM2 = {
+      |       ^
+../drivers/MCAL/PWM_Config.c(216): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  216 | PWM_t PB4_M0PWM2 = {
+      | ^
+../drivers/MCAL/PWM_Config.c(230): warning: no previous extern declaration for non-static variable 'PB5_M0PWM3' [-Wmissing-variable-declarations]
+  230 | PWM_t PB5_M0PWM3 = {
+      |       ^
+../drivers/MCAL/PWM_Config.c(230): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  230 | PWM_t PB5_M0PWM3 = {
+      | ^
+../drivers/MCAL/PWM_Config.c(243): warning: no previous extern declaration for non-static variable 'PB6_M0PWM0' [-Wmissing-variable-declarations]
+  243 | PWM_t PB6_M0PWM0 = {
+      |       ^
+../drivers/MCAL/PWM_Config.c(243): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  243 | PWM_t PB6_M0PWM0 = {
+      | ^
+../drivers/MCAL/PWM_Config.c(256): warning: no previous extern declaration for non-static variable 'PB7_M0PWM1' [-Wmissing-variable-declarations]
+  256 | PWM_t PB7_M0PWM1 = {
+      |       ^
+../drivers/MCAL/PWM_Config.c(256): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  256 | PWM_t PB7_M0PWM1 = {
+      | ^
+../drivers/MCAL/PWM_Config.c(269): warning: no previous extern declaration for non-static variable 'PD0_M0PWM6' [-Wmissing-variable-declarations]
+  269 | PWM_t PD0_M0PWM6 = {
+      |       ^
+../drivers/MCAL/PWM_Config.c(269): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  269 | PWM_t PD0_M0PWM6 = {
+      | ^
+../drivers/MCAL/PWM_Config.c(282): warning: no previous extern declaration for non-static variable 'PD0_M1PWM0' [-Wmissing-variable-declarations]
+  282 | PWM_t PD0_M1PWM0 = {
+      |       ^
+../drivers/MCAL/PWM_Config.c(282): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  282 | PWM_t PD0_M1PWM0 = {
+      | ^
+../drivers/MCAL/PWM_Config.c(295): warning: no previous extern declaration for non-static variable 'PD1_M0PWM7' [-Wmissing-variable-declarations]
+  295 | PWM_t PD1_M0PWM7 = {
+      |       ^
+../drivers/MCAL/PWM_Config.c(295): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  295 | PWM_t PD1_M0PWM7 = {
+      | ^
+../drivers/MCAL/PWM_Config.c(308): warning: no previous extern declaration for non-static variable 'PD1_M1PWM1' [-Wmissing-variable-declarations]
+  308 | PWM_t PD1_M1PWM1 = {
+      |       ^
+../drivers/MCAL/PWM_Config.c(308): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  308 | PWM_t PD1_M1PWM1 = {
+      | ^
+../drivers/MCAL/PWM_Config.c(321): warning: no previous extern declaration for non-static variable 'PE4_M0PWM4' [-Wmissing-variable-declarations]
+  321 | PWM_t PE4_M0PWM4 = {
+      |       ^
+../drivers/MCAL/PWM_Config.c(321): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  321 | PWM_t PE4_M0PWM4 = {
+      | ^
+../drivers/MCAL/PWM_Config.c(334): warning: no previous extern declaration for non-static variable 'PE4_M1PWM2' [-Wmissing-variable-declarations]
+  334 | PWM_t PE4_M1PWM2 = {
+      |       ^
+../drivers/MCAL/PWM_Config.c(334): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  334 | PWM_t PE4_M1PWM2 = {
+      | ^
+../drivers/MCAL/PWM_Config.c(347): warning: no previous extern declaration for non-static variable 'PE5_M0PWM5' [-Wmissing-variable-declarations]
+  347 | PWM_t PE5_M0PWM5 = {
+      |       ^
+../drivers/MCAL/PWM_Config.c(347): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  347 | PWM_t PE5_M0PWM5 = {
+      | ^
+../drivers/MCAL/PWM_Config.c(360): warning: no previous extern declaration for non-static variable 'PE5_M1PWM3' [-Wmissing-variable-declarations]
+  360 | PWM_t PE5_M1PWM3 = {
+      |       ^
+../drivers/MCAL/PWM_Config.c(360): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  360 | PWM_t PE5_M1PWM3 = {
+      | ^
+../drivers/MCAL/PWM_Config.c(373): warning: no previous extern declaration for non-static variable 'PF0_M1PWM4' [-Wmissing-variable-declarations]
+  373 | PWM_t PF0_M1PWM4 = {
+      |       ^
+../drivers/MCAL/PWM_Config.c(373): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  373 | PWM_t PF0_M1PWM4 = {
+      | ^
+../drivers/MCAL/PWM_Config.c(386): warning: no previous extern declaration for non-static variable 'PF1_M1PWM5' [-Wmissing-variable-declarations]
+  386 | PWM_t PF1_M1PWM5 = {
+      |       ^
+../drivers/MCAL/PWM_Config.c(386): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  386 | PWM_t PF1_M1PWM5 = {
+      | ^
+../drivers/MCAL/PWM_Config.c(399): warning: no previous extern declaration for non-static variable 'PF2_M1PWM6' [-Wmissing-variable-declarations]
+  399 | PWM_t PF2_M1PWM6 = {
+      |       ^
+../drivers/MCAL/PWM_Config.c(399): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  399 | PWM_t PF2_M1PWM6 = {
+      | ^
+../drivers/MCAL/PWM_Config.c(412): warning: no previous extern declaration for non-static variable 'PF3_M1PWM7' [-Wmissing-variable-declarations]
+  412 | PWM_t PF3_M1PWM7 = {
+      |       ^
+../drivers/MCAL/PWM_Config.c(412): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  412 | PWM_t PF3_M1PWM7 = {
+      | ^
+19 warnings generated.
+compiling PWM_Config.c...
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(31): warning: 'INT_TIMER0A' macro redefined [-Wmacro-redefined]
+   31 | #define INT_TIMER0A     35          // 16/32-Bit Timer 0A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(435): note: previous definition is here
+  435 | #define INT_TIMER0A             INT_CONCAT(INT_TIMER0A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(32): warning: 'INT_TIMER0B' macro redefined [-Wmacro-redefined]
+   32 | #define INT_TIMER0B     36          // 16/32-Bit Timer 0B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(436): note: previous definition is here
+  436 | #define INT_TIMER0B             INT_CONCAT(INT_TIMER0B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(33): warning: 'INT_TIMER1A' macro redefined [-Wmacro-redefined]
+   33 | #define INT_TIMER1A     37          // 16/32-Bit Timer 1A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(437): note: previous definition is here
+  437 | #define INT_TIMER1A             INT_CONCAT(INT_TIMER1A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(34): warning: 'INT_TIMER1B' macro redefined [-Wmacro-redefined]
+   34 | #define INT_TIMER1B     38          // 16/32-Bit Timer 1B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(438): note: previous definition is here
+  438 | #define INT_TIMER1B             INT_CONCAT(INT_TIMER1B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(35): warning: 'INT_TIMER2A' macro redefined [-Wmacro-redefined]
+   35 | #define INT_TIMER2A     39          // 16/32-Bit Timer 2A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(439): note: previous definition is here
+  439 | #define INT_TIMER2A             INT_CONCAT(INT_TIMER2A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(36): warning: 'INT_TIMER2B' macro redefined [-Wmacro-redefined]
+   36 | #define INT_TIMER2B     40          // 16/32-Bit Timer 2B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(440): note: previous definition is here
+  440 | #define INT_TIMER2B             INT_CONCAT(INT_TIMER2B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(37): warning: 'INT_TIMER3A' macro redefined [-Wmacro-redefined]
+   37 | #define INT_TIMER3A     51          // 16/32-Bit Timer 3A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(441): note: previous definition is here
+  441 | #define INT_TIMER3A             INT_CONCAT(INT_TIMER3A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(38): warning: 'INT_TIMER3B' macro redefined [-Wmacro-redefined]
+   38 | #define INT_TIMER3B     52          // Timer 3B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(442): note: previous definition is here
+  442 | #define INT_TIMER3B             INT_CONCAT(INT_TIMER3B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(39): warning: 'INT_TIMER4A' macro redefined [-Wmacro-redefined]
+   39 | #define INT_TIMER4A     86          // 16/32-Bit Timer 4A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(443): note: previous definition is here
+  443 | #define INT_TIMER4A             INT_CONCAT(INT_TIMER4A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(40): warning: 'INT_TIMER4B' macro redefined [-Wmacro-redefined]
+   40 | #define INT_TIMER4B     87          // 16/32-Bit Timer 4B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(444): note: previous definition is here
+  444 | #define INT_TIMER4B             INT_CONCAT(INT_TIMER4B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(41): warning: 'INT_TIMER5A' macro redefined [-Wmacro-redefined]
+   41 | #define INT_TIMER5A     108         // 16/32-Bit Timer 5A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(445): note: previous definition is here
+  445 | #define INT_TIMER5A             INT_CONCAT(INT_TIMER5A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(42): warning: 'INT_TIMER5B' macro redefined [-Wmacro-redefined]
+   42 | #define INT_TIMER5B     109         // 16/32-Bit Timer 5B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(446): note: previous definition is here
+  446 | #define INT_TIMER5B             INT_CONCAT(INT_TIMER5B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(44): warning: 'INT_WTIMER0A' macro redefined [-Wmacro-redefined]
+   44 | #define INT_WTIMER0A    110         // 32/64-Bit Timer 0A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(463): note: previous definition is here
+  463 | #define INT_WTIMER0A            INT_CONCAT(INT_WTIMER0A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(45): warning: 'INT_WTIMER0B' macro redefined [-Wmacro-redefined]
+   45 | #define INT_WTIMER0B    111         // 32/64-Bit Timer 0B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(464): note: previous definition is here
+  464 | #define INT_WTIMER0B            INT_CONCAT(INT_WTIMER0B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(46): warning: 'INT_WTIMER1A' macro redefined [-Wmacro-redefined]
+   46 | #define INT_WTIMER1A    112         // 32/64-Bit Timer 1A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(465): note: previous definition is here
+  465 | #define INT_WTIMER1A            INT_CONCAT(INT_WTIMER1A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(47): warning: 'INT_WTIMER1B' macro redefined [-Wmacro-redefined]
+   47 | #define INT_WTIMER1B    113         // 32/64-Bit Timer 1B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(466): note: previous definition is here
+  466 | #define INT_WTIMER1B            INT_CONCAT(INT_WTIMER1B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(48): warning: 'INT_WTIMER2A' macro redefined [-Wmacro-redefined]
+   48 | #define INT_WTIMER2A    114         // 32/64-Bit Timer 2A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(467): note: previous definition is here
+  467 | #define INT_WTIMER2A            INT_CONCAT(INT_WTIMER2A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(49): warning: 'INT_WTIMER2B' macro redefined [-Wmacro-redefined]
+   49 | #define INT_WTIMER2B    115         // 32/64-Bit Timer 2B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(468): note: previous definition is here
+  468 | #define INT_WTIMER2B            INT_CONCAT(INT_WTIMER2B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(50): warning: 'INT_WTIMER3A' macro redefined [-Wmacro-redefined]
+   50 | #define INT_WTIMER3A    116         // 32/64-Bit Timer 3A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(469): note: previous definition is here
+  469 | #define INT_WTIMER3A            INT_CONCAT(INT_WTIMER3A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(51): warning: 'INT_WTIMER3B' macro redefined [-Wmacro-redefined]
+   51 | #define INT_WTIMER3B    117         // 32/64-Bit Timer 3B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(470): note: previous definition is here
+  470 | #define INT_WTIMER3B            INT_CONCAT(INT_WTIMER3B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(52): warning: 'INT_WTIMER4A' macro redefined [-Wmacro-redefined]
+   52 | #define INT_WTIMER4A    118         // 32/64-Bit Timer 4A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(471): note: previous definition is here
+  471 | #define INT_WTIMER4A            INT_CONCAT(INT_WTIMER4A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(53): warning: 'INT_WTIMER4B' macro redefined [-Wmacro-redefined]
+   53 | #define INT_WTIMER4B    119         // 32/64-Bit Timer 4B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(472): note: previous definition is here
+  472 | #define INT_WTIMER4B            INT_CONCAT(INT_WTIMER4B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(54): warning: 'INT_WTIMER5A' macro redefined [-Wmacro-redefined]
+   54 | #define INT_WTIMER5A    120         // 32/64-Bit Timer 5A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(473): note: previous definition is here
+  473 | #define INT_WTIMER5A            INT_CONCAT(INT_WTIMER5A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(55): warning: 'INT_WTIMER5B' macro redefined [-Wmacro-redefined]
+   55 | #define INT_WTIMER5B    121         // 32/64-Bit Timer 5B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(474): note: previous definition is here
+  474 | #define INT_WTIMER5B            INT_CONCAT(INT_WTIMER5B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer_Config.c(260): warning: no previous extern declaration for non-static variable 'timer0A' [-Wmissing-variable-declarations]
+  260 | timer_t timer0A = {
+      |         ^
+../drivers/MCAL/Timer_Config.c(260): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  260 | timer_t timer0A = {
+      | ^
+../drivers/MCAL/Timer_Config.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(72): warning: padding struct 'timer_t' with 3 bytes to align 'TIMER_BASE' [-Wpadded]
+   72 |     uint32_t   TIMER_BASE            ;   // timer from 0 to 5
+      |                ^
+../drivers/MCAL/Timer_Config.c(277): warning: no previous extern declaration for non-static variable 'timer0B' [-Wmissing-variable-declarations]
+  277 | timer_t timer0B = {
+      |         ^
+../drivers/MCAL/Timer_Config.c(277): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  277 | timer_t timer0B = {
+      | ^
+../drivers/MCAL/Timer_Config.c(293): warning: no previous extern declaration for non-static variable 'timer1A' [-Wmissing-variable-declarations]
+  293 | timer_t timer1A = {
+      |         ^
+../drivers/MCAL/Timer_Config.c(293): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  293 | timer_t timer1A = {
+      | ^
+../drivers/MCAL/Timer_Config.c(309): warning: no previous extern declaration for non-static variable 'timer1B' [-Wmissing-variable-declarations]
+  309 | timer_t timer1B = {
+      |         ^
+../drivers/MCAL/Timer_Config.c(309): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  309 | timer_t timer1B = {
+      | ^
+../drivers/MCAL/Timer_Config.c(325): warning: no previous extern declaration for non-static variable 'timer2A' [-Wmissing-variable-declarations]
+  325 | timer_t timer2A = {
+      |         ^
+../drivers/MCAL/Timer_Config.c(325): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  325 | timer_t timer2A = {
+      | ^
+../drivers/MCAL/Timer_Config.c(341): warning: no previous extern declaration for non-static variable 'timer2B' [-Wmissing-variable-declarations]
+  341 | timer_t timer2B = {
+      |         ^
+../drivers/MCAL/Timer_Config.c(341): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  341 | timer_t timer2B = {
+      | ^
+../drivers/MCAL/Timer_Config.c(358): warning: no previous extern declaration for non-static variable 'wtimer2A' [-Wmissing-variable-declarations]
+  358 | timer_t wtimer2A = {
+      |         ^
+../drivers/MCAL/Timer_Config.c(358): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  358 | timer_t wtimer2A = {
+      | ^
+../drivers/MCAL/Timer_Config.c(374): warning: no previous extern declaration for non-static variable 'wtimer2B' [-Wmissing-variable-declarations]
+  374 | timer_t wtimer2B  = {
+      |         ^
+../drivers/MCAL/Timer_Config.c(374): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  374 | timer_t wtimer2B  = {
+      | ^
+../drivers/MCAL/Timer_Config.c(390): warning: no previous extern declaration for non-static variable 'wtimer3A' [-Wmissing-variable-declarations]
+  390 | timer_t wtimer3A  = {
+      |         ^
+../drivers/MCAL/Timer_Config.c(390): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  390 | timer_t wtimer3A  = {
+      | ^
+../drivers/MCAL/Timer_Config.c(406): warning: no previous extern declaration for non-static variable 'wtimer3B' [-Wmissing-variable-declarations]
+  406 | timer_t wtimer3B = {
+      |         ^
+../drivers/MCAL/Timer_Config.c(406): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  406 | timer_t wtimer3B = {
+      | ^
+../drivers/MCAL/Timer_Config.c(422): warning: no previous extern declaration for non-static variable 'wtimer4A' [-Wmissing-variable-declarations]
+  422 | timer_t wtimer4A  = {
+      |         ^
+../drivers/MCAL/Timer_Config.c(422): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  422 | timer_t wtimer4A  = {
+      | ^
+36 warnings generated.
+compiling Timer_Config.c...
+../drivers/MCAL/GPIO_Config.c(73): warning: no previous extern declaration for non-static variable 'pin_red' [-Wmissing-variable-declarations]
+   73 | const pin_t pin_red ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(73): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   73 | const pin_t pin_red ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(80): warning: no previous extern declaration for non-static variable 'pin_blue' [-Wmissing-variable-declarations]
+   80 | const pin_t pin_blue ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(80): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   80 | const pin_t pin_blue ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(87): warning: no previous extern declaration for non-static variable 'pin_green' [-Wmissing-variable-declarations]
+   87 | const pin_t pin_green ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(87): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   87 | const pin_t pin_green ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(94): warning: no previous extern declaration for non-static variable 'trig_pin' [-Wmissing-variable-declarations]
+   94 | const pin_t trig_pin ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(94): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   94 | const pin_t trig_pin ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(101): warning: no previous extern declaration for non-static variable 'echo_pin' [-Wmissing-variable-declarations]
+  101 | const pin_t echo_pin ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(101): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  101 | const pin_t echo_pin ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(110): warning: no previous extern declaration for non-static variable 'PA2' [-Wmissing-variable-declarations]
+  110 | const pin_t PA2 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(110): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  110 | const pin_t PA2 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(117): warning: no previous extern declaration for non-static variable 'PA3' [-Wmissing-variable-declarations]
+  117 | const pin_t PA3 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(117): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  117 | const pin_t PA3 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(124): warning: no previous extern declaration for non-static variable 'PA4' [-Wmissing-variable-declarations]
+  124 | const pin_t PA4 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(124): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  124 | const pin_t PA4 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(131): warning: no previous extern declaration for non-static variable 'PA5' [-Wmissing-variable-declarations]
+  131 | const pin_t PA5 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(131): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  131 | const pin_t PA5 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(138): warning: no previous extern declaration for non-static variable 'PA6' [-Wmissing-variable-declarations]
+  138 | const pin_t PA6 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(138): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  138 | const pin_t PA6 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(145): warning: no previous extern declaration for non-static variable 'PA7' [-Wmissing-variable-declarations]
+  145 | const pin_t PA7 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(145): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  145 | const pin_t PA7 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(154): warning: no previous extern declaration for non-static variable 'PB0' [-Wmissing-variable-declarations]
+  154 | const pin_t PB0 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(154): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  154 | const pin_t PB0 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(161): warning: no previous extern declaration for non-static variable 'PB1' [-Wmissing-variable-declarations]
+  161 | const pin_t PB1 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(161): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  161 | const pin_t PB1 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(168): warning: no previous extern declaration for non-static variable 'PB4' [-Wmissing-variable-declarations]
+  168 | const pin_t PB4 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(168): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  168 | const pin_t PB4 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(175): warning: no previous extern declaration for non-static variable 'PB5' [-Wmissing-variable-declarations]
+  175 | const pin_t PB5 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(175): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  175 | const pin_t PB5 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(182): warning: no previous extern declaration for non-static variable 'PB6' [-Wmissing-variable-declarations]
+  182 | const pin_t PB6 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(182): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  182 | const pin_t PB6 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(189): warning: no previous extern declaration for non-static variable 'PB7' [-Wmissing-variable-declarations]
+  189 | const pin_t PB7 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(189): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  189 | const pin_t PB7 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(196): warning: no previous extern declaration for non-static variable 'PC4' [-Wmissing-variable-declarations]
+  196 | const pin_t PC4 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(196): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  196 | const pin_t PC4 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(203): warning: no previous extern declaration for non-static variable 'PC5' [-Wmissing-variable-declarations]
+  203 | const pin_t PC5 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(203): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  203 | const pin_t PC5 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(210): warning: no previous extern declaration for non-static variable 'PC6' [-Wmissing-variable-declarations]
+  210 | const pin_t PC6 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(210): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  210 | const pin_t PC6 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(217): warning: no previous extern declaration for non-static variable 'PC7' [-Wmissing-variable-declarations]
+  217 | const pin_t PC7 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(217): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  217 | const pin_t PC7 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(225): warning: no previous extern declaration for non-static variable 'PD0' [-Wmissing-variable-declarations]
+  225 | const pin_t PD0 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(225): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  225 | const pin_t PD0 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(232): warning: no previous extern declaration for non-static variable 'PD1' [-Wmissing-variable-declarations]
+  232 | const pin_t PD1 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(232): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  232 | const pin_t PD1 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(239): warning: no previous extern declaration for non-static variable 'PD2' [-Wmissing-variable-declarations]
+  239 | const pin_t PD2 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(239): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  239 | const pin_t PD2 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(246): warning: no previous extern declaration for non-static variable 'PD3' [-Wmissing-variable-declarations]
+  246 | const pin_t PD3 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(246): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  246 | const pin_t PD3 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(255): warning: no previous extern declaration for non-static variable 'PD6' [-Wmissing-variable-declarations]
+  255 | const pin_t PD6 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(255): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  255 | const pin_t PD6 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(263): warning: no previous extern declaration for non-static variable 'PD7' [-Wmissing-variable-declarations]
+  263 | const pin_t PD7 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(263): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  263 | const pin_t PD7 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(270): warning: no previous extern declaration for non-static variable 'PE0' [-Wmissing-variable-declarations]
+  270 | const pin_t PE0 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(270): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  270 | const pin_t PE0 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(277): warning: no previous extern declaration for non-static variable 'PE1' [-Wmissing-variable-declarations]
+  277 | const pin_t PE1 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(277): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  277 | const pin_t PE1 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(284): warning: no previous extern declaration for non-static variable 'PE2' [-Wmissing-variable-declarations]
+  284 | const pin_t PE2 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(284): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  284 | const pin_t PE2 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(291): warning: no previous extern declaration for non-static variable 'PE3' [-Wmissing-variable-declarations]
+  291 | const pin_t PE3 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(291): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  291 | const pin_t PE3 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(298): warning: no previous extern declaration for non-static variable 'PE4' [-Wmissing-variable-declarations]
+  298 | const pin_t PE4 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(298): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  298 | const pin_t PE4 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(305): warning: no previous extern declaration for non-static variable 'PE5' [-Wmissing-variable-declarations]
+  305 | const pin_t PE5 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(305): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  305 | const pin_t PE5 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(313): warning: no previous extern declaration for non-static variable 'PF0' [-Wmissing-variable-declarations]
+  313 | const pin_t PF0 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(313): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  313 | const pin_t PF0 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(320): warning: no previous extern declaration for non-static variable 'PF1' [-Wmissing-variable-declarations]
+  320 | const pin_t PF1 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(320): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  320 | const pin_t PF1 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(327): warning: no previous extern declaration for non-static variable 'PF2' [-Wmissing-variable-declarations]
+  327 | const pin_t PF2 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(327): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  327 | const pin_t PF2 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(334): warning: no previous extern declaration for non-static variable 'PF3' [-Wmissing-variable-declarations]
+  334 | const pin_t PF3 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(334): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  334 | const pin_t PF3 ={
+      |       ^
+../drivers/MCAL/GPIO_Config.c(341): warning: no previous extern declaration for non-static variable 'PF4' [-Wmissing-variable-declarations]
+  341 | const pin_t PF4 ={
+      |             ^
+../drivers/MCAL/GPIO_Config.c(341): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  341 | const pin_t PF4 ={
+      |       ^
+38 warnings generated.
+compiling GPIO_Config.c...
+../drivers/MCAL/RCC_Config.c(12): warning: In file included from...
+../drivers/MCAL/RCC.h(14): warning: non-portable path to file '"Std_Types.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   14 | #include "STD_Types.h"
+      |          ^~~~~~~~~~~~~
+      |          "Std_Types.h"
+../drivers/MCAL/RCC_Config.c(141): warning: no previous extern declaration for non-static variable 'RCC_config80' [-Wmissing-variable-declarations]
+  141 |  const RCC_t RCC_config80 = {
+      |              ^
+../drivers/MCAL/RCC_Config.c(141): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  141 |  const RCC_t RCC_config80 = {
+      |        ^
+../drivers/MCAL/RCC_Config.c(147): warning: no previous extern declaration for non-static variable 'RCC_config16' [-Wmissing-variable-declarations]
+  147 |  const RCC_t RCC_config16 = {
+      |              ^
+../drivers/MCAL/RCC_Config.c(147): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  147 |  const RCC_t RCC_config16 = {
+      |        ^
+../drivers/MCAL/RCC_Config.c(153): warning: no previous extern declaration for non-static variable 'RCC_config40' [-Wmissing-variable-declarations]
+  153 |  const RCC_t RCC_config40 = {
+      |              ^
+../drivers/MCAL/RCC_Config.c(153): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  153 |  const RCC_t RCC_config40 = {
+      |        ^
+../drivers/MCAL/RCC_Config.c(159): warning: no previous extern declaration for non-static variable 'RCC_config50' [-Wmissing-variable-declarations]
+  159 |   const RCC_t RCC_config50 = {
+      |               ^
+../drivers/MCAL/RCC_Config.c(159): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  159 |   const RCC_t RCC_config50 = {
+      |         ^
+../drivers/MCAL/RCC_Config.c(165): warning: no previous extern declaration for non-static variable 'RCC_config66' [-Wmissing-variable-declarations]
+  165 |  const RCC_t RCC_config66 = {
+      |              ^
+../drivers/MCAL/RCC_Config.c(165): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  165 |  const RCC_t RCC_config66 = {
+      |        ^
+../drivers/MCAL/RCC_Config.c(171): warning: no previous extern declaration for non-static variable 'RCC_configInt16' [-Wmissing-variable-declarations]
+  171 | const RCC_INT_t RCC_configInt16 = {
+      |                 ^
+../drivers/MCAL/RCC_Config.c(171): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  171 | const RCC_INT_t RCC_configInt16 = {
+      |       ^
+7 warnings generated.
+compiling RCC_Config.c...
+../drivers/MCAL/RCC.c(10): warning: In file included from...
+../drivers/MCAL/RCC.h(14): warning: non-portable path to file '"Std_Types.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   14 | #include "STD_Types.h"
+      |          ^~~~~~~~~~~~~
+      |          "Std_Types.h"
+1 warning generated.
+compiling RCC.c...
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(31): warning: 'INT_TIMER0A' macro redefined [-Wmacro-redefined]
+   31 | #define INT_TIMER0A     35          // 16/32-Bit Timer 0A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(435): note: previous definition is here
+  435 | #define INT_TIMER0A             INT_CONCAT(INT_TIMER0A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(32): warning: 'INT_TIMER0B' macro redefined [-Wmacro-redefined]
+   32 | #define INT_TIMER0B     36          // 16/32-Bit Timer 0B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(436): note: previous definition is here
+  436 | #define INT_TIMER0B             INT_CONCAT(INT_TIMER0B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(33): warning: 'INT_TIMER1A' macro redefined [-Wmacro-redefined]
+   33 | #define INT_TIMER1A     37          // 16/32-Bit Timer 1A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(437): note: previous definition is here
+  437 | #define INT_TIMER1A             INT_CONCAT(INT_TIMER1A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(34): warning: 'INT_TIMER1B' macro redefined [-Wmacro-redefined]
+   34 | #define INT_TIMER1B     38          // 16/32-Bit Timer 1B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(438): note: previous definition is here
+  438 | #define INT_TIMER1B             INT_CONCAT(INT_TIMER1B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(35): warning: 'INT_TIMER2A' macro redefined [-Wmacro-redefined]
+   35 | #define INT_TIMER2A     39          // 16/32-Bit Timer 2A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(439): note: previous definition is here
+  439 | #define INT_TIMER2A             INT_CONCAT(INT_TIMER2A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(36): warning: 'INT_TIMER2B' macro redefined [-Wmacro-redefined]
+   36 | #define INT_TIMER2B     40          // 16/32-Bit Timer 2B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(440): note: previous definition is here
+  440 | #define INT_TIMER2B             INT_CONCAT(INT_TIMER2B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(37): warning: 'INT_TIMER3A' macro redefined [-Wmacro-redefined]
+   37 | #define INT_TIMER3A     51          // 16/32-Bit Timer 3A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(441): note: previous definition is here
+  441 | #define INT_TIMER3A             INT_CONCAT(INT_TIMER3A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(38): warning: 'INT_TIMER3B' macro redefined [-Wmacro-redefined]
+   38 | #define INT_TIMER3B     52          // Timer 3B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(442): note: previous definition is here
+  442 | #define INT_TIMER3B             INT_CONCAT(INT_TIMER3B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(39): warning: 'INT_TIMER4A' macro redefined [-Wmacro-redefined]
+   39 | #define INT_TIMER4A     86          // 16/32-Bit Timer 4A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(443): note: previous definition is here
+  443 | #define INT_TIMER4A             INT_CONCAT(INT_TIMER4A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(40): warning: 'INT_TIMER4B' macro redefined [-Wmacro-redefined]
+   40 | #define INT_TIMER4B     87          // 16/32-Bit Timer 4B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(444): note: previous definition is here
+  444 | #define INT_TIMER4B             INT_CONCAT(INT_TIMER4B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(41): warning: 'INT_TIMER5A' macro redefined [-Wmacro-redefined]
+   41 | #define INT_TIMER5A     108         // 16/32-Bit Timer 5A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(445): note: previous definition is here
+  445 | #define INT_TIMER5A             INT_CONCAT(INT_TIMER5A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(42): warning: 'INT_TIMER5B' macro redefined [-Wmacro-redefined]
+   42 | #define INT_TIMER5B     109         // 16/32-Bit Timer 5B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(446): note: previous definition is here
+  446 | #define INT_TIMER5B             INT_CONCAT(INT_TIMER5B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(44): warning: 'INT_WTIMER0A' macro redefined [-Wmacro-redefined]
+   44 | #define INT_WTIMER0A    110         // 32/64-Bit Timer 0A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(463): note: previous definition is here
+  463 | #define INT_WTIMER0A            INT_CONCAT(INT_WTIMER0A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(45): warning: 'INT_WTIMER0B' macro redefined [-Wmacro-redefined]
+   45 | #define INT_WTIMER0B    111         // 32/64-Bit Timer 0B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(464): note: previous definition is here
+  464 | #define INT_WTIMER0B            INT_CONCAT(INT_WTIMER0B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(46): warning: 'INT_WTIMER1A' macro redefined [-Wmacro-redefined]
+   46 | #define INT_WTIMER1A    112         // 32/64-Bit Timer 1A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(465): note: previous definition is here
+  465 | #define INT_WTIMER1A            INT_CONCAT(INT_WTIMER1A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(47): warning: 'INT_WTIMER1B' macro redefined [-Wmacro-redefined]
+   47 | #define INT_WTIMER1B    113         // 32/64-Bit Timer 1B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(466): note: previous definition is here
+  466 | #define INT_WTIMER1B            INT_CONCAT(INT_WTIMER1B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(48): warning: 'INT_WTIMER2A' macro redefined [-Wmacro-redefined]
+   48 | #define INT_WTIMER2A    114         // 32/64-Bit Timer 2A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(467): note: previous definition is here
+  467 | #define INT_WTIMER2A            INT_CONCAT(INT_WTIMER2A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(49): warning: 'INT_WTIMER2B' macro redefined [-Wmacro-redefined]
+   49 | #define INT_WTIMER2B    115         // 32/64-Bit Timer 2B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(468): note: previous definition is here
+  468 | #define INT_WTIMER2B            INT_CONCAT(INT_WTIMER2B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(50): warning: 'INT_WTIMER3A' macro redefined [-Wmacro-redefined]
+   50 | #define INT_WTIMER3A    116         // 32/64-Bit Timer 3A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(469): note: previous definition is here
+  469 | #define INT_WTIMER3A            INT_CONCAT(INT_WTIMER3A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(51): warning: 'INT_WTIMER3B' macro redefined [-Wmacro-redefined]
+   51 | #define INT_WTIMER3B    117         // 32/64-Bit Timer 3B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(470): note: previous definition is here
+  470 | #define INT_WTIMER3B            INT_CONCAT(INT_WTIMER3B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(52): warning: 'INT_WTIMER4A' macro redefined [-Wmacro-redefined]
+   52 | #define INT_WTIMER4A    118         // 32/64-Bit Timer 4A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(471): note: previous definition is here
+  471 | #define INT_WTIMER4A            INT_CONCAT(INT_WTIMER4A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(53): warning: 'INT_WTIMER4B' macro redefined [-Wmacro-redefined]
+   53 | #define INT_WTIMER4B    119         // 32/64-Bit Timer 4B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(472): note: previous definition is here
+  472 | #define INT_WTIMER4B            INT_CONCAT(INT_WTIMER4B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(54): warning: 'INT_WTIMER5A' macro redefined [-Wmacro-redefined]
+   54 | #define INT_WTIMER5A    120         // 32/64-Bit Timer 5A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(473): note: previous definition is here
+  473 | #define INT_WTIMER5A            INT_CONCAT(INT_WTIMER5A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(55): warning: 'INT_WTIMER5B' macro redefined [-Wmacro-redefined]
+   55 | #define INT_WTIMER5B    121         // 32/64-Bit Timer 5B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(474): note: previous definition is here
+  474 | #define INT_WTIMER5B            INT_CONCAT(INT_WTIMER5B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/MCAL/Timer.c(8): warning: In file included from...
+../drivers/MCAL/Timer.h(72): warning: padding struct 'timer_t' with 3 bytes to align 'TIMER_BASE' [-Wpadded]
+   72 |     uint32_t   TIMER_BASE            ;   // timer from 0 to 5
+      |                ^
+../drivers/MCAL/Timer.c(89): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   89 |              GPIOPinTypeTimer(timer->PORT, timer->PIN);
+      |              ~~~~~~~~~~~~~~~~              ~~~~~~~^~~
+../drivers/MCAL/Timer.c(57): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+   57 |              uint32_t  port_enable = 0;
+      |                        ^
+27 warnings generated.
+compiling Timer.c...
+app.c(7): warning: In file included from...
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(298): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  298 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  338 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(357): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  357 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(713): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  713 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(729): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  729 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(774): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  774 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(779): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  779 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(872): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  872 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(885): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  885 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(892): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  892 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(897): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  897 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(904): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  904 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(910): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  910 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(917): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  917 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(924): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  924 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(929): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  929 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(936): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  936 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(942): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  942 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(949): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  949 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(956): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  956 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(961): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  961 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(968): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  968 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(974): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  974 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(981): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  981 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(988): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  988 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(993): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  993 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1000): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1000 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1006): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1006 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1013): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1013 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1020): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1020 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1025): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1025 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1032): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1032 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1038): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1038 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1045): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1045 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1052): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1052 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1057): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1057 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1064): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1064 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1070): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1070 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1077): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1077 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1084): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1084 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1089): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1089 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1096): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1096 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1102): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1102 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1251): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1251 |   union {
+      |   ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(51): warning: 'WATCHDOG0_BASE' macro redefined [-Wmacro-redefined]
+   51 | #define WATCHDOG0_BASE          0x40000000  // Watchdog0
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1543): note: previous definition is here
+ 1543 | #define WATCHDOG0_BASE                  0x40000000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(52): warning: 'WATCHDOG1_BASE' macro redefined [-Wmacro-redefined]
+   52 | #define WATCHDOG1_BASE          0x40001000  // Watchdog1
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1544): note: previous definition is here
+ 1544 | #define WATCHDOG1_BASE                  0x40001000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(57): warning: 'SSI0_BASE' macro redefined [-Wmacro-redefined]
+   57 | #define SSI0_BASE               0x40008000  // SSI0
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1549): note: previous definition is here
+ 1549 | #define SSI0_BASE                       0x40008000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(58): warning: 'SSI1_BASE' macro redefined [-Wmacro-redefined]
+   58 | #define SSI1_BASE               0x40009000  // SSI1
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1550): note: previous definition is here
+ 1550 | #define SSI1_BASE                       0x40009000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(59): warning: 'SSI2_BASE' macro redefined [-Wmacro-redefined]
+   59 | #define SSI2_BASE               0x4000A000  // SSI2
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1551): note: previous definition is here
+ 1551 | #define SSI2_BASE                       0x4000A000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(60): warning: 'SSI3_BASE' macro redefined [-Wmacro-redefined]
+   60 | #define SSI3_BASE               0x4000B000  // SSI3
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1552): note: previous definition is here
+ 1552 | #define SSI3_BASE                       0x4000B000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(61): warning: 'UART0_BASE' macro redefined [-Wmacro-redefined]
+   61 | #define UART0_BASE              0x4000C000  // UART0
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1553): note: previous definition is here
+ 1553 | #define UART0_BASE                      0x4000C000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(62): warning: 'UART1_BASE' macro redefined [-Wmacro-redefined]
+   62 | #define UART1_BASE              0x4000D000  // UART1
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1554): note: previous definition is here
+ 1554 | #define UART1_BASE                      0x4000D000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(63): warning: 'UART2_BASE' macro redefined [-Wmacro-redefined]
+   63 | #define UART2_BASE              0x4000E000  // UART2
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1555): note: previous definition is here
+ 1555 | #define UART2_BASE                      0x4000E000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(64): warning: 'UART3_BASE' macro redefined [-Wmacro-redefined]
+   64 | #define UART3_BASE              0x4000F000  // UART3
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1556): note: previous definition is here
+ 1556 | #define UART3_BASE                      0x4000F000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(65): warning: 'UART4_BASE' macro redefined [-Wmacro-redefined]
+   65 | #define UART4_BASE              0x40010000  // UART4
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1557): note: previous definition is here
+ 1557 | #define UART4_BASE                      0x40010000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(66): warning: 'UART5_BASE' macro redefined [-Wmacro-redefined]
+   66 | #define UART5_BASE              0x40011000  // UART5
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1558): note: previous definition is here
+ 1558 | #define UART5_BASE                      0x40011000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(67): warning: 'UART6_BASE' macro redefined [-Wmacro-redefined]
+   67 | #define UART6_BASE              0x40012000  // UART6
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1559): note: previous definition is here
+ 1559 | #define UART6_BASE                      0x40012000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(68): warning: 'UART7_BASE' macro redefined [-Wmacro-redefined]
+   68 | #define UART7_BASE              0x40013000  // UART7
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1560): note: previous definition is here
+ 1560 | #define UART7_BASE                      0x40013000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(69): warning: 'I2C0_BASE' macro redefined [-Wmacro-redefined]
+   69 | #define I2C0_BASE               0x40020000  // I2C0
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1561): note: previous definition is here
+ 1561 | #define I2C0_BASE                       0x40020000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(70): warning: 'I2C1_BASE' macro redefined [-Wmacro-redefined]
+   70 | #define I2C1_BASE               0x40021000  // I2C1
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1562): note: previous definition is here
+ 1562 | #define I2C1_BASE                       0x40021000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(71): warning: 'I2C2_BASE' macro redefined [-Wmacro-redefined]
+   71 | #define I2C2_BASE               0x40022000  // I2C2
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1563): note: previous definition is here
+ 1563 | #define I2C2_BASE                       0x40022000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(72): warning: 'I2C3_BASE' macro redefined [-Wmacro-redefined]
+   72 | #define I2C3_BASE               0x40023000  // I2C3
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1564): note: previous definition is here
+ 1564 | #define I2C3_BASE                       0x40023000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(77): warning: 'PWM0_BASE' macro redefined [-Wmacro-redefined]
+   77 | #define PWM0_BASE               0x40028000  // Pulse Width Modulator (PWM)
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1567): note: previous definition is here
+ 1567 | #define PWM0_BASE                       0x40028000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(78): warning: 'PWM1_BASE' macro redefined [-Wmacro-redefined]
+   78 | #define PWM1_BASE               0x40029000  // Pulse Width Modulator (PWM)
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1568): note: previous definition is here
+ 1568 | #define PWM1_BASE                       0x40029000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(79): warning: 'QEI0_BASE' macro redefined [-Wmacro-redefined]
+   79 | #define QEI0_BASE               0x4002C000  // QEI0
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1569): note: previous definition is here
+ 1569 | #define QEI0_BASE                       0x4002C000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(80): warning: 'QEI1_BASE' macro redefined [-Wmacro-redefined]
+   80 | #define QEI1_BASE               0x4002D000  // QEI1
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1570): note: previous definition is here
+ 1570 | #define QEI1_BASE                       0x4002D000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(81): warning: 'TIMER0_BASE' macro redefined [-Wmacro-redefined]
+   81 | #define TIMER0_BASE             0x40030000  // Timer0
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1571): note: previous definition is here
+ 1571 | #define TIMER0_BASE                     0x40030000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(82): warning: 'TIMER1_BASE' macro redefined [-Wmacro-redefined]
+   82 | #define TIMER1_BASE             0x40031000  // Timer1
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1572): note: previous definition is here
+ 1572 | #define TIMER1_BASE                     0x40031000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(83): warning: 'TIMER2_BASE' macro redefined [-Wmacro-redefined]
+   83 | #define TIMER2_BASE             0x40032000  // Timer2
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1573): note: previous definition is here
+ 1573 | #define TIMER2_BASE                     0x40032000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(84): warning: 'TIMER3_BASE' macro redefined [-Wmacro-redefined]
+   84 | #define TIMER3_BASE             0x40033000  // Timer3
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1574): note: previous definition is here
+ 1574 | #define TIMER3_BASE                     0x40033000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(85): warning: 'TIMER4_BASE' macro redefined [-Wmacro-redefined]
+   85 | #define TIMER4_BASE             0x40034000  // Timer4
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1575): note: previous definition is here
+ 1575 | #define TIMER4_BASE                     0x40034000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(86): warning: 'TIMER5_BASE' macro redefined [-Wmacro-redefined]
+   86 | #define TIMER5_BASE             0x40035000  // Timer5
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1576): note: previous definition is here
+ 1576 | #define TIMER5_BASE                     0x40035000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(87): warning: 'WTIMER0_BASE' macro redefined [-Wmacro-redefined]
+   87 | #define WTIMER0_BASE            0x40036000  // Wide Timer0
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1577): note: previous definition is here
+ 1577 | #define WTIMER0_BASE                    0x40036000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(88): warning: 'WTIMER1_BASE' macro redefined [-Wmacro-redefined]
+   88 | #define WTIMER1_BASE            0x40037000  // Wide Timer1
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1578): note: previous definition is here
+ 1578 | #define WTIMER1_BASE                    0x40037000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(89): warning: 'ADC0_BASE' macro redefined [-Wmacro-redefined]
+   89 | #define ADC0_BASE               0x40038000  // ADC0
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1579): note: previous definition is here
+ 1579 | #define ADC0_BASE                       0x40038000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(90): warning: 'ADC1_BASE' macro redefined [-Wmacro-redefined]
+   90 | #define ADC1_BASE               0x40039000  // ADC1
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1580): note: previous definition is here
+ 1580 | #define ADC1_BASE                       0x40039000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(91): warning: 'COMP_BASE' macro redefined [-Wmacro-redefined]
+   91 | #define COMP_BASE               0x4003C000  // Analog comparators
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1581): note: previous definition is here
+ 1581 | #define COMP_BASE                       0x4003C000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(93): warning: 'CAN0_BASE' macro redefined [-Wmacro-redefined]
+   93 | #define CAN0_BASE               0x40040000  // CAN0
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1582): note: previous definition is here
+ 1582 | #define CAN0_BASE                       0x40040000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(94): warning: 'CAN1_BASE' macro redefined [-Wmacro-redefined]
+   94 | #define CAN1_BASE               0x40041000  // CAN1
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1583): note: previous definition is here
+ 1583 | #define CAN1_BASE                       0x40041000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(95): warning: 'WTIMER2_BASE' macro redefined [-Wmacro-redefined]
+   95 | #define WTIMER2_BASE            0x4004C000  // Wide Timer2
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1584): note: previous definition is here
+ 1584 | #define WTIMER2_BASE                    0x4004C000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(96): warning: 'WTIMER3_BASE' macro redefined [-Wmacro-redefined]
+   96 | #define WTIMER3_BASE            0x4004D000  // Wide Timer3
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1585): note: previous definition is here
+ 1585 | #define WTIMER3_BASE                    0x4004D000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(97): warning: 'WTIMER4_BASE' macro redefined [-Wmacro-redefined]
+   97 | #define WTIMER4_BASE            0x4004E000  // Wide Timer4
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1586): note: previous definition is here
+ 1586 | #define WTIMER4_BASE                    0x4004E000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(98): warning: 'WTIMER5_BASE' macro redefined [-Wmacro-redefined]
+   98 | #define WTIMER5_BASE            0x4004F000  // Wide Timer5
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1587): note: previous definition is here
+ 1587 | #define WTIMER5_BASE                    0x4004F000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(99): warning: 'USB0_BASE' macro redefined [-Wmacro-redefined]
+   99 | #define USB0_BASE               0x40050000  // USB 0 Controller
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1588): note: previous definition is here
+ 1588 | #define USB0_BASE                       0x40050000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(121): warning: 'EEPROM_BASE' macro redefined [-Wmacro-redefined]
+  121 | #define EEPROM_BASE             0x400AF000  // EEPROM memory
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1595): note: previous definition is here
+ 1595 | #define EEPROM_BASE                     0x400AF000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(133): warning: 'SYSEXC_BASE' macro redefined [-Wmacro-redefined]
+  133 | #define SYSEXC_BASE             0x400F9000  // System Exception Module
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1596): note: previous definition is here
+ 1596 | #define SYSEXC_BASE                     0x400F9000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(134): warning: 'HIB_BASE' macro redefined [-Wmacro-redefined]
+  134 | #define HIB_BASE                0x400FC000  // Hibernation Module
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1597): note: previous definition is here
+ 1597 | #define HIB_BASE                        0x400FC000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(135): warning: 'FLASH_CTRL_BASE' macro redefined [-Wmacro-redefined]
+  135 | #define FLASH_CTRL_BASE         0x400FD000  // FLASH Controller
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1598): note: previous definition is here
+ 1598 | #define FLASH_CTRL_BASE                 0x400FD000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(136): warning: 'SYSCTL_BASE' macro redefined [-Wmacro-redefined]
+  136 | #define SYSCTL_BASE             0x400FE000  // System Control
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1599): note: previous definition is here
+ 1599 | #define SYSCTL_BASE                     0x400FE000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(137): warning: 'UDMA_BASE' macro redefined [-Wmacro-redefined]
+  137 | #define UDMA_BASE               0x400FF000  // uDMA Controller
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123GH6PM.h(1600): note: previous definition is here
+ 1600 | #define UDMA_BASE                       0x400FF000UL
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(145): warning: 'ITM_BASE' macro redefined [-Wmacro-redefined]
+  145 | #define ITM_BASE                0xE0000000  // Instrumentation Trace Macrocell
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include\core_cm4.h(1551): note: previous definition is here
+ 1551 | #define ITM_BASE            (0xE0000000UL)                            /*!< ITM Base Address */
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(146): warning: 'DWT_BASE' macro redefined [-Wmacro-redefined]
+  146 | #define DWT_BASE                0xE0001000  // Data Watchpoint and Trace
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include\core_cm4.h(1552): note: previous definition is here
+ 1552 | #define DWT_BASE            (0xE0001000UL)                            /*!< DWT Base Address */
+      |         ^
+app.c(11): warning: In file included from...
+../drivers/MCAL\GPIO_Config.h(16): warning: In file included from...
+../drivers/MCAL/GPIO.h(19): warning: In file included from...
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_memmap.h(148): warning: 'NVIC_BASE' macro redefined [-Wmacro-redefined]
+  148 | #define NVIC_BASE               0xE000E000  // Nested Vectored Interrupt Ctrl
+      |         ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include\core_cm4.h(1556): note: previous definition is here
+ 1556 | #define NVIC_BASE           (SCS_BASE +  0x0100UL)                    /*!< NVIC Base Address */
+      |         ^
+app.c(12): warning: In file included from...
+../drivers/MCAL\RCC_Config.h(13): warning: In file included from...
+../drivers/MCAL/RCC.h(14): warning: non-portable path to file '"Std_Types.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   14 | #include "STD_Types.h"
+      |          ^~~~~~~~~~~~~
+      |          "Std_Types.h"
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(31): warning: 'INT_TIMER0A' macro redefined [-Wmacro-redefined]
+   31 | #define INT_TIMER0A     35          // 16/32-Bit Timer 0A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(435): note: previous definition is here
+  435 | #define INT_TIMER0A             INT_CONCAT(INT_TIMER0A_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(32): warning: 'INT_TIMER0B' macro redefined [-Wmacro-redefined]
+   32 | #define INT_TIMER0B     36          // 16/32-Bit Timer 0B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(436): note: previous definition is here
+  436 | #define INT_TIMER0B             INT_CONCAT(INT_TIMER0B_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(33): warning: 'INT_TIMER1A' macro redefined [-Wmacro-redefined]
+   33 | #define INT_TIMER1A     37          // 16/32-Bit Timer 1A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(437): note: previous definition is here
+  437 | #define INT_TIMER1A             INT_CONCAT(INT_TIMER1A_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(34): warning: 'INT_TIMER1B' macro redefined [-Wmacro-redefined]
+   34 | #define INT_TIMER1B     38          // 16/32-Bit Timer 1B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(438): note: previous definition is here
+  438 | #define INT_TIMER1B             INT_CONCAT(INT_TIMER1B_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(35): warning: 'INT_TIMER2A' macro redefined [-Wmacro-redefined]
+   35 | #define INT_TIMER2A     39          // 16/32-Bit Timer 2A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(439): note: previous definition is here
+  439 | #define INT_TIMER2A             INT_CONCAT(INT_TIMER2A_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(36): warning: 'INT_TIMER2B' macro redefined [-Wmacro-redefined]
+   36 | #define INT_TIMER2B     40          // 16/32-Bit Timer 2B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(440): note: previous definition is here
+  440 | #define INT_TIMER2B             INT_CONCAT(INT_TIMER2B_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(37): warning: 'INT_TIMER3A' macro redefined [-Wmacro-redefined]
+   37 | #define INT_TIMER3A     51          // 16/32-Bit Timer 3A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(441): note: previous definition is here
+  441 | #define INT_TIMER3A             INT_CONCAT(INT_TIMER3A_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(38): warning: 'INT_TIMER3B' macro redefined [-Wmacro-redefined]
+   38 | #define INT_TIMER3B     52          // Timer 3B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(442): note: previous definition is here
+  442 | #define INT_TIMER3B             INT_CONCAT(INT_TIMER3B_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(39): warning: 'INT_TIMER4A' macro redefined [-Wmacro-redefined]
+   39 | #define INT_TIMER4A     86          // 16/32-Bit Timer 4A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(443): note: previous definition is here
+  443 | #define INT_TIMER4A             INT_CONCAT(INT_TIMER4A_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(40): warning: 'INT_TIMER4B' macro redefined [-Wmacro-redefined]
+   40 | #define INT_TIMER4B     87          // 16/32-Bit Timer 4B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(444): note: previous definition is here
+  444 | #define INT_TIMER4B             INT_CONCAT(INT_TIMER4B_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(41): warning: 'INT_TIMER5A' macro redefined [-Wmacro-redefined]
+   41 | #define INT_TIMER5A     108         // 16/32-Bit Timer 5A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(445): note: previous definition is here
+  445 | #define INT_TIMER5A             INT_CONCAT(INT_TIMER5A_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(42): warning: 'INT_TIMER5B' macro redefined [-Wmacro-redefined]
+   42 | #define INT_TIMER5B     109         // 16/32-Bit Timer 5B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(446): note: previous definition is here
+  446 | #define INT_TIMER5B             INT_CONCAT(INT_TIMER5B_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(44): warning: 'INT_WTIMER0A' macro redefined [-Wmacro-redefined]
+   44 | #define INT_WTIMER0A    110         // 32/64-Bit Timer 0A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(463): note: previous definition is here
+  463 | #define INT_WTIMER0A            INT_CONCAT(INT_WTIMER0A_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(45): warning: 'INT_WTIMER0B' macro redefined [-Wmacro-redefined]
+   45 | #define INT_WTIMER0B    111         // 32/64-Bit Timer 0B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(464): note: previous definition is here
+  464 | #define INT_WTIMER0B            INT_CONCAT(INT_WTIMER0B_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(46): warning: 'INT_WTIMER1A' macro redefined [-Wmacro-redefined]
+   46 | #define INT_WTIMER1A    112         // 32/64-Bit Timer 1A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(465): note: previous definition is here
+  465 | #define INT_WTIMER1A            INT_CONCAT(INT_WTIMER1A_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(47): warning: 'INT_WTIMER1B' macro redefined [-Wmacro-redefined]
+   47 | #define INT_WTIMER1B    113         // 32/64-Bit Timer 1B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(466): note: previous definition is here
+  466 | #define INT_WTIMER1B            INT_CONCAT(INT_WTIMER1B_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(48): warning: 'INT_WTIMER2A' macro redefined [-Wmacro-redefined]
+   48 | #define INT_WTIMER2A    114         // 32/64-Bit Timer 2A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(467): note: previous definition is here
+  467 | #define INT_WTIMER2A            INT_CONCAT(INT_WTIMER2A_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(49): warning: 'INT_WTIMER2B' macro redefined [-Wmacro-redefined]
+   49 | #define INT_WTIMER2B    115         // 32/64-Bit Timer 2B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(468): note: previous definition is here
+  468 | #define INT_WTIMER2B            INT_CONCAT(INT_WTIMER2B_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(50): warning: 'INT_WTIMER3A' macro redefined [-Wmacro-redefined]
+   50 | #define INT_WTIMER3A    116         // 32/64-Bit Timer 3A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(469): note: previous definition is here
+  469 | #define INT_WTIMER3A            INT_CONCAT(INT_WTIMER3A_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(51): warning: 'INT_WTIMER3B' macro redefined [-Wmacro-redefined]
+   51 | #define INT_WTIMER3B    117         // 32/64-Bit Timer 3B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(470): note: previous definition is here
+  470 | #define INT_WTIMER3B            INT_CONCAT(INT_WTIMER3B_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(52): warning: 'INT_WTIMER4A' macro redefined [-Wmacro-redefined]
+   52 | #define INT_WTIMER4A    118         // 32/64-Bit Timer 4A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(471): note: previous definition is here
+  471 | #define INT_WTIMER4A            INT_CONCAT(INT_WTIMER4A_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(53): warning: 'INT_WTIMER4B' macro redefined [-Wmacro-redefined]
+   53 | #define INT_WTIMER4B    119         // 32/64-Bit Timer 4B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(472): note: previous definition is here
+  472 | #define INT_WTIMER4B            INT_CONCAT(INT_WTIMER4B_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(54): warning: 'INT_WTIMER5A' macro redefined [-Wmacro-redefined]
+   54 | #define INT_WTIMER5A    120         // 32/64-Bit Timer 5A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(473): note: previous definition is here
+  473 | #define INT_WTIMER5A            INT_CONCAT(INT_WTIMER5A_, INT_DEVICE_CLASS)
+      |         ^
+app.c(13): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(55): warning: 'INT_WTIMER5B' macro redefined [-Wmacro-redefined]
+   55 | #define INT_WTIMER5B    121         // 32/64-Bit Timer 5B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(474): note: previous definition is here
+  474 | #define INT_WTIMER5B            INT_CONCAT(INT_WTIMER5B_, INT_DEVICE_CLASS)
+      |         ^
+app.c(19): warning: In file included from...
+../drivers/HAL\lcd.h(118): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  118 | void lcdClear();
+      |              ^
+      |               void
+app.c(22): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   22 | void fun();
+      |         ^
+      |          void
+app.c(23): warning: no previous extern declaration for non-static variable 'counter' [-Wmissing-variable-declarations]
+   23 | volatile uint16_t counter = 0;
+      |                   ^
+app.c(23): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   23 | volatile uint16_t counter = 0;
+      |          ^
+app.c(27): warning: no previous extern declaration for non-static variable 'receive' [-Wmissing-variable-declarations]
+   27 | char receive = 0;
+      |      ^
+app.c(27): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   27 | char receive = 0;
+      | ^
+app.c(28): warning: no previous extern declaration for non-static variable 'key' [-Wmissing-variable-declarations]
+   28 | char key = 0;
+      |      ^
+app.c(28): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   28 | char key = 0;
+      | ^
+app.c(68): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   68 |                         MCAL_PWM_PulseWidthSet(&PF3_M1PWM7,speed);
+      |                         ~~~~~~~~~~~~~~~~~~~~~~             ^~~~~
+app.c(74): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   74 |                         MCAL_PWM_PulseWidthSet(&PF3_M1PWM7,speed);
+      |                         ~~~~~~~~~~~~~~~~~~~~~~             ^~~~~
+app.c(26): warning: no previous extern declaration for non-static variable 'mesg' [-Wmissing-variable-declarations]
+   26 | char mesg[20];
+      |      ^
+app.c(26): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   26 | char mesg[20];
+      | ^
+126 warnings generated.
+compiling app.c...
+../drivers/MCAL/PWM.c(59): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   59 |                                                 GPIOUnlockPin(PWM->PORT,PWM->PIN);
+      |                                                 ~~~~~~~~~~~~~           ~~~~~^~~
+../drivers/MCAL/PWM.c(65): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   65 |             GPIOPinTypePWM(PWM->PORT, PWM->PIN);
+      |             ~~~~~~~~~~~~~~            ~~~~~^~~
+2 warnings generated.
+compiling PWM.c...
+../drivers/MCAL/GPIO.c(53): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   53 |                                                 GPIOUnlockPin(pin->port,pin->pin);
+      |                                                 ~~~~~~~~~~~~~           ~~~~~^~~
+../drivers/MCAL/GPIO.c(59): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   59 |           GPIOPadConfigSet(pin->port, pin->pin, pin->current, pin->type);
+      |           ~~~~~~~~~~~~~~~~            ~~~~~^~~
+../drivers/MCAL/GPIO.c(61): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   61 |           GPIODirModeSet(pin->port, pin->pin, pin->dir);
+      |           ~~~~~~~~~~~~~~            ~~~~~^~~
+../drivers/MCAL/GPIO.c(63): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   63 |           GPIOPinWrite(pin->port, pin->pin, LOW);
+      |           ~~~~~~~~~~~~            ~~~~~^~~
+../drivers/MCAL/GPIO.c(82): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   82 |               GPIOPinWrite(pin->port, pin->pin, pin->pin);
+      |               ~~~~~~~~~~~~                      ~~~~~^~~
+../drivers/MCAL/GPIO.c(82): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   82 |               GPIOPinWrite(pin->port, pin->pin, pin->pin);
+      |               ~~~~~~~~~~~~            ~~~~~^~~
+../drivers/MCAL/GPIO.c(86): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   86 |               GPIOPinWrite(pin->port, pin->pin, 0x00);
+      |               ~~~~~~~~~~~~            ~~~~~^~~
+../drivers/MCAL/GPIO.c(90): warning: implicit conversion loses integer precision: 'int32_t' (aka 'int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   90 |               pin_state = GPIOPinRead(pin->port, pin->pin);
+      |                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../drivers/MCAL/GPIO.c(90): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   90 |               pin_state = GPIOPinRead(pin->port, pin->pin);
+      |                           ~~~~~~~~~~~            ~~~~~^~~
+../drivers/MCAL/GPIO.c(93): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   93 |                   GPIOPinWrite(pin->port, pin->pin, 0x00);
+      |                   ~~~~~~~~~~~~            ~~~~~^~~
+../drivers/MCAL/GPIO.c(97): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   97 |                   GPIOPinWrite(pin->port, pin->pin, pin->pin);
+      |                   ~~~~~~~~~~~~                      ~~~~~^~~
+../drivers/MCAL/GPIO.c(97): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   97 |                   GPIOPinWrite(pin->port, pin->pin, pin->pin);
+      |                   ~~~~~~~~~~~~            ~~~~~^~~
+../drivers/MCAL/GPIO.c(115): warning: implicit conversion loses integer precision: 'int32_t' (aka 'int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  115 |           pin_state = GPIOPinRead(pin->port, pin->pin);
+      |                     ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../drivers/MCAL/GPIO.c(115): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  115 |           pin_state = GPIOPinRead(pin->port, pin->pin);
+      |                       ~~~~~~~~~~~            ~~~~~^~~
+../drivers/MCAL/GPIO.c(106): warning: variable 'ret' set but not used [-Wunused-but-set-variable]
+  106 |     Std_ReturnType ret = E_OK;
+      |                    ^
+../drivers/MCAL/GPIO.c(127): warning: non-void function does not return a value in all control paths [-Wreturn-type]
+  127 | }
+      | ^
+../drivers/MCAL/GPIO.c(152): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  152 |               GPIOIntTypeSet(Int_pin->port, Int_pin->pin, Int_pin->Int_type);
+      |               ~~~~~~~~~~~~~~                ~~~~~~~~~^~~
+../drivers/MCAL/GPIO.c(9): warning: In file included from...
+../drivers/MCAL/GPIO.h(114): warning: padding struct 'Int_pin_t' with 3 bytes to align 'Int_type' [-Wpadded]
+  114 |     uint32_t   Int_type        ;   // interrupt type
+      |                ^
+18 warnings generated.
+compiling GPIO.c...
+../drivers/HAL/lcd.c(10): warning: In file included from...
+../drivers/HAL/lcd.h(118): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+  118 | void lcdClear();
+      |              ^
+      |               void
+../drivers/HAL/lcd.c(19): warning: no previous extern declaration for non-static variable 'data8Bit' [-Wmissing-variable-declarations]
+   19 | bool data8Bit = 0;
+      |      ^
+../drivers/HAL/lcd.c(19): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   19 | bool data8Bit = 0;
+      | ^
+C:\Keil_v5\ARM\ARMCLANG\Bin\..\include\stdbool.h(15): note: expanded from macro 'bool'
+   15 |     #define bool _Bool
+      |                  ^
+../drivers/HAL/lcd.c(25): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   25 | void lcdEnable() {
+      |               ^
+      |                void
+../drivers/HAL/lcd.c(28): warning: implicit conversion changes signedness: 'int' to 'uint8_t' (aka 'unsigned char') [-Wsign-conversion]
+   28 |         GPIOPinWrite(LCD_GPIO_CTL_BASE, E_PIN, ~E_PIN);
+      |         ~~~~~~~~~~~~                           ^~~~~~
+../drivers/HAL/lcd.c(25): warning: no previous prototype for function 'lcdEnable' [-Wmissing-prototypes]
+   25 | void lcdEnable() {
+      |      ^
+../drivers/HAL/lcd.c(25): note: declare 'static' if the function is not intended to be used outside of this translation unit
+   25 | void lcdEnable() {
+      | ^
+      | static 
+../drivers/HAL/lcd.c(44): warning: implicit conversion loses integer precision: 'int' to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   44 |                 GPIOPinWrite(LCD_GPIO_DATA_BASE, DATA_PINS, (ui8Data & 0x0F) << 4); //send first 4-bits
+      |                 ~~~~~~~~~~~~                                ~~~~~~~~~~~~~~~~~^~~~
+../drivers/HAL/lcd.c(53): warning: implicit conversion changes signedness: 'int' to 'uint8_t' (aka 'unsigned char') [-Wsign-conversion]
+   53 |         GPIOPinWrite(LCD_GPIO_CTL_BASE, E_PIN, ~E_PIN);
+      |         ~~~~~~~~~~~~                           ^~~~~~
+../drivers/HAL/lcd.c(55): warning: implicit conversion changes signedness: 'int' to 'uint8_t' (aka 'unsigned char') [-Wsign-conversion]
+   55 |         GPIOPinWrite(LCD_GPIO_CTL_BASE, RS_PIN, ~RS_PIN);
+      |         ~~~~~~~~~~~~                            ^~~~~~~
+../drivers/HAL/lcd.c(64): warning: implicit conversion changes signedness: 'int' to 'uint8_t' (aka 'unsigned char') [-Wsign-conversion]
+   64 |         GPIOPinWrite(LCD_GPIO_CTL_BASE, E_PIN, ~E_PIN);
+      |         ~~~~~~~~~~~~                           ^~~~~~
+../drivers/HAL/lcd.c(85): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   85 | void lcdClear() {
+      |              ^
+      |               void
+../drivers/HAL/lcd.c(85): warning: no previous prototype for function 'lcdClear' [-Wmissing-prototypes]
+   85 | void lcdClear() {
+      |      ^
+../drivers/HAL/lcd.h(118): note: this declaration is not a prototype; add 'void' to make it a prototype for a zero-parameter function
+  118 | void lcdClear();
+      |      ^        
+      |               void
+../drivers/HAL/lcd.c(78): warning: unsafe pointer arithmetic [-Wunsafe-buffer-usage]
+   78 |                 s ++;
+      |                 ^
+12 warnings generated.
+compiling lcd.c...
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(14): warning: In file included from...
+../drivers/MCAL\RCC_Config.h(13): warning: In file included from...
+../drivers/MCAL/RCC.h(14): warning: non-portable path to file '"Std_Types.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   14 | #include "STD_Types.h"
+      |          ^~~~~~~~~~~~~
+      |          "Std_Types.h"
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(31): warning: 'INT_TIMER0A' macro redefined [-Wmacro-redefined]
+   31 | #define INT_TIMER0A     35          // 16/32-Bit Timer 0A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(435): note: previous definition is here
+  435 | #define INT_TIMER0A             INT_CONCAT(INT_TIMER0A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(32): warning: 'INT_TIMER0B' macro redefined [-Wmacro-redefined]
+   32 | #define INT_TIMER0B     36          // 16/32-Bit Timer 0B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(436): note: previous definition is here
+  436 | #define INT_TIMER0B             INT_CONCAT(INT_TIMER0B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(33): warning: 'INT_TIMER1A' macro redefined [-Wmacro-redefined]
+   33 | #define INT_TIMER1A     37          // 16/32-Bit Timer 1A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(437): note: previous definition is here
+  437 | #define INT_TIMER1A             INT_CONCAT(INT_TIMER1A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(34): warning: 'INT_TIMER1B' macro redefined [-Wmacro-redefined]
+   34 | #define INT_TIMER1B     38          // 16/32-Bit Timer 1B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(438): note: previous definition is here
+  438 | #define INT_TIMER1B             INT_CONCAT(INT_TIMER1B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(35): warning: 'INT_TIMER2A' macro redefined [-Wmacro-redefined]
+   35 | #define INT_TIMER2A     39          // 16/32-Bit Timer 2A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(439): note: previous definition is here
+  439 | #define INT_TIMER2A             INT_CONCAT(INT_TIMER2A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(36): warning: 'INT_TIMER2B' macro redefined [-Wmacro-redefined]
+   36 | #define INT_TIMER2B     40          // 16/32-Bit Timer 2B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(440): note: previous definition is here
+  440 | #define INT_TIMER2B             INT_CONCAT(INT_TIMER2B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(37): warning: 'INT_TIMER3A' macro redefined [-Wmacro-redefined]
+   37 | #define INT_TIMER3A     51          // 16/32-Bit Timer 3A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(441): note: previous definition is here
+  441 | #define INT_TIMER3A             INT_CONCAT(INT_TIMER3A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(38): warning: 'INT_TIMER3B' macro redefined [-Wmacro-redefined]
+   38 | #define INT_TIMER3B     52          // Timer 3B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(442): note: previous definition is here
+  442 | #define INT_TIMER3B             INT_CONCAT(INT_TIMER3B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(39): warning: 'INT_TIMER4A' macro redefined [-Wmacro-redefined]
+   39 | #define INT_TIMER4A     86          // 16/32-Bit Timer 4A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(443): note: previous definition is here
+  443 | #define INT_TIMER4A             INT_CONCAT(INT_TIMER4A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(40): warning: 'INT_TIMER4B' macro redefined [-Wmacro-redefined]
+   40 | #define INT_TIMER4B     87          // 16/32-Bit Timer 4B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(444): note: previous definition is here
+  444 | #define INT_TIMER4B             INT_CONCAT(INT_TIMER4B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(41): warning: 'INT_TIMER5A' macro redefined [-Wmacro-redefined]
+   41 | #define INT_TIMER5A     108         // 16/32-Bit Timer 5A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(445): note: previous definition is here
+  445 | #define INT_TIMER5A             INT_CONCAT(INT_TIMER5A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(42): warning: 'INT_TIMER5B' macro redefined [-Wmacro-redefined]
+   42 | #define INT_TIMER5B     109         // 16/32-Bit Timer 5B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(446): note: previous definition is here
+  446 | #define INT_TIMER5B             INT_CONCAT(INT_TIMER5B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(44): warning: 'INT_WTIMER0A' macro redefined [-Wmacro-redefined]
+   44 | #define INT_WTIMER0A    110         // 32/64-Bit Timer 0A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(463): note: previous definition is here
+  463 | #define INT_WTIMER0A            INT_CONCAT(INT_WTIMER0A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(45): warning: 'INT_WTIMER0B' macro redefined [-Wmacro-redefined]
+   45 | #define INT_WTIMER0B    111         // 32/64-Bit Timer 0B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(464): note: previous definition is here
+  464 | #define INT_WTIMER0B            INT_CONCAT(INT_WTIMER0B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(46): warning: 'INT_WTIMER1A' macro redefined [-Wmacro-redefined]
+   46 | #define INT_WTIMER1A    112         // 32/64-Bit Timer 1A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(465): note: previous definition is here
+  465 | #define INT_WTIMER1A            INT_CONCAT(INT_WTIMER1A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(47): warning: 'INT_WTIMER1B' macro redefined [-Wmacro-redefined]
+   47 | #define INT_WTIMER1B    113         // 32/64-Bit Timer 1B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(466): note: previous definition is here
+  466 | #define INT_WTIMER1B            INT_CONCAT(INT_WTIMER1B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(48): warning: 'INT_WTIMER2A' macro redefined [-Wmacro-redefined]
+   48 | #define INT_WTIMER2A    114         // 32/64-Bit Timer 2A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(467): note: previous definition is here
+  467 | #define INT_WTIMER2A            INT_CONCAT(INT_WTIMER2A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(49): warning: 'INT_WTIMER2B' macro redefined [-Wmacro-redefined]
+   49 | #define INT_WTIMER2B    115         // 32/64-Bit Timer 2B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(468): note: previous definition is here
+  468 | #define INT_WTIMER2B            INT_CONCAT(INT_WTIMER2B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(50): warning: 'INT_WTIMER3A' macro redefined [-Wmacro-redefined]
+   50 | #define INT_WTIMER3A    116         // 32/64-Bit Timer 3A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(469): note: previous definition is here
+  469 | #define INT_WTIMER3A            INT_CONCAT(INT_WTIMER3A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(51): warning: 'INT_WTIMER3B' macro redefined [-Wmacro-redefined]
+   51 | #define INT_WTIMER3B    117         // 32/64-Bit Timer 3B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(470): note: previous definition is here
+  470 | #define INT_WTIMER3B            INT_CONCAT(INT_WTIMER3B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(52): warning: 'INT_WTIMER4A' macro redefined [-Wmacro-redefined]
+   52 | #define INT_WTIMER4A    118         // 32/64-Bit Timer 4A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(471): note: previous definition is here
+  471 | #define INT_WTIMER4A            INT_CONCAT(INT_WTIMER4A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(53): warning: 'INT_WTIMER4B' macro redefined [-Wmacro-redefined]
+   53 | #define INT_WTIMER4B    119         // 32/64-Bit Timer 4B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(472): note: previous definition is here
+  472 | #define INT_WTIMER4B            INT_CONCAT(INT_WTIMER4B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(54): warning: 'INT_WTIMER5A' macro redefined [-Wmacro-redefined]
+   54 | #define INT_WTIMER5A    120         // 32/64-Bit Timer 5A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(473): note: previous definition is here
+  473 | #define INT_WTIMER5A            INT_CONCAT(INT_WTIMER5A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(55): warning: 'INT_WTIMER5B' macro redefined [-Wmacro-redefined]
+   55 | #define INT_WTIMER5B    121         // 32/64-Bit Timer 5B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(474): note: previous definition is here
+  474 | #define INT_WTIMER5B            INT_CONCAT(INT_WTIMER5B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic.c(8): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(72): warning: padding struct 'timer_t' with 3 bytes to align 'TIMER_BASE' [-Wpadded]
+   72 |     uint32_t   TIMER_BASE            ;   // timer from 0 to 5
+      |                ^
+../drivers/HAL/ultrasonic.c(50): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+   50 |                                                 a = MCAL_Timer_GET_VALUE(ultra->timer);
+      |                                                   ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../drivers/HAL/ultrasonic.c(54): warning: implicit conversion changes signedness: 'uint32_t' (aka 'unsigned int') to 'int' [-Wsign-conversion]
+   54 |                                                 b = MCAL_Timer_GET_VALUE(ultra->timer);
+      |                                                   ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../drivers/HAL/ultrasonic.c(58): warning: implicit conversion changes signedness: 'int' to 'uint32_t' (aka 'unsigned int') [-Wsign-conversion]
+   58 |                                                 *dist = a - b;
+      |                                                       ~ ~~^~~
+../drivers/HAL/ultrasonic.c(48): warning: while loop has empty body [-Wempty-body]
+   48 |                                                 while(!(MCAL_GPIO_Pin_Read(ultra->echo_pin)));
+      |                                                                                              ^
+../drivers/HAL/ultrasonic.c(48): note: put the semicolon on a separate line to silence this warning
+../drivers/HAL/ultrasonic.c(52): warning: while loop has empty body [-Wempty-body]
+   52 |                                                 while((MCAL_GPIO_Pin_Read(ultra->echo_pin)));
+      |                                                                                             ^
+../drivers/HAL/ultrasonic.c(52): note: put the semicolon on a separate line to silence this warning
+31 warnings generated.
+compiling ultrasonic.c...
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(14): warning: In file included from...
+../drivers/MCAL\RCC_Config.h(13): warning: In file included from...
+../drivers/MCAL/RCC.h(14): warning: non-portable path to file '"Std_Types.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   14 | #include "STD_Types.h"
+      |          ^~~~~~~~~~~~~
+      |          "Std_Types.h"
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(31): warning: 'INT_TIMER0A' macro redefined [-Wmacro-redefined]
+   31 | #define INT_TIMER0A     35          // 16/32-Bit Timer 0A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(435): note: previous definition is here
+  435 | #define INT_TIMER0A             INT_CONCAT(INT_TIMER0A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(32): warning: 'INT_TIMER0B' macro redefined [-Wmacro-redefined]
+   32 | #define INT_TIMER0B     36          // 16/32-Bit Timer 0B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(436): note: previous definition is here
+  436 | #define INT_TIMER0B             INT_CONCAT(INT_TIMER0B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(33): warning: 'INT_TIMER1A' macro redefined [-Wmacro-redefined]
+   33 | #define INT_TIMER1A     37          // 16/32-Bit Timer 1A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(437): note: previous definition is here
+  437 | #define INT_TIMER1A             INT_CONCAT(INT_TIMER1A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(34): warning: 'INT_TIMER1B' macro redefined [-Wmacro-redefined]
+   34 | #define INT_TIMER1B     38          // 16/32-Bit Timer 1B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(438): note: previous definition is here
+  438 | #define INT_TIMER1B             INT_CONCAT(INT_TIMER1B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(35): warning: 'INT_TIMER2A' macro redefined [-Wmacro-redefined]
+   35 | #define INT_TIMER2A     39          // 16/32-Bit Timer 2A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(439): note: previous definition is here
+  439 | #define INT_TIMER2A             INT_CONCAT(INT_TIMER2A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(36): warning: 'INT_TIMER2B' macro redefined [-Wmacro-redefined]
+   36 | #define INT_TIMER2B     40          // 16/32-Bit Timer 2B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(440): note: previous definition is here
+  440 | #define INT_TIMER2B             INT_CONCAT(INT_TIMER2B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(37): warning: 'INT_TIMER3A' macro redefined [-Wmacro-redefined]
+   37 | #define INT_TIMER3A     51          // 16/32-Bit Timer 3A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(441): note: previous definition is here
+  441 | #define INT_TIMER3A             INT_CONCAT(INT_TIMER3A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(38): warning: 'INT_TIMER3B' macro redefined [-Wmacro-redefined]
+   38 | #define INT_TIMER3B     52          // Timer 3B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(442): note: previous definition is here
+  442 | #define INT_TIMER3B             INT_CONCAT(INT_TIMER3B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(39): warning: 'INT_TIMER4A' macro redefined [-Wmacro-redefined]
+   39 | #define INT_TIMER4A     86          // 16/32-Bit Timer 4A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(443): note: previous definition is here
+  443 | #define INT_TIMER4A             INT_CONCAT(INT_TIMER4A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(40): warning: 'INT_TIMER4B' macro redefined [-Wmacro-redefined]
+   40 | #define INT_TIMER4B     87          // 16/32-Bit Timer 4B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(444): note: previous definition is here
+  444 | #define INT_TIMER4B             INT_CONCAT(INT_TIMER4B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(41): warning: 'INT_TIMER5A' macro redefined [-Wmacro-redefined]
+   41 | #define INT_TIMER5A     108         // 16/32-Bit Timer 5A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(445): note: previous definition is here
+  445 | #define INT_TIMER5A             INT_CONCAT(INT_TIMER5A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(42): warning: 'INT_TIMER5B' macro redefined [-Wmacro-redefined]
+   42 | #define INT_TIMER5B     109         // 16/32-Bit Timer 5B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(446): note: previous definition is here
+  446 | #define INT_TIMER5B             INT_CONCAT(INT_TIMER5B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(44): warning: 'INT_WTIMER0A' macro redefined [-Wmacro-redefined]
+   44 | #define INT_WTIMER0A    110         // 32/64-Bit Timer 0A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(463): note: previous definition is here
+  463 | #define INT_WTIMER0A            INT_CONCAT(INT_WTIMER0A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(45): warning: 'INT_WTIMER0B' macro redefined [-Wmacro-redefined]
+   45 | #define INT_WTIMER0B    111         // 32/64-Bit Timer 0B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(464): note: previous definition is here
+  464 | #define INT_WTIMER0B            INT_CONCAT(INT_WTIMER0B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(46): warning: 'INT_WTIMER1A' macro redefined [-Wmacro-redefined]
+   46 | #define INT_WTIMER1A    112         // 32/64-Bit Timer 1A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(465): note: previous definition is here
+  465 | #define INT_WTIMER1A            INT_CONCAT(INT_WTIMER1A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(47): warning: 'INT_WTIMER1B' macro redefined [-Wmacro-redefined]
+   47 | #define INT_WTIMER1B    113         // 32/64-Bit Timer 1B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(466): note: previous definition is here
+  466 | #define INT_WTIMER1B            INT_CONCAT(INT_WTIMER1B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(48): warning: 'INT_WTIMER2A' macro redefined [-Wmacro-redefined]
+   48 | #define INT_WTIMER2A    114         // 32/64-Bit Timer 2A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(467): note: previous definition is here
+  467 | #define INT_WTIMER2A            INT_CONCAT(INT_WTIMER2A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(49): warning: 'INT_WTIMER2B' macro redefined [-Wmacro-redefined]
+   49 | #define INT_WTIMER2B    115         // 32/64-Bit Timer 2B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(468): note: previous definition is here
+  468 | #define INT_WTIMER2B            INT_CONCAT(INT_WTIMER2B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(50): warning: 'INT_WTIMER3A' macro redefined [-Wmacro-redefined]
+   50 | #define INT_WTIMER3A    116         // 32/64-Bit Timer 3A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(469): note: previous definition is here
+  469 | #define INT_WTIMER3A            INT_CONCAT(INT_WTIMER3A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(51): warning: 'INT_WTIMER3B' macro redefined [-Wmacro-redefined]
+   51 | #define INT_WTIMER3B    117         // 32/64-Bit Timer 3B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(470): note: previous definition is here
+  470 | #define INT_WTIMER3B            INT_CONCAT(INT_WTIMER3B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(52): warning: 'INT_WTIMER4A' macro redefined [-Wmacro-redefined]
+   52 | #define INT_WTIMER4A    118         // 32/64-Bit Timer 4A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(471): note: previous definition is here
+  471 | #define INT_WTIMER4A            INT_CONCAT(INT_WTIMER4A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(53): warning: 'INT_WTIMER4B' macro redefined [-Wmacro-redefined]
+   53 | #define INT_WTIMER4B    119         // 32/64-Bit Timer 4B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(472): note: previous definition is here
+  472 | #define INT_WTIMER4B            INT_CONCAT(INT_WTIMER4B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(54): warning: 'INT_WTIMER5A' macro redefined [-Wmacro-redefined]
+   54 | #define INT_WTIMER5A    120         // 32/64-Bit Timer 5A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(473): note: previous definition is here
+  473 | #define INT_WTIMER5A            INT_CONCAT(INT_WTIMER5A_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(55): warning: 'INT_WTIMER5B' macro redefined [-Wmacro-redefined]
+   55 | #define INT_WTIMER5B    121         // 32/64-Bit Timer 5B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(474): note: previous definition is here
+  474 | #define INT_WTIMER5B            INT_CONCAT(INT_WTIMER5B_, INT_DEVICE_CLASS)
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(22): warning: initializing 'pin_t *' with an expression of type 'const pin_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+   22 |         &PA6,
+      |         ^~~~
+../drivers/HAL/ultrasonic_Config.c(23): warning: initializing 'pin_t *' with an expression of type 'const pin_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+   23 |         &PB4,
+      |         ^~~~
+../drivers/HAL/ultrasonic_Config.c(20): warning: no previous extern declaration for non-static variable 'ultra1' [-Wmissing-variable-declarations]
+   20 | ultra_t ultra1 =
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(20): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   20 | ultra_t ultra1 =
+      | ^
+../drivers/HAL/ultrasonic_Config.c(9): warning: In file included from...
+../drivers/HAL/ultrasonic.h(16): warning: In file included from...
+../drivers/MCAL\Timer_Config.h(11): warning: In file included from...
+../drivers/MCAL/Timer.h(72): warning: padding struct 'timer_t' with 3 bytes to align 'TIMER_BASE' [-Wpadded]
+   72 |     uint32_t   TIMER_BASE            ;   // timer from 0 to 5
+      |                ^
+../drivers/HAL/ultrasonic_Config.c(28): warning: initializing 'pin_t *' with an expression of type 'const pin_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+   28 |         &PA6,
+      |         ^~~~
+../drivers/HAL/ultrasonic_Config.c(29): warning: initializing 'pin_t *' with an expression of type 'const pin_t *' discards qualifiers [-Wincompatible-pointer-types-discards-qualifiers]
+   29 |         &PB5,
+      |         ^~~~
+../drivers/HAL/ultrasonic_Config.c(26): warning: no previous extern declaration for non-static variable 'ultra2' [-Wmissing-variable-declarations]
+   26 | ultra_t ultra2 =
+      |         ^
+../drivers/HAL/ultrasonic_Config.c(26): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   26 | ultra_t ultra2 =
+      | ^
+../drivers/HAL/ultrasonic_Config.c(31): warning: no newline at end of file [-Wnewline-eof]
+   31 | };
+      |   ^
+33 warnings generated.
+compiling ultrasonic_Config.c...
+RTE/Device/TM4C123GH6PM/system_TM4C123.c(13): warning: In file included from...
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123\TM4C123.h(98): warning: In file included from...
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(298): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  298 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(338): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  338 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(357): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  357 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(713): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  713 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(729): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  729 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(774): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  774 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(779): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  779 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(872): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  872 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(885): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  885 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(892): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  892 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(897): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  897 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(904): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  904 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(910): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  910 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(917): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  917 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(924): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  924 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(929): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  929 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(936): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  936 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(942): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  942 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(949): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  949 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(956): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  956 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(961): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  961 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(968): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  968 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(974): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  974 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(981): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  981 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(988): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  988 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(993): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+  993 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1000): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1000 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1006): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1006 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1013): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1013 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1020): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1020 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1025): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1025 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1032): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1032 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1038): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1038 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1045): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1045 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1052): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1052 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1057): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1057 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1064): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1064 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1070): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1070 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1077): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1077 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1084): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1084 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1089): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1089 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1096): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1096 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1102): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1102 |   union {
+      |   ^
+C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123/TM4C123GH6PM.h(1251): warning: anonymous unions are a C11 extension [-Wc11-extensions]
+ 1251 |   union {
+      |   ^
+44 warnings generated.
+compiling system_TM4C123.c...
+linking...
+Program Size: Code=2736 RO-data=1816 RW-data=44 ZI-data=516  
+".\Objects\test.axf" - 0 Error(s), 394 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil::TM4C_DFP@1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_app
+  C:/Users/scs9112021/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+
+   * Component: Keil::Device:Startup@1.0.1
+      Source file:   Device/Source/ARM/startup_TM4C123.s
+      Source file:   Device/Source/system_TM4C123.c
+      Include file:  Device/Include/TM4C123/TM4C123.h
+Build Time Elapsed:  00:00:08
+</pre>
+</body>
+</html>

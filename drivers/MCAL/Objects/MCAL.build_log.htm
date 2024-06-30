@@ -1,0 +1,840 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Ahmed Said, mosa, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.39.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARMCLANG\Bin
+C Compiler:      ArmClang.exe V6.21
+Assembler:       Armasm.exe V6.21
+Linker/Locator:  ArmLink.exe V6.21
+Library Manager: ArmAr.exe V6.21
+Hex Converter:   FromElf.exe V6.21
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      UL2CM3.DLL V1.164.9.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+D:\Tiva_C_projects\drivers\MCAL\MCAL.uvprojx
+Project File Date:  12/15/2023
+
+<h2>Output:</h2>
+*** Using Compiler 'V6.21', folder: 'C:\Keil_v5\ARM\ARMCLANG\Bin'
+Build target 'Target 1'
+RCC_Config.c(12): warning: In file included from...
+./RCC.h(14): warning: non-portable path to file '"Std_Types.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   14 | #include "STD_Types.h"
+      |          ^~~~~~~~~~~~~
+      |          "Std_Types.h"
+RCC_Config.c(141): warning: no previous extern declaration for non-static variable 'RCC_config80' [-Wmissing-variable-declarations]
+  141 |  const RCC_t RCC_config80 = {
+      |              ^
+RCC_Config.c(141): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  141 |  const RCC_t RCC_config80 = {
+      |        ^
+RCC_Config.c(147): warning: no previous extern declaration for non-static variable 'RCC_config16' [-Wmissing-variable-declarations]
+  147 |  const RCC_t RCC_config16 = {
+      |              ^
+RCC_Config.c(147): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  147 |  const RCC_t RCC_config16 = {
+      |        ^
+RCC_Config.c(153): warning: no previous extern declaration for non-static variable 'RCC_config40' [-Wmissing-variable-declarations]
+  153 |  const RCC_t RCC_config40 = {
+      |              ^
+RCC_Config.c(153): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  153 |  const RCC_t RCC_config40 = {
+      |        ^
+RCC_Config.c(159): warning: no previous extern declaration for non-static variable 'RCC_config50' [-Wmissing-variable-declarations]
+  159 |   const RCC_t RCC_config50 = {
+      |               ^
+RCC_Config.c(159): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  159 |   const RCC_t RCC_config50 = {
+      |         ^
+RCC_Config.c(165): warning: no previous extern declaration for non-static variable 'RCC_config66' [-Wmissing-variable-declarations]
+  165 |  const RCC_t RCC_config66 = {
+      |              ^
+RCC_Config.c(165): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  165 |  const RCC_t RCC_config66 = {
+      |        ^
+RCC_Config.c(171): warning: no previous extern declaration for non-static variable 'RCC_configInt16' [-Wmissing-variable-declarations]
+  171 | const RCC_INT_t RCC_configInt16 = {
+      |                 ^
+RCC_Config.c(171): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  171 | const RCC_INT_t RCC_configInt16 = {
+      |       ^
+7 warnings generated.
+compiling RCC_Config.c...
+GPIO_Config.c(73): warning: no previous extern declaration for non-static variable 'pin_red' [-Wmissing-variable-declarations]
+   73 | const pin_t pin_red ={
+      |             ^
+GPIO_Config.c(73): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   73 | const pin_t pin_red ={
+      |       ^
+GPIO_Config.c(80): warning: no previous extern declaration for non-static variable 'pin_blue' [-Wmissing-variable-declarations]
+   80 | const pin_t pin_blue ={
+      |             ^
+GPIO_Config.c(80): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   80 | const pin_t pin_blue ={
+      |       ^
+GPIO_Config.c(87): warning: no previous extern declaration for non-static variable 'pin_green' [-Wmissing-variable-declarations]
+   87 | const pin_t pin_green ={
+      |             ^
+GPIO_Config.c(87): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   87 | const pin_t pin_green ={
+      |       ^
+GPIO_Config.c(94): warning: no previous extern declaration for non-static variable 'trig_pin' [-Wmissing-variable-declarations]
+   94 | const pin_t trig_pin ={
+      |             ^
+GPIO_Config.c(94): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+   94 | const pin_t trig_pin ={
+      |       ^
+GPIO_Config.c(101): warning: no previous extern declaration for non-static variable 'echo_pin' [-Wmissing-variable-declarations]
+  101 | const pin_t echo_pin ={
+      |             ^
+GPIO_Config.c(101): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  101 | const pin_t echo_pin ={
+      |       ^
+GPIO_Config.c(111): warning: no previous extern declaration for non-static variable 'PA6' [-Wmissing-variable-declarations]
+  111 | const pin_t PA6 ={
+      |             ^
+GPIO_Config.c(111): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  111 | const pin_t PA6 ={
+      |       ^
+GPIO_Config.c(118): warning: no previous extern declaration for non-static variable 'PA7' [-Wmissing-variable-declarations]
+  118 | const pin_t PA7 ={
+      |             ^
+GPIO_Config.c(118): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  118 | const pin_t PA7 ={
+      |       ^
+GPIO_Config.c(127): warning: no previous extern declaration for non-static variable 'PB0' [-Wmissing-variable-declarations]
+  127 | const pin_t PB0 ={
+      |             ^
+GPIO_Config.c(127): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  127 | const pin_t PB0 ={
+      |       ^
+GPIO_Config.c(134): warning: no previous extern declaration for non-static variable 'PB1' [-Wmissing-variable-declarations]
+  134 | const pin_t PB1 ={
+      |             ^
+GPIO_Config.c(134): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  134 | const pin_t PB1 ={
+      |       ^
+GPIO_Config.c(141): warning: no previous extern declaration for non-static variable 'PB4' [-Wmissing-variable-declarations]
+  141 | const pin_t PB4 ={
+      |             ^
+GPIO_Config.c(141): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  141 | const pin_t PB4 ={
+      |       ^
+GPIO_Config.c(148): warning: no previous extern declaration for non-static variable 'PB5' [-Wmissing-variable-declarations]
+  148 | const pin_t PB5 ={
+      |             ^
+GPIO_Config.c(148): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  148 | const pin_t PB5 ={
+      |       ^
+GPIO_Config.c(155): warning: no previous extern declaration for non-static variable 'PB6' [-Wmissing-variable-declarations]
+  155 | const pin_t PB6 ={
+      |             ^
+GPIO_Config.c(155): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  155 | const pin_t PB6 ={
+      |       ^
+GPIO_Config.c(162): warning: no previous extern declaration for non-static variable 'PB7' [-Wmissing-variable-declarations]
+  162 | const pin_t PB7 ={
+      |             ^
+GPIO_Config.c(162): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  162 | const pin_t PB7 ={
+      |       ^
+GPIO_Config.c(169): warning: no previous extern declaration for non-static variable 'PC4' [-Wmissing-variable-declarations]
+  169 | const pin_t PC4 ={
+      |             ^
+GPIO_Config.c(169): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  169 | const pin_t PC4 ={
+      |       ^
+GPIO_Config.c(176): warning: no previous extern declaration for non-static variable 'PC5' [-Wmissing-variable-declarations]
+  176 | const pin_t PC5 ={
+      |             ^
+GPIO_Config.c(176): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  176 | const pin_t PC5 ={
+      |       ^
+GPIO_Config.c(183): warning: no previous extern declaration for non-static variable 'PC6' [-Wmissing-variable-declarations]
+  183 | const pin_t PC6 ={
+      |             ^
+GPIO_Config.c(183): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  183 | const pin_t PC6 ={
+      |       ^
+GPIO_Config.c(190): warning: no previous extern declaration for non-static variable 'PC7' [-Wmissing-variable-declarations]
+  190 | const pin_t PC7 ={
+      |             ^
+GPIO_Config.c(190): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  190 | const pin_t PC7 ={
+      |       ^
+GPIO_Config.c(198): warning: no previous extern declaration for non-static variable 'PD0' [-Wmissing-variable-declarations]
+  198 | const pin_t PD0 ={
+      |             ^
+GPIO_Config.c(198): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  198 | const pin_t PD0 ={
+      |       ^
+GPIO_Config.c(205): warning: no previous extern declaration for non-static variable 'PD1' [-Wmissing-variable-declarations]
+  205 | const pin_t PD1 ={
+      |             ^
+GPIO_Config.c(205): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  205 | const pin_t PD1 ={
+      |       ^
+GPIO_Config.c(212): warning: no previous extern declaration for non-static variable 'PD2' [-Wmissing-variable-declarations]
+  212 | const pin_t PD2 ={
+      |             ^
+GPIO_Config.c(212): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  212 | const pin_t PD2 ={
+      |       ^
+GPIO_Config.c(219): warning: no previous extern declaration for non-static variable 'PD3' [-Wmissing-variable-declarations]
+  219 | const pin_t PD3 ={
+      |             ^
+GPIO_Config.c(219): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  219 | const pin_t PD3 ={
+      |       ^
+GPIO_Config.c(228): warning: no previous extern declaration for non-static variable 'PD6' [-Wmissing-variable-declarations]
+  228 | const pin_t PD6 ={
+      |             ^
+GPIO_Config.c(228): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  228 | const pin_t PD6 ={
+      |       ^
+GPIO_Config.c(236): warning: no previous extern declaration for non-static variable 'PD7' [-Wmissing-variable-declarations]
+  236 | const pin_t PD7 ={
+      |             ^
+GPIO_Config.c(236): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  236 | const pin_t PD7 ={
+      |       ^
+GPIO_Config.c(243): warning: no previous extern declaration for non-static variable 'PE0' [-Wmissing-variable-declarations]
+  243 | const pin_t PE0 ={
+      |             ^
+GPIO_Config.c(243): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  243 | const pin_t PE0 ={
+      |       ^
+GPIO_Config.c(250): warning: no previous extern declaration for non-static variable 'PE1' [-Wmissing-variable-declarations]
+  250 | const pin_t PE1 ={
+      |             ^
+GPIO_Config.c(250): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  250 | const pin_t PE1 ={
+      |       ^
+GPIO_Config.c(257): warning: no previous extern declaration for non-static variable 'PE2' [-Wmissing-variable-declarations]
+  257 | const pin_t PE2 ={
+      |             ^
+GPIO_Config.c(257): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  257 | const pin_t PE2 ={
+      |       ^
+GPIO_Config.c(264): warning: no previous extern declaration for non-static variable 'PE3' [-Wmissing-variable-declarations]
+  264 | const pin_t PE3 ={
+      |             ^
+GPIO_Config.c(264): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  264 | const pin_t PE3 ={
+      |       ^
+GPIO_Config.c(271): warning: no previous extern declaration for non-static variable 'PE4' [-Wmissing-variable-declarations]
+  271 | const pin_t PE4 ={
+      |             ^
+GPIO_Config.c(271): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  271 | const pin_t PE4 ={
+      |       ^
+GPIO_Config.c(278): warning: no previous extern declaration for non-static variable 'PE5' [-Wmissing-variable-declarations]
+  278 | const pin_t PE5 ={
+      |             ^
+GPIO_Config.c(278): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  278 | const pin_t PE5 ={
+      |       ^
+GPIO_Config.c(286): warning: no previous extern declaration for non-static variable 'PF0' [-Wmissing-variable-declarations]
+  286 | const pin_t PF0 ={
+      |             ^
+GPIO_Config.c(286): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  286 | const pin_t PF0 ={
+      |       ^
+GPIO_Config.c(293): warning: no previous extern declaration for non-static variable 'PF1' [-Wmissing-variable-declarations]
+  293 | const pin_t PF1 ={
+      |             ^
+GPIO_Config.c(293): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  293 | const pin_t PF1 ={
+      |       ^
+GPIO_Config.c(300): warning: no previous extern declaration for non-static variable 'PF2' [-Wmissing-variable-declarations]
+  300 | const pin_t PF2 ={
+      |             ^
+GPIO_Config.c(300): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  300 | const pin_t PF2 ={
+      |       ^
+GPIO_Config.c(307): warning: no previous extern declaration for non-static variable 'PF3' [-Wmissing-variable-declarations]
+  307 | const pin_t PF3 ={
+      |             ^
+GPIO_Config.c(307): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  307 | const pin_t PF3 ={
+      |       ^
+GPIO_Config.c(314): warning: no previous extern declaration for non-static variable 'PF4' [-Wmissing-variable-declarations]
+  314 | const pin_t PF4 ={
+      |             ^
+GPIO_Config.c(314): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  314 | const pin_t PF4 ={
+      |       ^
+34 warnings generated.
+compiling GPIO_Config.c...
+SysTick.c(8): warning: In file included from...
+./SysTick.h(44): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   44 | Std_ReturnType MCAL_SysTick_Int_handler(void (*fun)());
+      |                                                    ^
+      |                                                     void
+SysTick.c(12): warning: a function declaration without a prototype is deprecated in all versions of C [-Wstrict-prototypes]
+   12 | Std_ReturnType MCAL_SysTick_Int_handler(void (*fun)())
+      |                                                    ^
+      |                                                     void
+SysTick.c(29): warning: incompatible function pointer types passing 'void (*)()' to parameter of type 'void (*)(void)' [-Wincompatible-function-pointer-types-strict]
+   29 |            IntRegister(FAULT_SYSTICK , fun );
+      |                                        ^~~
+C:/ti/TivaWare_C_Series-2.2.0.295\driverlib/interrupt.h(69): note: passing argument to parameter 'pfnHandler' here
+   69 | extern void IntRegister(uint32_t ui32Interrupt, void (*pfnHandler)(void));
+      |                                                        ^
+3 warnings generated.
+compiling SysTick.c...
+compiling delay.c...
+RCC.c(10): warning: In file included from...
+./RCC.h(14): warning: non-portable path to file '"Std_Types.h"'; specified path differs in case from file name on disk [-Wnonportable-include-path]
+   14 | #include "STD_Types.h"
+      |          ^~~~~~~~~~~~~
+      |          "Std_Types.h"
+1 warning generated.
+compiling RCC.c...
+GPIO.c(52): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   52 |                                                 GPIOUnlockPin(pin->port,pin->pin);
+      |                                                 ~~~~~~~~~~~~~           ~~~~~^~~
+GPIO.c(58): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   58 |           GPIOPadConfigSet(pin->port, pin->pin, pin->current, pin->type);
+      |           ~~~~~~~~~~~~~~~~            ~~~~~^~~
+GPIO.c(60): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   60 |           GPIODirModeSet(pin->port, pin->pin, pin->dir);
+      |           ~~~~~~~~~~~~~~            ~~~~~^~~
+GPIO.c(62): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   62 |           GPIOPinWrite(pin->port, pin->pin, LOW);
+      |           ~~~~~~~~~~~~            ~~~~~^~~
+GPIO.c(81): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   81 |               GPIOPinWrite(pin->port, pin->pin, pin->pin);
+      |               ~~~~~~~~~~~~                      ~~~~~^~~
+GPIO.c(81): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   81 |               GPIOPinWrite(pin->port, pin->pin, pin->pin);
+      |               ~~~~~~~~~~~~            ~~~~~^~~
+GPIO.c(85): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   85 |               GPIOPinWrite(pin->port, pin->pin, 0x00);
+      |               ~~~~~~~~~~~~            ~~~~~^~~
+GPIO.c(89): warning: implicit conversion loses integer precision: 'int32_t' (aka 'int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   89 |               pin_state = GPIOPinRead(pin->port, pin->pin);
+      |                         ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GPIO.c(89): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   89 |               pin_state = GPIOPinRead(pin->port, pin->pin);
+      |                           ~~~~~~~~~~~            ~~~~~^~~
+GPIO.c(92): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   92 |                   GPIOPinWrite(pin->port, pin->pin, 0x00);
+      |                   ~~~~~~~~~~~~            ~~~~~^~~
+GPIO.c(96): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   96 |                   GPIOPinWrite(pin->port, pin->pin, pin->pin);
+      |                   ~~~~~~~~~~~~                      ~~~~~^~~
+GPIO.c(96): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   96 |                   GPIOPinWrite(pin->port, pin->pin, pin->pin);
+      |                   ~~~~~~~~~~~~            ~~~~~^~~
+GPIO.c(114): warning: implicit conversion loses integer precision: 'int32_t' (aka 'int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  114 |           pin_state = GPIOPinRead(pin->port, pin->pin);
+      |                     ~ ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+GPIO.c(114): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  114 |           pin_state = GPIOPinRead(pin->port, pin->pin);
+      |                       ~~~~~~~~~~~            ~~~~~^~~
+GPIO.c(105): warning: variable 'ret' set but not used [-Wunused-but-set-variable]
+  105 |     Std_ReturnType ret = E_OK;
+      |                    ^
+GPIO.c(126): warning: non-void function does not return a value in all control paths [-Wreturn-type]
+  126 | }
+      | ^
+GPIO.c(151): warning: implicit conversion loses integer precision: 'const uint32_t' (aka 'const unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+  151 |               GPIOIntTypeSet(Int_pin->port, Int_pin->pin, Int_pin->Int_type);
+      |               ~~~~~~~~~~~~~~                ~~~~~~~~~^~~
+GPIO.c(9): warning: In file included from...
+./GPIO.h(114): warning: padding struct 'Int_pin_t' with 3 bytes to align 'Int_type' [-Wpadded]
+  114 |     uint32_t   Int_type        ;   // interrupt type
+      |                ^
+18 warnings generated.
+compiling GPIO.c...
+Timer.c(8): warning: In file included from...
+./Timer.h(31): warning: 'INT_TIMER0A' macro redefined [-Wmacro-redefined]
+   31 | #define INT_TIMER0A     35          // 16/32-Bit Timer 0A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(435): note: previous definition is here
+  435 | #define INT_TIMER0A             INT_CONCAT(INT_TIMER0A_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(32): warning: 'INT_TIMER0B' macro redefined [-Wmacro-redefined]
+   32 | #define INT_TIMER0B     36          // 16/32-Bit Timer 0B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(436): note: previous definition is here
+  436 | #define INT_TIMER0B             INT_CONCAT(INT_TIMER0B_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(33): warning: 'INT_TIMER1A' macro redefined [-Wmacro-redefined]
+   33 | #define INT_TIMER1A     37          // 16/32-Bit Timer 1A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(437): note: previous definition is here
+  437 | #define INT_TIMER1A             INT_CONCAT(INT_TIMER1A_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(34): warning: 'INT_TIMER1B' macro redefined [-Wmacro-redefined]
+   34 | #define INT_TIMER1B     38          // 16/32-Bit Timer 1B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(438): note: previous definition is here
+  438 | #define INT_TIMER1B             INT_CONCAT(INT_TIMER1B_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(35): warning: 'INT_TIMER2A' macro redefined [-Wmacro-redefined]
+   35 | #define INT_TIMER2A     39          // 16/32-Bit Timer 2A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(439): note: previous definition is here
+  439 | #define INT_TIMER2A             INT_CONCAT(INT_TIMER2A_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(36): warning: 'INT_TIMER2B' macro redefined [-Wmacro-redefined]
+   36 | #define INT_TIMER2B     40          // 16/32-Bit Timer 2B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(440): note: previous definition is here
+  440 | #define INT_TIMER2B             INT_CONCAT(INT_TIMER2B_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(37): warning: 'INT_TIMER3A' macro redefined [-Wmacro-redefined]
+   37 | #define INT_TIMER3A     51          // 16/32-Bit Timer 3A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(441): note: previous definition is here
+  441 | #define INT_TIMER3A             INT_CONCAT(INT_TIMER3A_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(38): warning: 'INT_TIMER3B' macro redefined [-Wmacro-redefined]
+   38 | #define INT_TIMER3B     52          // Timer 3B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(442): note: previous definition is here
+  442 | #define INT_TIMER3B             INT_CONCAT(INT_TIMER3B_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(39): warning: 'INT_TIMER4A' macro redefined [-Wmacro-redefined]
+   39 | #define INT_TIMER4A     86          // 16/32-Bit Timer 4A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(443): note: previous definition is here
+  443 | #define INT_TIMER4A             INT_CONCAT(INT_TIMER4A_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(40): warning: 'INT_TIMER4B' macro redefined [-Wmacro-redefined]
+   40 | #define INT_TIMER4B     87          // 16/32-Bit Timer 4B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(444): note: previous definition is here
+  444 | #define INT_TIMER4B             INT_CONCAT(INT_TIMER4B_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(41): warning: 'INT_TIMER5A' macro redefined [-Wmacro-redefined]
+   41 | #define INT_TIMER5A     108         // 16/32-Bit Timer 5A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(445): note: previous definition is here
+  445 | #define INT_TIMER5A             INT_CONCAT(INT_TIMER5A_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(42): warning: 'INT_TIMER5B' macro redefined [-Wmacro-redefined]
+   42 | #define INT_TIMER5B     109         // 16/32-Bit Timer 5B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(446): note: previous definition is here
+  446 | #define INT_TIMER5B             INT_CONCAT(INT_TIMER5B_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(44): warning: 'INT_WTIMER0A' macro redefined [-Wmacro-redefined]
+   44 | #define INT_WTIMER0A    110         // 32/64-Bit Timer 0A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(463): note: previous definition is here
+  463 | #define INT_WTIMER0A            INT_CONCAT(INT_WTIMER0A_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(45): warning: 'INT_WTIMER0B' macro redefined [-Wmacro-redefined]
+   45 | #define INT_WTIMER0B    111         // 32/64-Bit Timer 0B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(464): note: previous definition is here
+  464 | #define INT_WTIMER0B            INT_CONCAT(INT_WTIMER0B_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(46): warning: 'INT_WTIMER1A' macro redefined [-Wmacro-redefined]
+   46 | #define INT_WTIMER1A    112         // 32/64-Bit Timer 1A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(465): note: previous definition is here
+  465 | #define INT_WTIMER1A            INT_CONCAT(INT_WTIMER1A_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(47): warning: 'INT_WTIMER1B' macro redefined [-Wmacro-redefined]
+   47 | #define INT_WTIMER1B    113         // 32/64-Bit Timer 1B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(466): note: previous definition is here
+  466 | #define INT_WTIMER1B            INT_CONCAT(INT_WTIMER1B_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(48): warning: 'INT_WTIMER2A' macro redefined [-Wmacro-redefined]
+   48 | #define INT_WTIMER2A    114         // 32/64-Bit Timer 2A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(467): note: previous definition is here
+  467 | #define INT_WTIMER2A            INT_CONCAT(INT_WTIMER2A_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(49): warning: 'INT_WTIMER2B' macro redefined [-Wmacro-redefined]
+   49 | #define INT_WTIMER2B    115         // 32/64-Bit Timer 2B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(468): note: previous definition is here
+  468 | #define INT_WTIMER2B            INT_CONCAT(INT_WTIMER2B_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(50): warning: 'INT_WTIMER3A' macro redefined [-Wmacro-redefined]
+   50 | #define INT_WTIMER3A    116         // 32/64-Bit Timer 3A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(469): note: previous definition is here
+  469 | #define INT_WTIMER3A            INT_CONCAT(INT_WTIMER3A_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(51): warning: 'INT_WTIMER3B' macro redefined [-Wmacro-redefined]
+   51 | #define INT_WTIMER3B    117         // 32/64-Bit Timer 3B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(470): note: previous definition is here
+  470 | #define INT_WTIMER3B            INT_CONCAT(INT_WTIMER3B_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(52): warning: 'INT_WTIMER4A' macro redefined [-Wmacro-redefined]
+   52 | #define INT_WTIMER4A    118         // 32/64-Bit Timer 4A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(471): note: previous definition is here
+  471 | #define INT_WTIMER4A            INT_CONCAT(INT_WTIMER4A_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(53): warning: 'INT_WTIMER4B' macro redefined [-Wmacro-redefined]
+   53 | #define INT_WTIMER4B    119         // 32/64-Bit Timer 4B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(472): note: previous definition is here
+  472 | #define INT_WTIMER4B            INT_CONCAT(INT_WTIMER4B_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(54): warning: 'INT_WTIMER5A' macro redefined [-Wmacro-redefined]
+   54 | #define INT_WTIMER5A    120         // 32/64-Bit Timer 5A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(473): note: previous definition is here
+  473 | #define INT_WTIMER5A            INT_CONCAT(INT_WTIMER5A_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(55): warning: 'INT_WTIMER5B' macro redefined [-Wmacro-redefined]
+   55 | #define INT_WTIMER5B    121         // 32/64-Bit Timer 5B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(474): note: previous definition is here
+  474 | #define INT_WTIMER5B            INT_CONCAT(INT_WTIMER5B_, INT_DEVICE_CLASS)
+      |         ^
+Timer.c(8): warning: In file included from...
+./Timer.h(72): warning: padding struct 'timer_t' with 3 bytes to align 'TIMER_BASE' [-Wpadded]
+   72 |     uint32_t   TIMER_BASE            ;   // timer from 0 to 5
+      |                ^
+Timer.c(89): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   89 |              GPIOPinTypeTimer(timer->PORT, timer->PIN);
+      |              ~~~~~~~~~~~~~~~~              ~~~~~~~^~~
+Timer.c(57): warning: mixing declarations and code is incompatible with standards before C99 [-Wdeclaration-after-statement]
+   57 |              uint32_t  port_enable = 0;
+      |                        ^
+27 warnings generated.
+compiling Timer.c...
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(31): warning: 'INT_TIMER0A' macro redefined [-Wmacro-redefined]
+   31 | #define INT_TIMER0A     35          // 16/32-Bit Timer 0A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(435): note: previous definition is here
+  435 | #define INT_TIMER0A             INT_CONCAT(INT_TIMER0A_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(32): warning: 'INT_TIMER0B' macro redefined [-Wmacro-redefined]
+   32 | #define INT_TIMER0B     36          // 16/32-Bit Timer 0B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(436): note: previous definition is here
+  436 | #define INT_TIMER0B             INT_CONCAT(INT_TIMER0B_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(33): warning: 'INT_TIMER1A' macro redefined [-Wmacro-redefined]
+   33 | #define INT_TIMER1A     37          // 16/32-Bit Timer 1A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(437): note: previous definition is here
+  437 | #define INT_TIMER1A             INT_CONCAT(INT_TIMER1A_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(34): warning: 'INT_TIMER1B' macro redefined [-Wmacro-redefined]
+   34 | #define INT_TIMER1B     38          // 16/32-Bit Timer 1B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(438): note: previous definition is here
+  438 | #define INT_TIMER1B             INT_CONCAT(INT_TIMER1B_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(35): warning: 'INT_TIMER2A' macro redefined [-Wmacro-redefined]
+   35 | #define INT_TIMER2A     39          // 16/32-Bit Timer 2A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(439): note: previous definition is here
+  439 | #define INT_TIMER2A             INT_CONCAT(INT_TIMER2A_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(36): warning: 'INT_TIMER2B' macro redefined [-Wmacro-redefined]
+   36 | #define INT_TIMER2B     40          // 16/32-Bit Timer 2B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(440): note: previous definition is here
+  440 | #define INT_TIMER2B             INT_CONCAT(INT_TIMER2B_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(37): warning: 'INT_TIMER3A' macro redefined [-Wmacro-redefined]
+   37 | #define INT_TIMER3A     51          // 16/32-Bit Timer 3A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(441): note: previous definition is here
+  441 | #define INT_TIMER3A             INT_CONCAT(INT_TIMER3A_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(38): warning: 'INT_TIMER3B' macro redefined [-Wmacro-redefined]
+   38 | #define INT_TIMER3B     52          // Timer 3B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(442): note: previous definition is here
+  442 | #define INT_TIMER3B             INT_CONCAT(INT_TIMER3B_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(39): warning: 'INT_TIMER4A' macro redefined [-Wmacro-redefined]
+   39 | #define INT_TIMER4A     86          // 16/32-Bit Timer 4A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(443): note: previous definition is here
+  443 | #define INT_TIMER4A             INT_CONCAT(INT_TIMER4A_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(40): warning: 'INT_TIMER4B' macro redefined [-Wmacro-redefined]
+   40 | #define INT_TIMER4B     87          // 16/32-Bit Timer 4B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(444): note: previous definition is here
+  444 | #define INT_TIMER4B             INT_CONCAT(INT_TIMER4B_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(41): warning: 'INT_TIMER5A' macro redefined [-Wmacro-redefined]
+   41 | #define INT_TIMER5A     108         // 16/32-Bit Timer 5A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(445): note: previous definition is here
+  445 | #define INT_TIMER5A             INT_CONCAT(INT_TIMER5A_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(42): warning: 'INT_TIMER5B' macro redefined [-Wmacro-redefined]
+   42 | #define INT_TIMER5B     109         // 16/32-Bit Timer 5B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(446): note: previous definition is here
+  446 | #define INT_TIMER5B             INT_CONCAT(INT_TIMER5B_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(44): warning: 'INT_WTIMER0A' macro redefined [-Wmacro-redefined]
+   44 | #define INT_WTIMER0A    110         // 32/64-Bit Timer 0A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(463): note: previous definition is here
+  463 | #define INT_WTIMER0A            INT_CONCAT(INT_WTIMER0A_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(45): warning: 'INT_WTIMER0B' macro redefined [-Wmacro-redefined]
+   45 | #define INT_WTIMER0B    111         // 32/64-Bit Timer 0B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(464): note: previous definition is here
+  464 | #define INT_WTIMER0B            INT_CONCAT(INT_WTIMER0B_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(46): warning: 'INT_WTIMER1A' macro redefined [-Wmacro-redefined]
+   46 | #define INT_WTIMER1A    112         // 32/64-Bit Timer 1A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(465): note: previous definition is here
+  465 | #define INT_WTIMER1A            INT_CONCAT(INT_WTIMER1A_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(47): warning: 'INT_WTIMER1B' macro redefined [-Wmacro-redefined]
+   47 | #define INT_WTIMER1B    113         // 32/64-Bit Timer 1B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(466): note: previous definition is here
+  466 | #define INT_WTIMER1B            INT_CONCAT(INT_WTIMER1B_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(48): warning: 'INT_WTIMER2A' macro redefined [-Wmacro-redefined]
+   48 | #define INT_WTIMER2A    114         // 32/64-Bit Timer 2A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(467): note: previous definition is here
+  467 | #define INT_WTIMER2A            INT_CONCAT(INT_WTIMER2A_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(49): warning: 'INT_WTIMER2B' macro redefined [-Wmacro-redefined]
+   49 | #define INT_WTIMER2B    115         // 32/64-Bit Timer 2B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(468): note: previous definition is here
+  468 | #define INT_WTIMER2B            INT_CONCAT(INT_WTIMER2B_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(50): warning: 'INT_WTIMER3A' macro redefined [-Wmacro-redefined]
+   50 | #define INT_WTIMER3A    116         // 32/64-Bit Timer 3A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(469): note: previous definition is here
+  469 | #define INT_WTIMER3A            INT_CONCAT(INT_WTIMER3A_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(51): warning: 'INT_WTIMER3B' macro redefined [-Wmacro-redefined]
+   51 | #define INT_WTIMER3B    117         // 32/64-Bit Timer 3B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(470): note: previous definition is here
+  470 | #define INT_WTIMER3B            INT_CONCAT(INT_WTIMER3B_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(52): warning: 'INT_WTIMER4A' macro redefined [-Wmacro-redefined]
+   52 | #define INT_WTIMER4A    118         // 32/64-Bit Timer 4A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(471): note: previous definition is here
+  471 | #define INT_WTIMER4A            INT_CONCAT(INT_WTIMER4A_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(53): warning: 'INT_WTIMER4B' macro redefined [-Wmacro-redefined]
+   53 | #define INT_WTIMER4B    119         // 32/64-Bit Timer 4B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(472): note: previous definition is here
+  472 | #define INT_WTIMER4B            INT_CONCAT(INT_WTIMER4B_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(54): warning: 'INT_WTIMER5A' macro redefined [-Wmacro-redefined]
+   54 | #define INT_WTIMER5A    120         // 32/64-Bit Timer 5A
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(473): note: previous definition is here
+  473 | #define INT_WTIMER5A            INT_CONCAT(INT_WTIMER5A_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(55): warning: 'INT_WTIMER5B' macro redefined [-Wmacro-redefined]
+   55 | #define INT_WTIMER5B    121         // 32/64-Bit Timer 5B
+      |         ^
+C:/ti/TivaWare_C_Series-2.2.0.295\inc/hw_ints.h(474): note: previous definition is here
+  474 | #define INT_WTIMER5B            INT_CONCAT(INT_WTIMER5B_, INT_DEVICE_CLASS)
+      |         ^
+Timer_Config.c(261): warning: no previous extern declaration for non-static variable 'timer0A' [-Wmissing-variable-declarations]
+  261 | timer_t timer0A = {
+      |         ^
+Timer_Config.c(261): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  261 | timer_t timer0A = {
+      | ^
+Timer_Config.c(8): warning: In file included from...
+./Timer.h(72): warning: padding struct 'timer_t' with 3 bytes to align 'TIMER_BASE' [-Wpadded]
+   72 |     uint32_t   TIMER_BASE            ;   // timer from 0 to 5
+      |                ^
+Timer_Config.c(277): warning: no previous extern declaration for non-static variable 'timer0B' [-Wmissing-variable-declarations]
+  277 | timer_t timer0B = {
+      |         ^
+Timer_Config.c(277): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  277 | timer_t timer0B = {
+      | ^
+Timer_Config.c(293): warning: no previous extern declaration for non-static variable 'timer1A' [-Wmissing-variable-declarations]
+  293 | timer_t timer1A = {
+      |         ^
+Timer_Config.c(293): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  293 | timer_t timer1A = {
+      | ^
+Timer_Config.c(309): warning: no previous extern declaration for non-static variable 'timer1B' [-Wmissing-variable-declarations]
+  309 | timer_t timer1B = {
+      |         ^
+Timer_Config.c(309): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  309 | timer_t timer1B = {
+      | ^
+Timer_Config.c(325): warning: no previous extern declaration for non-static variable 'timer2A' [-Wmissing-variable-declarations]
+  325 | timer_t timer2A = {
+      |         ^
+Timer_Config.c(325): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  325 | timer_t timer2A = {
+      | ^
+Timer_Config.c(341): warning: no previous extern declaration for non-static variable 'timer2B' [-Wmissing-variable-declarations]
+  341 | timer_t timer2B = {
+      |         ^
+Timer_Config.c(341): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  341 | timer_t timer2B = {
+      | ^
+Timer_Config.c(358): warning: no previous extern declaration for non-static variable 'wtimer2A' [-Wmissing-variable-declarations]
+  358 | timer_t wtimer2A = {
+      |         ^
+Timer_Config.c(358): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  358 | timer_t wtimer2A = {
+      | ^
+Timer_Config.c(374): warning: no previous extern declaration for non-static variable 'wtimer2B' [-Wmissing-variable-declarations]
+  374 | timer_t wtimer2B  = {
+      |         ^
+Timer_Config.c(374): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  374 | timer_t wtimer2B  = {
+      | ^
+Timer_Config.c(390): warning: no previous extern declaration for non-static variable 'wtimer3A' [-Wmissing-variable-declarations]
+  390 | timer_t wtimer3A  = {
+      |         ^
+Timer_Config.c(390): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  390 | timer_t wtimer3A  = {
+      | ^
+Timer_Config.c(406): warning: no previous extern declaration for non-static variable 'wtimer3B' [-Wmissing-variable-declarations]
+  406 | timer_t wtimer3B = {
+      |         ^
+Timer_Config.c(406): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  406 | timer_t wtimer3B = {
+      | ^
+Timer_Config.c(422): warning: no previous extern declaration for non-static variable 'wtimer4A' [-Wmissing-variable-declarations]
+  422 | timer_t wtimer4A  = {
+      |         ^
+Timer_Config.c(422): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  422 | timer_t wtimer4A  = {
+      | ^
+36 warnings generated.
+compiling Timer_Config.c...
+SPI.c(61): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   61 |           GPIOPinTypeSSI(SSI->PORT,SSI->PINS);
+      |           ~~~~~~~~~~~~~~           ~~~~~^~~~
+1 warning generated.
+compiling SPI.c...
+SPI_Config.c(132): warning: no previous extern declaration for non-static variable 'SPI_config' [-Wmissing-variable-declarations]
+  132 | SSI_t SPI_config = {
+      |       ^
+SPI_Config.c(132): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  132 | SSI_t SPI_config = {
+      | ^
+1 warning generated.
+compiling SPI_Config.c...
+PWM.c(60): warning: implicit conversion loses integer precision: 'uint32_t' (aka 'unsigned int') to 'uint8_t' (aka 'unsigned char') [-Wimplicit-int-conversion]
+   60 |             GPIOPinTypePWM(PWM->PORT, PWM->PIN);
+      |             ~~~~~~~~~~~~~~            ~~~~~^~~
+1 warning generated.
+compiling PWM.c...
+PWM_Config.c(179): warning: no previous extern declaration for non-static variable 'pwm_out' [-Wmissing-variable-declarations]
+  179 | PWM_t pwm_out = {
+      |       ^
+PWM_Config.c(179): note: declare 'static' if the variable is not intended to be used outside of this translation unit
+  179 | PWM_t pwm_out = {
+      | ^
+1 warning generated.
+compiling PWM_Config.c...
+creating Library...
+".\Objects\MCAL.lib" - 0 Error(s), 130 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.TM4C_DFP.1.1.0.pack
+                Keil::TM4C_DFP@1.1.0
+                Texas Instruments Tiva C Series Device Support and Examples
+   * Component: Startup Version: 1.0.1
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_Target_1
+  C:/Users/scs9112021/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/scs9112021/AppData/Local/Arm/Packs/Keil/TM4C_DFP/1.1.0/Device/Include/TM4C123
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+
+   * Component: Keil::Device:Startup@1.0.1
+      Include file:  Device/Include/TM4C123/TM4C123.h
+      Source file:   Device/Source/system_TM4C123.c
+      Source file:   Device/Source/ARM/startup_TM4C123.s
+Build Time Elapsed:  00:00:03
+</pre>
+</body>
+</html>

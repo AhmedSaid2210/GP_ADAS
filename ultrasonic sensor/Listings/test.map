@@ -1,0 +1,1244 @@
+Component: Arm Compiler for Embedded 6.21 Tool: armlink [5ec1fa00]
+
+==============================================================================
+
+Section Cross References
+
+    app.o(.text.main) refers to rcc_config.o(.rodata.RCC_config16) for RCC_config16
+    app.o(.text.main) refers to rcc.o(.text.MCAL_RCC_SysCtlClockExternal) for MCAL_RCC_SysCtlClockExternal
+    app.o(.text.main) refers to gpio_config.o(.rodata.PE0) for PE0
+    app.o(.text.main) refers to gpio.o(.text.MCAL_GPIO_Pin_Init) for MCAL_GPIO_Pin_Init
+    app.o(.text.main) refers to gpio_config.o(.rodata.PE1) for PE1
+    app.o(.text.main) refers to gpio_config.o(.rodata.PE2) for PE2
+    app.o(.text.main) refers to gpio_config.o(.rodata.PE3) for PE3
+    app.o(.text.main) refers to gpio_config.o(.rodata.PE4) for PE4
+    app.o(.text.main) refers to gpio_config.o(.rodata.PE5) for PE5
+    app.o(.text.main) refers to ultrasonic_config.o(.data.ultra1) for ultra1
+    app.o(.text.main) refers to ultrasonic.o(.text.HAL_Ultra_Inti) for HAL_Ultra_Inti
+    app.o(.text.main) refers to app.o(.bss.key) for key
+    app.o(.text.main) refers to ultrasonic.o(.text.HAL_Ultra_Dist) for HAL_Ultra_Dist
+    app.o(.text.main) refers to gpio.o(.text.MCAL_GPIO_Pin_Write) for MCAL_GPIO_Pin_Write
+    app.o(.text.main) refers to gpio_config.o(.rodata.PF1) for PF1
+    app.o(.text.main) refers to delay.o(.text.MCAL_DelayMs) for MCAL_DelayMs
+    app.o(.ARM.exidx.text.main) refers to app.o(.text.main) for [Anonymous Symbol]
+    app.o(.text.fun) refers to timer_config.o(.data.timer1A) for timer1A
+    app.o(.text.fun) refers to timer.o(.text.MCAL_Timer_IntClear) for MCAL_Timer_IntClear
+    app.o(.ARM.exidx.text.fun) refers to app.o(.text.fun) for [Anonymous Symbol]
+    app.o(.text.initUART) refers to sysctl.o(i.SysCtlGPIOAHBEnable) for SysCtlGPIOAHBEnable
+    app.o(.text.initUART) refers to sysctl.o(i.SysCtlPeripheralEnable) for SysCtlPeripheralEnable
+    app.o(.text.initUART) refers to sysctl.o(i.SysCtlPeripheralReady) for SysCtlPeripheralReady
+    app.o(.text.initUART) refers to gpio.o(i.GPIOPinConfigure) for GPIOPinConfigure
+    app.o(.text.initUART) refers to gpio.o(i.GPIOPinTypeUART) for GPIOPinTypeUART
+    app.o(.text.initUART) refers to sysctl.o(i.SysCtlClockGet) for SysCtlClockGet
+    app.o(.text.initUART) refers to uart.o(i.UARTConfigSetExpClk) for UARTConfigSetExpClk
+    app.o(.text.initUART) refers to uart.o(i.UARTEnable) for UARTEnable
+    app.o(.ARM.exidx.text.initUART) refers to app.o(.text.initUART) for [Anonymous Symbol]
+    app.o(.text.printstring) refers to strlen.o(.text) for strlen
+    app.o(.text.printstring) refers to uart.o(i.UARTCharPut) for UARTCharPut
+    app.o(.ARM.exidx.text.printstring) refers to app.o(.text.printstring) for [Anonymous Symbol]
+    timer.o(.text.MCAL_Timer_Inti) refers to interrupt.o(i.IntMasterDisable) for IntMasterDisable
+    timer.o(.text.MCAL_Timer_Inti) refers to sysctl.o(i.SysCtlPeripheralEnable) for SysCtlPeripheralEnable
+    timer.o(.text.MCAL_Timer_Inti) refers to sysctl.o(i.SysCtlPeripheralReady) for SysCtlPeripheralReady
+    timer.o(.text.MCAL_Timer_Inti) refers to timer.o(i.TimerClockSourceSet) for TimerClockSourceSet
+    timer.o(.text.MCAL_Timer_Inti) refers to timer.o(i.TimerConfigure) for TimerConfigure
+    timer.o(.text.MCAL_Timer_Inti) refers to timer.o(i.TimerLoadSet) for TimerLoadSet
+    timer.o(.text.MCAL_Timer_Inti) refers to timer.o(i.TimerPrescaleSet) for TimerPrescaleSet
+    timer.o(.text.MCAL_Timer_Inti) refers to interrupt.o(i.IntPrioritySet) for IntPrioritySet
+    timer.o(.text.MCAL_Timer_Inti) refers to timer.o(i.TimerIntClear) for TimerIntClear
+    timer.o(.text.MCAL_Timer_Inti) refers to timer.o(i.TimerIntEnable) for TimerIntEnable
+    timer.o(.text.MCAL_Timer_Inti) refers to interrupt.o(i.IntEnable) for IntEnable
+    timer.o(.text.MCAL_Timer_Inti) refers to interrupt.o(i.IntMasterEnable) for IntMasterEnable
+    timer.o(.ARM.exidx.text.MCAL_Timer_Inti) refers to timer.o(.text.MCAL_Timer_Inti) for [Anonymous Symbol]
+    timer.o(.text.MCAL_Timer_Inti_CAP) refers to interrupt.o(i.IntMasterDisable) for IntMasterDisable
+    timer.o(.text.MCAL_Timer_Inti_CAP) refers to sysctl.o(i.SysCtlPeripheralEnable) for SysCtlPeripheralEnable
+    timer.o(.text.MCAL_Timer_Inti_CAP) refers to sysctl.o(i.SysCtlPeripheralReady) for SysCtlPeripheralReady
+    timer.o(.text.MCAL_Timer_Inti_CAP) refers to gpio.o(i.GPIOPinTypeTimer) for GPIOPinTypeTimer
+    timer.o(.text.MCAL_Timer_Inti_CAP) refers to gpio.o(i.GPIOPinConfigure) for GPIOPinConfigure
+    timer.o(.text.MCAL_Timer_Inti_CAP) refers to timer.o(i.TimerConfigure) for TimerConfigure
+    timer.o(.text.MCAL_Timer_Inti_CAP) refers to timer.o(i.TimerClockSourceSet) for TimerClockSourceSet
+    timer.o(.text.MCAL_Timer_Inti_CAP) refers to timer.o(i.TimerLoadSet) for TimerLoadSet
+    timer.o(.text.MCAL_Timer_Inti_CAP) refers to interrupt.o(i.IntPrioritySet) for IntPrioritySet
+    timer.o(.text.MCAL_Timer_Inti_CAP) refers to timer.o(i.TimerIntClear) for TimerIntClear
+    timer.o(.text.MCAL_Timer_Inti_CAP) refers to timer.o(i.TimerIntEnable) for TimerIntEnable
+    timer.o(.text.MCAL_Timer_Inti_CAP) refers to interrupt.o(i.IntEnable) for IntEnable
+    timer.o(.text.MCAL_Timer_Inti_CAP) refers to interrupt.o(i.IntMasterEnable) for IntMasterEnable
+    timer.o(.ARM.exidx.text.MCAL_Timer_Inti_CAP) refers to timer.o(.text.MCAL_Timer_Inti_CAP) for [Anonymous Symbol]
+    timer.o(.text.MCAL_Timer_SET_PRESCALLER) refers to timer.o(i.TimerPrescaleSet) for TimerPrescaleSet
+    timer.o(.ARM.exidx.text.MCAL_Timer_SET_PRESCALLER) refers to timer.o(.text.MCAL_Timer_SET_PRESCALLER) for [Anonymous Symbol]
+    timer.o(.text.MCAL_Timer_SET_MATCH) refers to timer.o(i.TimerMatchSet) for TimerMatchSet
+    timer.o(.ARM.exidx.text.MCAL_Timer_SET_MATCH) refers to timer.o(.text.MCAL_Timer_SET_MATCH) for [Anonymous Symbol]
+    timer.o(.text.MCAL_Timer_SET_EVENT) refers to timer.o(i.TimerControlEvent) for TimerControlEvent
+    timer.o(.ARM.exidx.text.MCAL_Timer_SET_EVENT) refers to timer.o(.text.MCAL_Timer_SET_EVENT) for [Anonymous Symbol]
+    timer.o(.text.MCAL_Timer_SET_LOAD) refers to timer.o(i.TimerLoadSet) for TimerLoadSet
+    timer.o(.ARM.exidx.text.MCAL_Timer_SET_LOAD) refers to timer.o(.text.MCAL_Timer_SET_LOAD) for [Anonymous Symbol]
+    timer.o(.text.MCAL_Timer_GET_VALUE) refers to timer.o(i.TimerValueGet) for TimerValueGet
+    timer.o(.ARM.exidx.text.MCAL_Timer_GET_VALUE) refers to timer.o(.text.MCAL_Timer_GET_VALUE) for [Anonymous Symbol]
+    timer.o(.text.MCAL_Timer_Start) refers to timer.o(i.TimerEnable) for TimerEnable
+    timer.o(.ARM.exidx.text.MCAL_Timer_Start) refers to timer.o(.text.MCAL_Timer_Start) for [Anonymous Symbol]
+    timer.o(.text.MCAL_Timer_Stop) refers to timer.o(i.TimerDisable) for TimerDisable
+    timer.o(.ARM.exidx.text.MCAL_Timer_Stop) refers to timer.o(.text.MCAL_Timer_Stop) for [Anonymous Symbol]
+    timer.o(.text.MCAL_Timer_IntClear) refers to timer.o(i.TimerIntClear) for TimerIntClear
+    timer.o(.ARM.exidx.text.MCAL_Timer_IntClear) refers to timer.o(.text.MCAL_Timer_IntClear) for [Anonymous Symbol]
+    timer.o(.text.MCAL_Timer_Int_handler) refers to interrupt.o(i.IntRegister) for IntRegister
+    timer.o(.ARM.exidx.text.MCAL_Timer_Int_handler) refers to timer.o(.text.MCAL_Timer_Int_handler) for [Anonymous Symbol]
+    rcc.o(.text.MCAL_RCC_SysCtlClockInternal) refers to sysctl.o(i.SysCtlClockSet) for SysCtlClockSet
+    rcc.o(.ARM.exidx.text.MCAL_RCC_SysCtlClockInternal) refers to rcc.o(.text.MCAL_RCC_SysCtlClockInternal) for [Anonymous Symbol]
+    rcc.o(.text.MCAL_RCC_SysCtlClockExternal) refers to sysctl.o(i.SysCtlClockSet) for SysCtlClockSet
+    rcc.o(.ARM.exidx.text.MCAL_RCC_SysCtlClockExternal) refers to rcc.o(.text.MCAL_RCC_SysCtlClockExternal) for [Anonymous Symbol]
+    gpio.o(.text.MCAL_GPIO_Pin_Init) refers to sysctl.o(i.SysCtlPeripheralEnable) for SysCtlPeripheralEnable
+    gpio.o(.text.MCAL_GPIO_Pin_Init) refers to gpio.o(i.GPIOUnlockPin) for GPIOUnlockPin
+    gpio.o(.text.MCAL_GPIO_Pin_Init) refers to sysctl.o(i.SysCtlPeripheralReady) for SysCtlPeripheralReady
+    gpio.o(.text.MCAL_GPIO_Pin_Init) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(.text.MCAL_GPIO_Pin_Init) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(.text.MCAL_GPIO_Pin_Init) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    gpio.o(.ARM.exidx.text.MCAL_GPIO_Pin_Init) refers to gpio.o(.text.MCAL_GPIO_Pin_Init) for [Anonymous Symbol]
+    gpio.o(.text.MCAL_GPIO_Pin_Write) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    gpio.o(.text.MCAL_GPIO_Pin_Write) refers to gpio.o(i.GPIOPinRead) for GPIOPinRead
+    gpio.o(.ARM.exidx.text.MCAL_GPIO_Pin_Write) refers to gpio.o(.text.MCAL_GPIO_Pin_Write) for [Anonymous Symbol]
+    gpio.o(.text.MCAL_GPIO_Pin_Read) refers to gpio.o(i.GPIOPinRead) for GPIOPinRead
+    gpio.o(.ARM.exidx.text.MCAL_GPIO_Pin_Read) refers to gpio.o(.text.MCAL_GPIO_Pin_Read) for [Anonymous Symbol]
+    gpio.o(.text.MCAL_GPIO_Int_Config) refers to interrupt.o(i.IntMasterDisable) for IntMasterDisable
+    gpio.o(.text.MCAL_GPIO_Int_Config) refers to gpio.o(i.GPIOIntClear) for GPIOIntClear
+    gpio.o(.text.MCAL_GPIO_Int_Config) refers to interrupt.o(i.IntRegister) for IntRegister
+    gpio.o(.text.MCAL_GPIO_Int_Config) refers to gpio.o(i.GPIOIntTypeSet) for GPIOIntTypeSet
+    gpio.o(.text.MCAL_GPIO_Int_Config) refers to interrupt.o(i.IntPrioritySet) for IntPrioritySet
+    gpio.o(.text.MCAL_GPIO_Int_Config) refers to gpio.o(i.GPIOIntEnable) for GPIOIntEnable
+    gpio.o(.text.MCAL_GPIO_Int_Config) refers to interrupt.o(i.IntEnable) for IntEnable
+    gpio.o(.text.MCAL_GPIO_Int_Config) refers to interrupt.o(i.IntMasterEnable) for IntMasterEnable
+    gpio.o(.ARM.exidx.text.MCAL_GPIO_Int_Config) refers to gpio.o(.text.MCAL_GPIO_Int_Config) for [Anonymous Symbol]
+    spi.o(.text.MCAL_SSI_Inti) refers to sysctl.o(i.SysCtlPeripheralEnable) for SysCtlPeripheralEnable
+    spi.o(.text.MCAL_SSI_Inti) refers to sysctl.o(i.SysCtlPeripheralReady) for SysCtlPeripheralReady
+    spi.o(.text.MCAL_SSI_Inti) refers to gpio.o(i.GPIOPinConfigure) for GPIOPinConfigure
+    spi.o(.text.MCAL_SSI_Inti) refers to gpio.o(i.GPIOPinTypeSSI) for GPIOPinTypeSSI
+    spi.o(.text.MCAL_SSI_Inti) refers to sysctl.o(i.SysCtlClockGet) for SysCtlClockGet
+    spi.o(.text.MCAL_SSI_Inti) refers to ssi.o(i.SSIConfigSetExpClk) for SSIConfigSetExpClk
+    spi.o(.text.MCAL_SSI_Inti) refers to ssi.o(i.SSIEnable) for SSIEnable
+    spi.o(.ARM.exidx.text.MCAL_SSI_Inti) refers to spi.o(.text.MCAL_SSI_Inti) for [Anonymous Symbol]
+    spi.o(.text.MCAL_SSI_SendData) refers to ssi.o(i.SSIDataPutNonBlocking) for SSIDataPutNonBlocking
+    spi.o(.ARM.exidx.text.MCAL_SSI_SendData) refers to spi.o(.text.MCAL_SSI_SendData) for [Anonymous Symbol]
+    spi.o(.text.MCAL_SSI_ReceiveData) refers to ssi.o(i.SSIDataGetNonBlocking) for SSIDataGetNonBlocking
+    spi.o(.ARM.exidx.text.MCAL_SSI_ReceiveData) refers to spi.o(.text.MCAL_SSI_ReceiveData) for [Anonymous Symbol]
+    spi.o(.text.MCAL_SSI_SendReceiveSynch) refers to ssi.o(i.SSIBusy) for SSIBusy
+    spi.o(.text.MCAL_SSI_SendReceiveSynch) refers to ssi.o(i.SSIDataPut) for SSIDataPut
+    spi.o(.text.MCAL_SSI_SendReceiveSynch) refers to ssi.o(i.SSIDataGetNonBlocking) for SSIDataGetNonBlocking
+    spi.o(.ARM.exidx.text.MCAL_SSI_SendReceiveSynch) refers to spi.o(.text.MCAL_SSI_SendReceiveSynch) for [Anonymous Symbol]
+    spi.o(.text.MCAL_SSI_SendArray) refers to ssi.o(i.SSIDataPut) for SSIDataPut
+    spi.o(.ARM.exidx.text.MCAL_SSI_SendArray) refers to spi.o(.text.MCAL_SSI_SendArray) for [Anonymous Symbol]
+    spi.o(.text.MCAL_SSI_ReceiveArray) refers to ssi.o(i.SSIDataGetNonBlocking) for SSIDataGetNonBlocking
+    spi.o(.ARM.exidx.text.MCAL_SSI_ReceiveArray) refers to spi.o(.text.MCAL_SSI_ReceiveArray) for [Anonymous Symbol]
+    lcd.o(.text.lcdEnable) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    lcd.o(.text.lcdEnable) refers to delay.o(.text.MCAL_DelayUs) for MCAL_DelayUs
+    lcd.o(.ARM.exidx.text.lcdEnable) refers to lcd.o(.text.lcdEnable) for [Anonymous Symbol]
+    lcd.o(.text.lcdWriteData) refers to lcd.o(.bss.data8Bit) for data8Bit
+    lcd.o(.text.lcdWriteData) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    lcd.o(.text.lcdWriteData) refers to lcd.o(.text.lcdEnable) for lcdEnable
+    lcd.o(.ARM.exidx.text.lcdWriteData) refers to lcd.o(.text.lcdWriteData) for [Anonymous Symbol]
+    lcd.o(.text.lcdWriteCommand) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    lcd.o(.text.lcdWriteCommand) refers to lcd.o(.text.lcdWriteData) for lcdWriteData
+    lcd.o(.text.lcdWriteCommand) refers to delay.o(.text.MCAL_DelayMs) for MCAL_DelayMs
+    lcd.o(.ARM.exidx.text.lcdWriteCommand) refers to lcd.o(.text.lcdWriteCommand) for [Anonymous Symbol]
+    lcd.o(.text.lcdWriteChar) refers to gpio.o(i.GPIOPinWrite) for GPIOPinWrite
+    lcd.o(.text.lcdWriteChar) refers to lcd.o(.text.lcdWriteData) for lcdWriteData
+    lcd.o(.text.lcdWriteChar) refers to delay.o(.text.MCAL_DelayUs) for MCAL_DelayUs
+    lcd.o(.ARM.exidx.text.lcdWriteChar) refers to lcd.o(.text.lcdWriteChar) for [Anonymous Symbol]
+    lcd.o(.text.lcdWriteString) refers to lcd.o(.text.lcdWriteChar) for lcdWriteChar
+    lcd.o(.ARM.exidx.text.lcdWriteString) refers to lcd.o(.text.lcdWriteString) for [Anonymous Symbol]
+    lcd.o(.text.lcdClear) refers to lcd.o(.text.lcdWriteCommand) for lcdWriteCommand
+    lcd.o(.ARM.exidx.text.lcdClear) refers to lcd.o(.text.lcdClear) for [Anonymous Symbol]
+    lcd.o(.text.lcdClearAndWriteString) refers to lcd.o(.text.lcdClear) for lcdClear
+    lcd.o(.text.lcdClearAndWriteString) refers to lcd.o(.text.lcdWriteString) for lcdWriteString
+    lcd.o(.ARM.exidx.text.lcdClearAndWriteString) refers to lcd.o(.text.lcdClearAndWriteString) for [Anonymous Symbol]
+    lcd.o(.text.lcdGoToXY) refers to lcd.o(.text.lcdWriteCommand) for lcdWriteCommand
+    lcd.o(.ARM.exidx.text.lcdGoToXY) refers to lcd.o(.text.lcdGoToXY) for [Anonymous Symbol]
+    lcd.o(.text.lcdInit) refers to sysctl.o(i.SysCtlGPIOAHBEnable) for SysCtlGPIOAHBEnable
+    lcd.o(.text.lcdInit) refers to sysctl.o(i.SysCtlPeripheralEnable) for SysCtlPeripheralEnable
+    lcd.o(.text.lcdInit) refers to sysctl.o(i.SysCtlPeripheralReady) for SysCtlPeripheralReady
+    lcd.o(.text.lcdInit) refers to gpio.o(i.GPIOPinTypeGPIOOutput) for GPIOPinTypeGPIOOutput
+    lcd.o(.text.lcdInit) refers to lcd.o(.bss.data8Bit) for data8Bit
+    lcd.o(.text.lcdInit) refers to delay.o(.text.MCAL_DelayMs) for MCAL_DelayMs
+    lcd.o(.text.lcdInit) refers to lcd.o(.text.lcdWriteCommand) for lcdWriteCommand
+    lcd.o(.ARM.exidx.text.lcdInit) refers to lcd.o(.text.lcdInit) for [Anonymous Symbol]
+    ultrasonic.o(.text.HAL_Ultra_Inti) refers to gpio.o(.text.MCAL_GPIO_Pin_Init) for MCAL_GPIO_Pin_Init
+    ultrasonic.o(.text.HAL_Ultra_Inti) refers to timer.o(.text.MCAL_Timer_Inti_CAP) for MCAL_Timer_Inti_CAP
+    ultrasonic.o(.text.HAL_Ultra_Inti) refers to timer.o(.text.MCAL_Timer_SET_PRESCALLER) for MCAL_Timer_SET_PRESCALLER
+    ultrasonic.o(.text.HAL_Ultra_Inti) refers to timer.o(.text.MCAL_Timer_SET_EVENT) for MCAL_Timer_SET_EVENT
+    ultrasonic.o(.ARM.exidx.text.HAL_Ultra_Inti) refers to ultrasonic.o(.text.HAL_Ultra_Inti) for [Anonymous Symbol]
+    ultrasonic.o(.text.HAL_Ultra_Dist) refers to timer.o(.text.MCAL_Timer_SET_LOAD) for MCAL_Timer_SET_LOAD
+    ultrasonic.o(.text.HAL_Ultra_Dist) refers to gpio.o(.text.MCAL_GPIO_Pin_Write) for MCAL_GPIO_Pin_Write
+    ultrasonic.o(.text.HAL_Ultra_Dist) refers to delay.o(.text.MCAL_DelayUs) for MCAL_DelayUs
+    ultrasonic.o(.text.HAL_Ultra_Dist) refers to timer.o(.text.MCAL_Timer_Start) for MCAL_Timer_Start
+    ultrasonic.o(.text.HAL_Ultra_Dist) refers to gpio.o(.text.MCAL_GPIO_Pin_Read) for MCAL_GPIO_Pin_Read
+    ultrasonic.o(.text.HAL_Ultra_Dist) refers to timer.o(.text.MCAL_Timer_IntClear) for MCAL_Timer_IntClear
+    ultrasonic.o(.text.HAL_Ultra_Dist) refers to timer.o(.text.MCAL_Timer_GET_VALUE) for MCAL_Timer_GET_VALUE
+    ultrasonic.o(.text.HAL_Ultra_Dist) refers to timer.o(.text.MCAL_Timer_Stop) for MCAL_Timer_Stop
+    ultrasonic.o(.text.HAL_Ultra_Dist) refers to sysctl.o(i.SysCtlClockGet) for SysCtlClockGet
+    ultrasonic.o(.ARM.exidx.text.HAL_Ultra_Dist) refers to ultrasonic.o(.text.HAL_Ultra_Dist) for [Anonymous Symbol]
+    ultrasonic_config.o(.data.ultra1) refers to gpio_config.o(.rodata.PA6) for PA6
+    ultrasonic_config.o(.data.ultra1) refers to gpio_config.o(.rodata.PB4) for PB4
+    ultrasonic_config.o(.data.ultra1) refers to timer_config.o(.data.timer1A) for timer1A
+    ultrasonic_config.o(.data.ultra2) refers to gpio_config.o(.rodata.PA6) for PA6
+    ultrasonic_config.o(.data.ultra2) refers to gpio_config.o(.rodata.PB5) for PB5
+    ultrasonic_config.o(.data.ultra2) refers to timer_config.o(.data.timer1B) for timer1B
+    motor_config.o(.data.motor_config) refers to gpio_config.o(.rodata.PC4) for PC4
+    motor_config.o(.data.motor_config) refers to gpio_config.o(.rodata.PC5) for PC5
+    motor_config.o(.data.motor_config) refers to pwm_config.o(.data.PF2_M1PWM6) for PF2_M1PWM6
+    motor_config.o(.data.motor_config) refers to gpio_config.o(.rodata.PC6) for PC6
+    motor_config.o(.data.motor_config) refers to gpio_config.o(.rodata.PC7) for PC7
+    motor_config.o(.data.motor_config) refers to pwm_config.o(.data.PF3_M1PWM7) for PF3_M1PWM7
+    startup_tm4c123.o(RESET) refers to startup_tm4c123.o(STACK) for __initial_sp
+    startup_tm4c123.o(RESET) refers to startup_tm4c123.o(.text) for Reset_Handler
+    startup_tm4c123.o(.text) refers to system_tm4c123.o(.text.SystemInit) for SystemInit
+    startup_tm4c123.o(.text) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    system_tm4c123.o(.text.SystemCoreClockUpdate) refers to system_tm4c123.o(.text.getOscClk) for getOscClk
+    system_tm4c123.o(.text.SystemCoreClockUpdate) refers to system_tm4c123.o(.data.SystemCoreClock) for SystemCoreClock
+    system_tm4c123.o(.ARM.exidx.text.SystemCoreClockUpdate) refers to system_tm4c123.o(.text.SystemCoreClockUpdate) for [Anonymous Symbol]
+    system_tm4c123.o(.ARM.exidx.text.getOscClk) refers to system_tm4c123.o(.text.getOscClk) for [Anonymous Symbol]
+    system_tm4c123.o(.ARM.exidx.text.SystemInit) refers to system_tm4c123.o(.text.SystemInit) for [Anonymous Symbol]
+    gpio.o(i.GPIOIntRegister) refers to gpio.o(i._GPIOIntNumberGet) for _GPIOIntNumberGet
+    gpio.o(i.GPIOIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    gpio.o(i.GPIOIntRegister) refers to interrupt.o(i.IntEnable) for IntEnable
+    gpio.o(i.GPIOIntRegisterPin) refers to gpio.o(i._GPIOIntNumberGet) for _GPIOIntNumberGet
+    gpio.o(i.GPIOIntRegisterPin) refers to interrupt.o(i.IntRegister) for IntRegister
+    gpio.o(i.GPIOIntRegisterPin) refers to interrupt.o(i.IntEnable) for IntEnable
+    gpio.o(i.GPIOIntUnregister) refers to gpio.o(i._GPIOIntNumberGet) for _GPIOIntNumberGet
+    gpio.o(i.GPIOIntUnregister) refers to interrupt.o(i.IntDisable) for IntDisable
+    gpio.o(i.GPIOIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    gpio.o(i.GPIOIntUnregisterPin) refers to gpio.o(i._GPIOIntNumberGet) for _GPIOIntNumberGet
+    gpio.o(i.GPIOIntUnregisterPin) refers to interrupt.o(i.IntDisable) for IntDisable
+    gpio.o(i.GPIOIntUnregisterPin) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    gpio.o(i.GPIOPinConfigure) refers to gpio.o(.constdata) for .constdata
+    gpio.o(i.GPIOPinTypeADC) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeADC) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeCAN) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeCAN) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeComparator) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeComparator) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeComparatorOutput) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeComparatorOutput) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeDIVSCLK) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeDIVSCLK) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeEPI) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeEPI) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeEthernetLED) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeEthernetLED) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeEthernetMII) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeEthernetMII) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeGPIOInput) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeGPIOInput) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeGPIOOutput) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeGPIOOutput) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeGPIOOutputOD) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeGPIOOutputOD) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeHibernateRTCCLK) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeHibernateRTCCLK) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeI2C) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeI2C) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeI2CSCL) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeI2CSCL) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeLCD) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeLCD) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeOneWire) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeOneWire) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypePWM) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypePWM) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeQEI) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeQEI) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeSSI) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeSSI) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeTimer) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeTimer) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeTrace) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeTrace) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeUART) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeUART) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeUSBAnalog) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeUSBAnalog) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeUSBDigital) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeUSBDigital) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeWakeHigh) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeWakeHigh) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i.GPIOPinTypeWakeLow) refers to gpio.o(i.GPIODirModeSet) for GPIODirModeSet
+    gpio.o(i.GPIOPinTypeWakeLow) refers to gpio.o(i.GPIOPadConfigSet) for GPIOPadConfigSet
+    gpio.o(i._GPIOIntNumberGet) refers to gpio.o(.constdata) for .constdata
+    interrupt.o(i.IntDisable) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntEnable) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntIsEnabled) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntMasterDisable) refers to cpu.o(.emb_text) for CPUcpsid
+    interrupt.o(i.IntMasterEnable) refers to cpu.o(.emb_text) for CPUcpsie
+    interrupt.o(i.IntPendClear) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntPendSet) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntPriorityGet) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntPriorityGroupingGet) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntPriorityGroupingSet) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntPriorityMaskGet) refers to cpu.o(.emb_text) for CPUbasepriGet
+    interrupt.o(i.IntPriorityMaskSet) refers to cpu.o(.emb_text) for CPUbasepriSet
+    interrupt.o(i.IntPrioritySet) refers to interrupt.o(.constdata) for .constdata
+    interrupt.o(i.IntRegister) refers to interrupt.o(vtable) for vtable
+    interrupt.o(i.IntUnregister) refers to interrupt.o(i._IntDefaultHandler) for _IntDefaultHandler
+    interrupt.o(i.IntUnregister) refers to interrupt.o(vtable) for vtable
+    ssi.o(i.SSIIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    ssi.o(i.SSIIntRegister) refers to interrupt.o(i.IntEnable) for IntEnable
+    ssi.o(i.SSIIntRegister) refers to ssi.o(.constdata) for .constdata
+    ssi.o(i.SSIIntUnregister) refers to interrupt.o(i.IntDisable) for IntDisable
+    ssi.o(i.SSIIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    ssi.o(i.SSIIntUnregister) refers to ssi.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlClockFreqSet) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlClockGet) refers to sysctl.o(.constdata) for .constdata
+    sysctl.o(i.SysCtlClockSet) refers to sysctl.o(.emb_text) for SysCtlDelay
+    sysctl.o(i.SysCtlDeepSleep) refers to cpu.o(.emb_text) for CPUwfi
+    sysctl.o(i.SysCtlIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    sysctl.o(i.SysCtlIntRegister) refers to interrupt.o(i.IntEnable) for IntEnable
+    sysctl.o(i.SysCtlIntUnregister) refers to interrupt.o(i.IntDisable) for IntDisable
+    sysctl.o(i.SysCtlIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    sysctl.o(i.SysCtlSleep) refers to cpu.o(.emb_text) for CPUwfi
+    sysctl.o(i.SysCtlVCOGet) refers to sysctl.o(.constdata) for .constdata
+    timer.o(i.TimerIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    timer.o(i.TimerIntRegister) refers to interrupt.o(i.IntEnable) for IntEnable
+    timer.o(i.TimerIntRegister) refers to timer.o(.constdata) for .constdata
+    timer.o(i.TimerIntUnregister) refers to interrupt.o(i.IntDisable) for IntDisable
+    timer.o(i.TimerIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    timer.o(i.TimerIntUnregister) refers to timer.o(.constdata) for .constdata
+    uart.o(i.UARTIntRegister) refers to interrupt.o(i.IntRegister) for IntRegister
+    uart.o(i.UARTIntRegister) refers to interrupt.o(i.IntEnable) for IntEnable
+    uart.o(i.UARTIntRegister) refers to uart.o(.constdata) for .constdata
+    uart.o(i.UARTIntUnregister) refers to interrupt.o(i.IntDisable) for IntDisable
+    uart.o(i.UARTIntUnregister) refers to interrupt.o(i.IntUnregister) for IntUnregister
+    uart.o(i.UARTIntUnregister) refers to uart.o(.constdata) for .constdata
+    delay.o(.text.MCAL_DelayMs) refers to sysctl.o(i.SysCtlClockGet) for SysCtlClockGet
+    delay.o(.text.MCAL_DelayMs) refers to sysctl.o(.emb_text) for SysCtlDelay
+    delay.o(.ARM.exidx.text.MCAL_DelayMs) refers to delay.o(.text.MCAL_DelayMs) for [Anonymous Symbol]
+    delay.o(.text.MCAL_DelayUs) refers to sysctl.o(i.SysCtlClockGet) for SysCtlClockGet
+    delay.o(.text.MCAL_DelayUs) refers to sysctl.o(.emb_text) for SysCtlDelay
+    delay.o(.ARM.exidx.text.MCAL_DelayUs) refers to delay.o(.text.MCAL_DelayUs) for [Anonymous Symbol]
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry10a.o(.ARM.Collect$$$$0000000D) for __rt_final_cpp
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry11a.o(.ARM.Collect$$$$0000000F) for __rt_final_exit
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry7b.o(.ARM.Collect$$$$00000008) for _main_clock
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry8b.o(.ARM.Collect$$$$0000000A) for _main_cpp_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry9a.o(.ARM.Collect$$$$0000000B) for _main_init
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry5.o(.ARM.Collect$$$$00000004) for _main_scatterload
+    entry.o(.ARM.Collect$$$$00000000) refers (Special) to entry2.o(.ARM.Collect$$$$00000001) for _main_stk
+    entry2.o(.ARM.Collect$$$$00000001) refers to entry2.o(.ARM.Collect$$$$00002712) for __lit__00000000
+    entry2.o(.ARM.Collect$$$$00002712) refers to startup_tm4c123.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to startup_tm4c123.o(STACK) for __initial_sp
+    entry2.o(__vectab_stack_and_reset_area) refers to entry.o(.ARM.Collect$$$$00000000) for __main
+    entry5.o(.ARM.Collect$$$$00000004) refers to init.o(.text) for __scatterload
+    entry9a.o(.ARM.Collect$$$$0000000B) refers to app.o(.text.main) for main
+    entry9b.o(.ARM.Collect$$$$0000000C) refers to app.o(.text.main) for main
+    init.o(.text) refers to entry5.o(.ARM.Collect$$$$00000004) for __main_after_scatterload
+
+
+==============================================================================
+
+Removing Unused input sections from the image.
+
+    Removing app.o(.text), (0 bytes).
+    Removing app.o(.ARM.exidx.text.main), (8 bytes).
+    Removing app.o(.text.fun), (16 bytes).
+    Removing app.o(.ARM.exidx.text.fun), (8 bytes).
+    Removing app.o(.text.initUART), (136 bytes).
+    Removing app.o(.ARM.exidx.text.initUART), (8 bytes).
+    Removing app.o(.text.printstring), (62 bytes).
+    Removing app.o(.ARM.exidx.text.printstring), (8 bytes).
+    Removing app.o(.bss.counter), (2 bytes).
+    Removing app.o(.bss.receive), (1 bytes).
+    Removing app.o(.bss.mesg), (20 bytes).
+    Removing app.o(.ARM.use_no_argv), (4 bytes).
+    Removing gpio_config.o(.text), (0 bytes).
+    Removing gpio_config.o(.rodata.pin_red), (20 bytes).
+    Removing gpio_config.o(.rodata.pin_blue), (20 bytes).
+    Removing gpio_config.o(.rodata.pin_green), (20 bytes).
+    Removing gpio_config.o(.rodata.trig_pin), (20 bytes).
+    Removing gpio_config.o(.rodata.echo_pin), (20 bytes).
+    Removing gpio_config.o(.rodata.PA2), (20 bytes).
+    Removing gpio_config.o(.rodata.PA3), (20 bytes).
+    Removing gpio_config.o(.rodata.PA4), (20 bytes).
+    Removing gpio_config.o(.rodata.PA5), (20 bytes).
+    Removing gpio_config.o(.rodata.PA7), (20 bytes).
+    Removing gpio_config.o(.rodata.PB0), (20 bytes).
+    Removing gpio_config.o(.rodata.PB1), (20 bytes).
+    Removing gpio_config.o(.rodata.PB5), (20 bytes).
+    Removing gpio_config.o(.rodata.PB6), (20 bytes).
+    Removing gpio_config.o(.rodata.PB7), (20 bytes).
+    Removing gpio_config.o(.rodata.PC4), (20 bytes).
+    Removing gpio_config.o(.rodata.PC5), (20 bytes).
+    Removing gpio_config.o(.rodata.PC6), (20 bytes).
+    Removing gpio_config.o(.rodata.PC7), (20 bytes).
+    Removing gpio_config.o(.rodata.PD0), (20 bytes).
+    Removing gpio_config.o(.rodata.PD1), (20 bytes).
+    Removing gpio_config.o(.rodata.PD2), (20 bytes).
+    Removing gpio_config.o(.rodata.PD3), (20 bytes).
+    Removing gpio_config.o(.rodata.PD6), (20 bytes).
+    Removing gpio_config.o(.rodata.PD7), (20 bytes).
+    Removing gpio_config.o(.rodata.PF0), (20 bytes).
+    Removing gpio_config.o(.rodata.PF2), (20 bytes).
+    Removing gpio_config.o(.rodata.PF3), (20 bytes).
+    Removing gpio_config.o(.rodata.PF4), (20 bytes).
+    Removing rcc_config.o(.text), (0 bytes).
+    Removing rcc_config.o(.rodata.RCC_config80), (16 bytes).
+    Removing rcc_config.o(.rodata.RCC_config40), (16 bytes).
+    Removing rcc_config.o(.rodata.RCC_config50), (16 bytes).
+    Removing rcc_config.o(.rodata.RCC_config66), (16 bytes).
+    Removing rcc_config.o(.rodata.RCC_configInt16), (12 bytes).
+    Removing timer_config.o(.text), (0 bytes).
+    Removing timer_config.o(.data.timer0A), (56 bytes).
+    Removing timer_config.o(.data.timer0B), (56 bytes).
+    Removing timer_config.o(.data.timer1B), (56 bytes).
+    Removing timer_config.o(.data.timer2A), (56 bytes).
+    Removing timer_config.o(.data.timer2B), (56 bytes).
+    Removing timer_config.o(.data.wtimer2A), (56 bytes).
+    Removing timer_config.o(.data.wtimer2B), (56 bytes).
+    Removing timer_config.o(.data.wtimer3A), (56 bytes).
+    Removing timer_config.o(.data.wtimer3B), (56 bytes).
+    Removing timer_config.o(.data.wtimer4A), (56 bytes).
+    Removing pwm_config.o(.text), (0 bytes).
+    Removing pwm_config.o(.data.pwm_out), (44 bytes).
+    Removing pwm_config.o(.data.PA6_M1PWM2), (44 bytes).
+    Removing pwm_config.o(.data.PA7_M1PWM3), (44 bytes).
+    Removing pwm_config.o(.data.PB4_M0PWM2), (44 bytes).
+    Removing pwm_config.o(.data.PB5_M0PWM3), (44 bytes).
+    Removing pwm_config.o(.data.PB6_M0PWM0), (44 bytes).
+    Removing pwm_config.o(.data.PB7_M0PWM1), (44 bytes).
+    Removing pwm_config.o(.data.PD0_M0PWM6), (44 bytes).
+    Removing pwm_config.o(.data.PD0_M1PWM0), (44 bytes).
+    Removing pwm_config.o(.data.PD1_M0PWM7), (44 bytes).
+    Removing pwm_config.o(.data.PD1_M1PWM1), (44 bytes).
+    Removing pwm_config.o(.data.PE4_M0PWM4), (44 bytes).
+    Removing pwm_config.o(.data.PE4_M1PWM2), (44 bytes).
+    Removing pwm_config.o(.data.PE5_M0PWM5), (44 bytes).
+    Removing pwm_config.o(.data.PE5_M1PWM3), (44 bytes).
+    Removing pwm_config.o(.data.PF0_M1PWM4), (44 bytes).
+    Removing pwm_config.o(.data.PF1_M1PWM5), (44 bytes).
+    Removing pwm_config.o(.data.PF2_M1PWM6), (44 bytes).
+    Removing pwm_config.o(.data.PF3_M1PWM7), (44 bytes).
+    Removing timer.o(.text), (0 bytes).
+    Removing timer.o(.text.MCAL_Timer_Inti), (150 bytes).
+    Removing timer.o(.ARM.exidx.text.MCAL_Timer_Inti), (8 bytes).
+    Removing timer.o(.ARM.exidx.text.MCAL_Timer_Inti_CAP), (8 bytes).
+    Removing timer.o(.ARM.exidx.text.MCAL_Timer_SET_PRESCALLER), (8 bytes).
+    Removing timer.o(.text.MCAL_Timer_SET_MATCH), (48 bytes).
+    Removing timer.o(.ARM.exidx.text.MCAL_Timer_SET_MATCH), (8 bytes).
+    Removing timer.o(.ARM.exidx.text.MCAL_Timer_SET_EVENT), (8 bytes).
+    Removing timer.o(.ARM.exidx.text.MCAL_Timer_SET_LOAD), (8 bytes).
+    Removing timer.o(.ARM.exidx.text.MCAL_Timer_GET_VALUE), (8 bytes).
+    Removing timer.o(.ARM.exidx.text.MCAL_Timer_Start), (8 bytes).
+    Removing timer.o(.ARM.exidx.text.MCAL_Timer_Stop), (8 bytes).
+    Removing timer.o(.ARM.exidx.text.MCAL_Timer_IntClear), (8 bytes).
+    Removing timer.o(.text.MCAL_Timer_Int_handler), (48 bytes).
+    Removing timer.o(.ARM.exidx.text.MCAL_Timer_Int_handler), (8 bytes).
+    Removing rcc.o(.text), (0 bytes).
+    Removing rcc.o(.text.MCAL_RCC_SysCtlClockInternal), (52 bytes).
+    Removing rcc.o(.ARM.exidx.text.MCAL_RCC_SysCtlClockInternal), (8 bytes).
+    Removing rcc.o(.ARM.exidx.text.MCAL_RCC_SysCtlClockExternal), (8 bytes).
+    Removing gpio.o(.text), (0 bytes).
+    Removing gpio.o(.ARM.exidx.text.MCAL_GPIO_Pin_Init), (8 bytes).
+    Removing gpio.o(.ARM.exidx.text.MCAL_GPIO_Pin_Write), (8 bytes).
+    Removing gpio.o(.ARM.exidx.text.MCAL_GPIO_Pin_Read), (8 bytes).
+    Removing gpio.o(.text.MCAL_GPIO_Int_Config), (106 bytes).
+    Removing gpio.o(.ARM.exidx.text.MCAL_GPIO_Int_Config), (8 bytes).
+    Removing spi.o(.text), (0 bytes).
+    Removing spi.o(.text.MCAL_SSI_Inti), (350 bytes).
+    Removing spi.o(.ARM.exidx.text.MCAL_SSI_Inti), (8 bytes).
+    Removing spi.o(.text.MCAL_SSI_SendData), (60 bytes).
+    Removing spi.o(.ARM.exidx.text.MCAL_SSI_SendData), (8 bytes).
+    Removing spi.o(.text.MCAL_SSI_ReceiveData), (56 bytes).
+    Removing spi.o(.ARM.exidx.text.MCAL_SSI_ReceiveData), (8 bytes).
+    Removing spi.o(.text.MCAL_SSI_SendReceiveSynch), (88 bytes).
+    Removing spi.o(.ARM.exidx.text.MCAL_SSI_SendReceiveSynch), (8 bytes).
+    Removing spi.o(.text.MCAL_SSI_SendArray), (94 bytes).
+    Removing spi.o(.ARM.exidx.text.MCAL_SSI_SendArray), (8 bytes).
+    Removing spi.o(.text.MCAL_SSI_ReceiveArray), (102 bytes).
+    Removing spi.o(.ARM.exidx.text.MCAL_SSI_ReceiveArray), (8 bytes).
+    Removing spi_config.o(.text), (0 bytes).
+    Removing spi_config.o(.data.SPI_config), (48 bytes).
+    Removing spi_config.o(.data.SPI_config1), (48 bytes).
+    Removing spi_config.o(.data.SPI_config2), (48 bytes).
+    Removing spi_config.o(.data.SPI_config3), (48 bytes).
+    Removing lcd.o(.text), (0 bytes).
+    Removing lcd.o(.text.lcdEnable), (52 bytes).
+    Removing lcd.o(.ARM.exidx.text.lcdEnable), (8 bytes).
+    Removing lcd.o(.text.lcdWriteData), (106 bytes).
+    Removing lcd.o(.ARM.exidx.text.lcdWriteData), (8 bytes).
+    Removing lcd.o(.text.lcdWriteCommand), (54 bytes).
+    Removing lcd.o(.ARM.exidx.text.lcdWriteCommand), (8 bytes).
+    Removing lcd.o(.text.lcdWriteChar), (54 bytes).
+    Removing lcd.o(.ARM.exidx.text.lcdWriteChar), (8 bytes).
+    Removing lcd.o(.text.lcdWriteString), (38 bytes).
+    Removing lcd.o(.ARM.exidx.text.lcdWriteString), (8 bytes).
+    Removing lcd.o(.text.lcdClear), (10 bytes).
+    Removing lcd.o(.ARM.exidx.text.lcdClear), (8 bytes).
+    Removing lcd.o(.text.lcdClearAndWriteString), (20 bytes).
+    Removing lcd.o(.ARM.exidx.text.lcdClearAndWriteString), (8 bytes).
+    Removing lcd.o(.text.lcdGoToXY), (66 bytes).
+    Removing lcd.o(.ARM.exidx.text.lcdGoToXY), (8 bytes).
+    Removing lcd.o(.text.lcdInit), (302 bytes).
+    Removing lcd.o(.ARM.exidx.text.lcdInit), (8 bytes).
+    Removing lcd.o(.bss.data8Bit), (1 bytes).
+    Removing ultrasonic.o(.text), (0 bytes).
+    Removing ultrasonic.o(.ARM.exidx.text.HAL_Ultra_Inti), (8 bytes).
+    Removing ultrasonic.o(.ARM.exidx.text.HAL_Ultra_Dist), (8 bytes).
+    Removing ultrasonic_config.o(.text), (0 bytes).
+    Removing ultrasonic_config.o(.data.ultra2), (12 bytes).
+    Removing motor_config.o(.text), (0 bytes).
+    Removing motor_config.o(.data.motor_config), (24 bytes).
+    Removing startup_tm4c123.o(HEAP), (0 bytes).
+    Removing system_tm4c123.o(.text), (0 bytes).
+    Removing system_tm4c123.o(.text.SystemCoreClockUpdate), (326 bytes).
+    Removing system_tm4c123.o(.ARM.exidx.text.SystemCoreClockUpdate), (8 bytes).
+    Removing system_tm4c123.o(.text.getOscClk), (360 bytes).
+    Removing system_tm4c123.o(.ARM.exidx.text.getOscClk), (8 bytes).
+    Removing system_tm4c123.o(.ARM.exidx.text.SystemInit), (8 bytes).
+    Removing system_tm4c123.o(.data.SystemCoreClock), (4 bytes).
+    Removing gpio.o(i.GPIOADCTriggerDisable), (14 bytes).
+    Removing gpio.o(i.GPIOADCTriggerEnable), (12 bytes).
+    Removing gpio.o(i.GPIODMATriggerDisable), (14 bytes).
+    Removing gpio.o(i.GPIODMATriggerEnable), (12 bytes).
+    Removing gpio.o(i.GPIODirModeGet), (34 bytes).
+    Removing gpio.o(i.GPIOIntClear), (6 bytes).
+    Removing gpio.o(i.GPIOIntDisable), (14 bytes).
+    Removing gpio.o(i.GPIOIntEnable), (12 bytes).
+    Removing gpio.o(i.GPIOIntRegister), (26 bytes).
+    Removing gpio.o(i.GPIOIntRegisterPin), (30 bytes).
+    Removing gpio.o(i.GPIOIntStatus), (14 bytes).
+    Removing gpio.o(i.GPIOIntTypeGet), (70 bytes).
+    Removing gpio.o(i.GPIOIntTypeSet), (80 bytes).
+    Removing gpio.o(i.GPIOIntUnregister), (22 bytes).
+    Removing gpio.o(i.GPIOIntUnregisterPin), (26 bytes).
+    Removing gpio.o(i.GPIOPadConfigGet), (248 bytes).
+    Removing gpio.o(i.GPIOPinTypeADC), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeCAN), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeComparator), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeComparatorOutput), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeDIVSCLK), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeEPI), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeEthernetLED), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeEthernetMII), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeGPIOInput), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeGPIOOutput), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeGPIOOutputOD), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeHibernateRTCCLK), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeI2C), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeI2CSCL), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeLCD), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeOneWire), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypePWM), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeQEI), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeSSI), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeTrace), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeUART), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeUSBAnalog), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeUSBDigital), (28 bytes).
+    Removing gpio.o(i.GPIOPinTypeWakeHigh), (30 bytes).
+    Removing gpio.o(i.GPIOPinTypeWakeLow), (30 bytes).
+    Removing gpio.o(i.GPIOPinWakeStatus), (6 bytes).
+    Removing gpio.o(i._GPIOIntNumberGet), (80 bytes).
+    Removing interrupt.o(i.IntDisable), (100 bytes).
+    Removing interrupt.o(i.IntIsEnabled), (96 bytes).
+    Removing interrupt.o(i.IntPendClear), (68 bytes).
+    Removing interrupt.o(i.IntPendSet), (84 bytes).
+    Removing interrupt.o(i.IntPriorityGet), (28 bytes).
+    Removing interrupt.o(i.IntPriorityGroupingGet), (36 bytes).
+    Removing interrupt.o(i.IntPriorityGroupingSet), (28 bytes).
+    Removing interrupt.o(i.IntPriorityMaskGet), (4 bytes).
+    Removing interrupt.o(i.IntPriorityMaskSet), (4 bytes).
+    Removing interrupt.o(i.IntRegister), (52 bytes).
+    Removing interrupt.o(i.IntTrigger), (12 bytes).
+    Removing interrupt.o(i.IntUnregister), (20 bytes).
+    Removing interrupt.o(i._IntDefaultHandler), (2 bytes).
+    Removing interrupt.o(vtable), (620 bytes).
+    Removing ssi.o(i.SSIAdvDataPutFrameEnd), (20 bytes).
+    Removing ssi.o(i.SSIAdvDataPutFrameEndNonBlocking), (26 bytes).
+    Removing ssi.o(i.SSIAdvFrameHoldDisable), (10 bytes).
+    Removing ssi.o(i.SSIAdvFrameHoldEnable), (10 bytes).
+    Removing ssi.o(i.SSIAdvModeSet), (12 bytes).
+    Removing ssi.o(i.SSIBusy), (8 bytes).
+    Removing ssi.o(i.SSIClockSourceGet), (6 bytes).
+    Removing ssi.o(i.SSIClockSourceSet), (6 bytes).
+    Removing ssi.o(i.SSIConfigSetExpClk), (58 bytes).
+    Removing ssi.o(i.SSIDMADisable), (10 bytes).
+    Removing ssi.o(i.SSIDMAEnable), (8 bytes).
+    Removing ssi.o(i.SSIDataGet), (14 bytes).
+    Removing ssi.o(i.SSIDataGetNonBlocking), (20 bytes).
+    Removing ssi.o(i.SSIDataPut), (12 bytes).
+    Removing ssi.o(i.SSIDataPutNonBlocking), (16 bytes).
+    Removing ssi.o(i.SSIDisable), (10 bytes).
+    Removing ssi.o(i.SSIEnable), (10 bytes).
+    Removing ssi.o(i.SSIIntClear), (4 bytes).
+    Removing ssi.o(i.SSIIntDisable), (10 bytes).
+    Removing ssi.o(i.SSIIntEnable), (8 bytes).
+    Removing ssi.o(i.SSIIntRegister), (88 bytes).
+    Removing ssi.o(i.SSIIntStatus), (10 bytes).
+    Removing ssi.o(i.SSIIntUnregister), (88 bytes).
+    Removing ssi.o(i.SSILoopbackDisable), (10 bytes).
+    Removing ssi.o(i.SSILoopbackEnable), (10 bytes).
+    Removing ssi.o(.constdata), (64 bytes).
+    Removing sysctl.o(i.SysCtlAltClkConfig), (12 bytes).
+    Removing sysctl.o(i.SysCtlClockFreqSet), (740 bytes).
+    Removing sysctl.o(i.SysCtlClockOutConfig), (20 bytes).
+    Removing sysctl.o(i.SysCtlDeepSleep), (32 bytes).
+    Removing sysctl.o(i.SysCtlDeepSleepClockConfigSet), (112 bytes).
+    Removing sysctl.o(i.SysCtlDeepSleepClockSet), (12 bytes).
+    Removing sysctl.o(i.SysCtlDeepSleepPowerSet), (12 bytes).
+    Removing sysctl.o(i.SysCtlFlashSectorSizeGet), (56 bytes).
+    Removing sysctl.o(i.SysCtlFlashSizeGet), (56 bytes).
+    Removing sysctl.o(i.SysCtlGPIOAHBDisable), (28 bytes).
+    Removing sysctl.o(i.SysCtlGPIOAHBEnable), (24 bytes).
+    Removing sysctl.o(i.SysCtlIntClear), (12 bytes).
+    Removing sysctl.o(i.SysCtlIntDisable), (16 bytes).
+    Removing sysctl.o(i.SysCtlIntEnable), (16 bytes).
+    Removing sysctl.o(i.SysCtlIntRegister), (20 bytes).
+    Removing sysctl.o(i.SysCtlIntStatus), (16 bytes).
+    Removing sysctl.o(i.SysCtlIntUnregister), (18 bytes).
+    Removing sysctl.o(i.SysCtlLDODeepSleepGet), (12 bytes).
+    Removing sysctl.o(i.SysCtlLDODeepSleepSet), (12 bytes).
+    Removing sysctl.o(i.SysCtlLDOSleepGet), (12 bytes).
+    Removing sysctl.o(i.SysCtlLDOSleepSet), (12 bytes).
+    Removing sysctl.o(i.SysCtlMOSCConfigSet), (12 bytes).
+    Removing sysctl.o(i.SysCtlNMIClear), (16 bytes).
+    Removing sysctl.o(i.SysCtlNMIStatus), (12 bytes).
+    Removing sysctl.o(i.SysCtlPIOSCCalibrate), (76 bytes).
+    Removing sysctl.o(i.SysCtlPWMClockGet), (24 bytes).
+    Removing sysctl.o(i.SysCtlPWMClockSet), (20 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralClockGating), (68 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralDeepSleepDisable), (40 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralDeepSleepEnable), (40 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralDisable), (40 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralPowerOff), (40 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralPowerOn), (40 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralPresent), (44 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralReset), (60 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralSleepDisable), (40 bytes).
+    Removing sysctl.o(i.SysCtlPeripheralSleepEnable), (40 bytes).
+    Removing sysctl.o(i.SysCtlReset), (16 bytes).
+    Removing sysctl.o(i.SysCtlResetBehaviorGet), (12 bytes).
+    Removing sysctl.o(i.SysCtlResetBehaviorSet), (12 bytes).
+    Removing sysctl.o(i.SysCtlResetCauseClear), (16 bytes).
+    Removing sysctl.o(i.SysCtlResetCauseGet), (12 bytes).
+    Removing sysctl.o(i.SysCtlSRAMSizeGet), (16 bytes).
+    Removing sysctl.o(i.SysCtlSleep), (4 bytes).
+    Removing sysctl.o(i.SysCtlSleepPowerSet), (12 bytes).
+    Removing sysctl.o(i.SysCtlUSBPLLDisable), (16 bytes).
+    Removing sysctl.o(i.SysCtlUSBPLLEnable), (16 bytes).
+    Removing sysctl.o(i.SysCtlVCOGet), (120 bytes).
+    Removing sysctl.o(i.SysCtlVoltageEventClear), (16 bytes).
+    Removing sysctl.o(i.SysCtlVoltageEventConfig), (12 bytes).
+    Removing sysctl.o(i.SysCtlVoltageEventStatus), (12 bytes).
+    Removing timer.o(i.TimerADCEventGet), (4 bytes).
+    Removing timer.o(i.TimerADCEventSet), (4 bytes).
+    Removing timer.o(i.TimerClockSourceGet), (6 bytes).
+    Removing timer.o(i.TimerControlLevel), (22 bytes).
+    Removing timer.o(i.TimerControlStall), (22 bytes).
+    Removing timer.o(i.TimerControlTrigger), (80 bytes).
+    Removing timer.o(i.TimerControlWaitOnTrigger), (48 bytes).
+    Removing timer.o(i.TimerDMAEventGet), (4 bytes).
+    Removing timer.o(i.TimerDMAEventSet), (4 bytes).
+    Removing timer.o(i.TimerIntDisable), (10 bytes).
+    Removing timer.o(i.TimerIntRegister), (104 bytes).
+    Removing timer.o(i.TimerIntStatus), (10 bytes).
+    Removing timer.o(i.TimerIntUnregister), (104 bytes).
+    Removing timer.o(i.TimerLoadGet), (10 bytes).
+    Removing timer.o(i.TimerLoadGet64), (14 bytes).
+    Removing timer.o(i.TimerLoadSet64), (6 bytes).
+    Removing timer.o(i.TimerMatchGet), (10 bytes).
+    Removing timer.o(i.TimerMatchGet64), (14 bytes).
+    Removing timer.o(i.TimerMatchSet), (18 bytes).
+    Removing timer.o(i.TimerMatchSet64), (6 bytes).
+    Removing timer.o(i.TimerPrescaleGet), (10 bytes).
+    Removing timer.o(i.TimerPrescaleMatchGet), (10 bytes).
+    Removing timer.o(i.TimerPrescaleMatchSet), (18 bytes).
+    Removing timer.o(i.TimerRTCDisable), (10 bytes).
+    Removing timer.o(i.TimerRTCEnable), (10 bytes).
+    Removing timer.o(i.TimerSynchronize), (4 bytes).
+    Removing timer.o(i.TimerUpdateMode), (42 bytes).
+    Removing timer.o(i.TimerValueGet64), (14 bytes).
+    Removing timer.o(.constdata), (160 bytes).
+    Removing uart.o(i.UART9BitAddrSend), (38 bytes).
+    Removing uart.o(i.UART9BitAddrSet), (10 bytes).
+    Removing uart.o(i.UART9BitDisable), (14 bytes).
+    Removing uart.o(i.UART9BitEnable), (14 bytes).
+    Removing uart.o(i.UARTBreakCtl), (18 bytes).
+    Removing uart.o(i.UARTBusy), (8 bytes).
+    Removing uart.o(i.UARTCharGet), (12 bytes).
+    Removing uart.o(i.UARTCharGetNonBlocking), (16 bytes).
+    Removing uart.o(i.UARTCharPut), (12 bytes).
+    Removing uart.o(i.UARTCharPutNonBlocking), (16 bytes).
+    Removing uart.o(i.UARTCharsAvail), (10 bytes).
+    Removing uart.o(i.UARTClockSourceGet), (6 bytes).
+    Removing uart.o(i.UARTClockSourceSet), (6 bytes).
+    Removing uart.o(i.UARTConfigGetExpClk), (46 bytes).
+    Removing uart.o(i.UARTConfigSetExpClk), (110 bytes).
+    Removing uart.o(i.UARTDMADisable), (10 bytes).
+    Removing uart.o(i.UARTDMAEnable), (8 bytes).
+    Removing uart.o(i.UARTDisable), (30 bytes).
+    Removing uart.o(i.UARTDisableSIR), (10 bytes).
+    Removing uart.o(i.UARTEnable), (20 bytes).
+    Removing uart.o(i.UARTEnableSIR), (18 bytes).
+    Removing uart.o(i.UARTFIFODisable), (10 bytes).
+    Removing uart.o(i.UARTFIFOEnable), (10 bytes).
+    Removing uart.o(i.UARTFIFOLevelGet), (16 bytes).
+    Removing uart.o(i.UARTFIFOLevelSet), (6 bytes).
+    Removing uart.o(i.UARTFlowControlGet), (8 bytes).
+    Removing uart.o(i.UARTFlowControlSet), (12 bytes).
+    Removing uart.o(i.UARTIntClear), (4 bytes).
+    Removing uart.o(i.UARTIntDisable), (10 bytes).
+    Removing uart.o(i.UARTIntEnable), (8 bytes).
+    Removing uart.o(i.UARTIntRegister), (88 bytes).
+    Removing uart.o(i.UARTIntStatus), (10 bytes).
+    Removing uart.o(i.UARTIntUnregister), (88 bytes).
+    Removing uart.o(i.UARTLoopbackEnable), (10 bytes).
+    Removing uart.o(i.UARTModemControlClear), (14 bytes).
+    Removing uart.o(i.UARTModemControlGet), (8 bytes).
+    Removing uart.o(i.UARTModemControlSet), (12 bytes).
+    Removing uart.o(i.UARTModemStatusGet), (10 bytes).
+    Removing uart.o(i.UARTParityModeGet), (8 bytes).
+    Removing uart.o(i.UARTParityModeSet), (12 bytes).
+    Removing uart.o(i.UARTRxErrorClear), (6 bytes).
+    Removing uart.o(i.UARTRxErrorGet), (8 bytes).
+    Removing uart.o(i.UARTSmartCardDisable), (10 bytes).
+    Removing uart.o(i.UARTSmartCardEnable), (22 bytes).
+    Removing uart.o(i.UARTSpaceAvail), (10 bytes).
+    Removing uart.o(i.UARTTxIntModeGet), (8 bytes).
+    Removing uart.o(i.UARTTxIntModeSet), (12 bytes).
+    Removing uart.o(.constdata), (128 bytes).
+    Removing delay.o(.text), (0 bytes).
+    Removing delay.o(.ARM.exidx.text.MCAL_DelayMs), (8 bytes).
+    Removing delay.o(.ARM.exidx.text.MCAL_DelayUs), (8 bytes).
+
+371 unused section(s) (total 12450 bytes) removed from the image.
+
+==============================================================================
+
+Image Symbol Table
+
+    Local Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry2.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry5.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry7b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry8b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry9b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry10b.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11a.o ABSOLUTE
+    ../clib/microlib/init/entry.s            0x00000000   Number         0  entry11b.o ABSOLUTE
+    ../clib/microlib/string/strlen.c         0x00000000   Number         0  strlen.o ABSOLUTE
+    GPIO.c                                   0x00000000   Number         0  gpio.o ABSOLUTE
+    GPIO_Config.c                            0x00000000   Number         0  gpio_config.o ABSOLUTE
+    PWM_Config.c                             0x00000000   Number         0  pwm_config.o ABSOLUTE
+    RCC.c                                    0x00000000   Number         0  rcc.o ABSOLUTE
+    RCC_Config.c                             0x00000000   Number         0  rcc_config.o ABSOLUTE
+    RTE/Device/TM4C123GH6PM/startup_TM4C123.s 0x00000000   Number         0  startup_tm4c123.o ABSOLUTE
+    SPI.c                                    0x00000000   Number         0  spi.o ABSOLUTE
+    SPI_Config.c                             0x00000000   Number         0  spi_config.o ABSOLUTE
+    Timer.c                                  0x00000000   Number         0  timer.o ABSOLUTE
+    Timer_Config.c                           0x00000000   Number         0  timer_config.o ABSOLUTE
+    app.c                                    0x00000000   Number         0  app.o ABSOLUTE
+    cpu.c                                    0x00000000   Number         0  cpu.o ABSOLUTE
+    cpu.c                                    0x00000000   Number         0  cpu.o ABSOLUTE
+    dc.s                                     0x00000000   Number         0  dc.o ABSOLUTE
+    delay.c                                  0x00000000   Number         0  delay.o ABSOLUTE
+    gpio.c                                   0x00000000   Number         0  gpio.o ABSOLUTE
+    handlers.s                               0x00000000   Number         0  handlers.o ABSOLUTE
+    init.s                                   0x00000000   Number         0  init.o ABSOLUTE
+    interrupt.c                              0x00000000   Number         0  interrupt.o ABSOLUTE
+    lcd.c                                    0x00000000   Number         0  lcd.o ABSOLUTE
+    motor_Config.c                           0x00000000   Number         0  motor_config.o ABSOLUTE
+    ssi.c                                    0x00000000   Number         0  ssi.o ABSOLUTE
+    sysctl.c                                 0x00000000   Number         0  sysctl.o ABSOLUTE
+    sysctl.c                                 0x00000000   Number         0  sysctl.o ABSOLUTE
+    system_TM4C123.c                         0x00000000   Number         0  system_tm4c123.o ABSOLUTE
+    timer.c                                  0x00000000   Number         0  timer.o ABSOLUTE
+    uart.c                                   0x00000000   Number         0  uart.o ABSOLUTE
+    ultrasonic.c                             0x00000000   Number         0  ultrasonic.o ABSOLUTE
+    ultrasonic_Config.c                      0x00000000   Number         0  ultrasonic_config.o ABSOLUTE
+    RESET                                    0x00000000   Section      620  startup_tm4c123.o(RESET)
+    .ARM.Collect$$$$00000000                 0x0000026c   Section        0  entry.o(.ARM.Collect$$$$00000000)
+    .ARM.Collect$$$$00000001                 0x0000026c   Section        4  entry2.o(.ARM.Collect$$$$00000001)
+    .ARM.Collect$$$$00000004                 0x00000270   Section        4  entry5.o(.ARM.Collect$$$$00000004)
+    .ARM.Collect$$$$00000008                 0x00000274   Section        0  entry7b.o(.ARM.Collect$$$$00000008)
+    .ARM.Collect$$$$0000000A                 0x00000274   Section        0  entry8b.o(.ARM.Collect$$$$0000000A)
+    .ARM.Collect$$$$0000000B                 0x00000274   Section        8  entry9a.o(.ARM.Collect$$$$0000000B)
+    __lit__00000000                          0x0000027c   Data           4  entry2.o(.ARM.Collect$$$$00002712)
+    .ARM.Collect$$$$0000000D                 0x0000027c   Section        0  entry10a.o(.ARM.Collect$$$$0000000D)
+    .ARM.Collect$$$$0000000F                 0x0000027c   Section        0  entry11a.o(.ARM.Collect$$$$0000000F)
+    .ARM.Collect$$$$00002712                 0x0000027c   Section        4  entry2.o(.ARM.Collect$$$$00002712)
+    $v0                                      0x00000280   Number         0  sysctl.o(.emb_text)
+    .emb_text                                0x00000280   Section        6  sysctl.o(.emb_text)
+    $v0                                      0x00000288   Number         0  cpu.o(.emb_text)
+    .emb_text                                0x00000288   Section       38  cpu.o(.emb_text)
+    $v0                                      0x000002b0   Number         0  startup_tm4c123.o(.text)
+    .text                                    0x000002b0   Section      252  startup_tm4c123.o(.text)
+    .text                                    0x000003ac   Section       48  init.o(.text)
+    [Anonymous Symbol]                       0x000003dc   Section        0  ultrasonic.o(.text.HAL_Ultra_Dist)
+    [Anonymous Symbol]                       0x000004ac   Section        0  ultrasonic.o(.text.HAL_Ultra_Inti)
+    [Anonymous Symbol]                       0x000004f4   Section        0  delay.o(.text.MCAL_DelayMs)
+    [Anonymous Symbol]                       0x00000538   Section        0  delay.o(.text.MCAL_DelayUs)
+    [Anonymous Symbol]                       0x0000057c   Section        0  gpio.o(.text.MCAL_GPIO_Pin_Init)
+    [Anonymous Symbol]                       0x00000724   Section        0  gpio.o(.text.MCAL_GPIO_Pin_Read)
+    [Anonymous Symbol]                       0x00000778   Section        0  gpio.o(.text.MCAL_GPIO_Pin_Write)
+    [Anonymous Symbol]                       0x0000081c   Section        0  rcc.o(.text.MCAL_RCC_SysCtlClockExternal)
+    [Anonymous Symbol]                       0x00000854   Section        0  timer.o(.text.MCAL_Timer_GET_VALUE)
+    [Anonymous Symbol]                       0x0000088c   Section        0  timer.o(.text.MCAL_Timer_IntClear)
+    [Anonymous Symbol]                       0x000008bc   Section        0  timer.o(.text.MCAL_Timer_Inti_CAP)
+    [Anonymous Symbol]                       0x00000a18   Section        0  timer.o(.text.MCAL_Timer_SET_EVENT)
+    [Anonymous Symbol]                       0x00000a4c   Section        0  timer.o(.text.MCAL_Timer_SET_LOAD)
+    [Anonymous Symbol]                       0x00000a7c   Section        0  timer.o(.text.MCAL_Timer_SET_PRESCALLER)
+    [Anonymous Symbol]                       0x00000aac   Section        0  timer.o(.text.MCAL_Timer_Start)
+    [Anonymous Symbol]                       0x00000adc   Section        0  timer.o(.text.MCAL_Timer_Stop)
+    [Anonymous Symbol]                       0x00000b0c   Section        0  system_tm4c123.o(.text.SystemInit)
+    [Anonymous Symbol]                       0x00000c18   Section        0  app.o(.text.main)
+    i.GPIODirModeSet                         0x00000fb4   Section        0  gpio.o(i.GPIODirModeSet)
+    i.GPIOPadConfigSet                       0x00000fdc   Section        0  gpio.o(i.GPIOPadConfigSet)
+    i.GPIOPinConfigure                       0x0000114c   Section        0  gpio.o(i.GPIOPinConfigure)
+    i.GPIOPinRead                            0x00001190   Section        0  gpio.o(i.GPIOPinRead)
+    i.GPIOPinTypeTimer                       0x00001196   Section        0  gpio.o(i.GPIOPinTypeTimer)
+    i.GPIOPinWrite                           0x000011b2   Section        0  gpio.o(i.GPIOPinWrite)
+    i.GPIOUnlockPin                          0x000011b8   Section        0  gpio.o(i.GPIOUnlockPin)
+    i.IntEnable                              0x000011d0   Section        0  interrupt.o(i.IntEnable)
+    i.IntMasterDisable                       0x00001234   Section        0  interrupt.o(i.IntMasterDisable)
+    i.IntMasterEnable                        0x00001242   Section        0  interrupt.o(i.IntMasterEnable)
+    i.IntPrioritySet                         0x00001250   Section        0  interrupt.o(i.IntPrioritySet)
+    i.SysCtlClockGet                         0x00001278   Section        0  sysctl.o(i.SysCtlClockGet)
+    i.SysCtlClockSet                         0x000013cc   Section        0  sysctl.o(i.SysCtlClockSet)
+    i.SysCtlPeripheralEnable                 0x000014ec   Section        0  sysctl.o(i.SysCtlPeripheralEnable)
+    i.SysCtlPeripheralReady                  0x00001514   Section        0  sysctl.o(i.SysCtlPeripheralReady)
+    i.TimerClockSourceSet                    0x00001540   Section        0  timer.o(i.TimerClockSourceSet)
+    i.TimerConfigure                         0x00001548   Section        0  timer.o(i.TimerConfigure)
+    i.TimerControlEvent                      0x000015a8   Section        0  timer.o(i.TimerControlEvent)
+    i.TimerDisable                           0x000015ba   Section        0  timer.o(i.TimerDisable)
+    i.TimerEnable                            0x000015ca   Section        0  timer.o(i.TimerEnable)
+    i.TimerIntClear                          0x000015d8   Section        0  timer.o(i.TimerIntClear)
+    i.TimerIntEnable                         0x000015dc   Section        0  timer.o(i.TimerIntEnable)
+    i.TimerLoadSet                           0x000015e4   Section        0  timer.o(i.TimerLoadSet)
+    i.TimerPrescaleSet                       0x000015f6   Section        0  timer.o(i.TimerPrescaleSet)
+    i.TimerValueGet                          0x00001608   Section        0  timer.o(i.TimerValueGet)
+    i.__scatterload_copy                     0x00001612   Section       14  handlers.o(i.__scatterload_copy)
+    i.__scatterload_null                     0x00001620   Section        2  handlers.o(i.__scatterload_null)
+    i.__scatterload_zeroinit                 0x00001622   Section       14  handlers.o(i.__scatterload_zeroinit)
+    g_ppui32GPIOIntMapBlizzard               0x00001630   Data         192  gpio.o(.constdata)
+    .constdata                               0x00001630   Section      552  gpio.o(.constdata)
+    g_ppui32GPIOIntMapSnowflake              0x000016f0   Data         216  gpio.o(.constdata)
+    g_pui32GPIOBaseAddrs                     0x000017c8   Data         144  gpio.o(.constdata)
+    g_pui32Priority                          0x00001858   Data          32  interrupt.o(.constdata)
+    .constdata                               0x00001858   Section      268  interrupt.o(.constdata)
+    g_pui32Regs                              0x00001878   Data         156  interrupt.o(.constdata)
+    g_pui32EnRegs                            0x00001914   Data          20  interrupt.o(.constdata)
+    g_pui32Dii16Regs                         0x00001928   Data          20  interrupt.o(.constdata)
+    g_pui32PendRegs                          0x0000193c   Data          20  interrupt.o(.constdata)
+    g_pui32UnpendRegs                        0x00001950   Data          20  interrupt.o(.constdata)
+    g_pui32VCOFrequencies                    0x00001964   Data           8  sysctl.o(.constdata)
+    .constdata                               0x00001964   Section      596  sysctl.o(.constdata)
+    g_pui32Xtals                             0x0000196c   Data         108  sysctl.o(.constdata)
+    g_pppui32XTALtoVCO                       0x000019d8   Data         432  sysctl.o(.constdata)
+    g_sXTALtoMEMTIM                          0x00001b88   Data          48  sysctl.o(.constdata)
+    STACK                                    0x20000050   Section      512  startup_tm4c123.o(STACK)
+
+    Global Symbols
+
+    Symbol Name                              Value     Ov Type        Size  Object(Section)
+
+    BuildAttributes$$THM_ISAv4$E$P$D$K$B$S$7EM$VFPi3$EXTD16$VFPS$VFMA$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$~IW$USESV6$~STKCKD$USESV7$~SHL$OTIME$EBA8$MICROLIB$REQ8$PRES8$EABIv2 0x00000000   Number         0  anon$$obj.o ABSOLUTE
+    __Vectors                                0x00000000   Data           4  startup_tm4c123.o(RESET)
+    __cpp_initialize__aeabi_                  - Undefined Weak Reference
+    __cxa_finalize                            - Undefined Weak Reference
+    __decompress                              - Undefined Weak Reference
+    _clock_init                               - Undefined Weak Reference
+    _microlib_exit                            - Undefined Weak Reference
+    __Vectors_End                            0x0000026c   Data           0  startup_tm4c123.o(RESET)
+    __Vectors_Size                           0x0000026c   Number         0  startup_tm4c123.o ABSOLUTE
+    __main                                   0x0000026d   Thumb Code     0  entry.o(.ARM.Collect$$$$00000000)
+    _main_stk                                0x0000026d   Thumb Code     0  entry2.o(.ARM.Collect$$$$00000001)
+    _main_scatterload                        0x00000271   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    __main_after_scatterload                 0x00000275   Thumb Code     0  entry5.o(.ARM.Collect$$$$00000004)
+    _main_clock                              0x00000275   Thumb Code     0  entry7b.o(.ARM.Collect$$$$00000008)
+    _main_cpp_init                           0x00000275   Thumb Code     0  entry8b.o(.ARM.Collect$$$$0000000A)
+    _main_init                               0x00000275   Thumb Code     0  entry9a.o(.ARM.Collect$$$$0000000B)
+    __rt_final_cpp                           0x0000027d   Thumb Code     0  entry10a.o(.ARM.Collect$$$$0000000D)
+    __rt_final_exit                          0x0000027d   Thumb Code     0  entry11a.o(.ARM.Collect$$$$0000000F)
+    SysCtlDelay                              0x00000281   Thumb Code     6  sysctl.o(.emb_text)
+    CPUcpsid                                 0x00000289   Thumb Code     8  cpu.o(.emb_text)
+    CPUprimask                               0x00000291   Thumb Code     6  cpu.o(.emb_text)
+    CPUcpsie                                 0x00000297   Thumb Code     8  cpu.o(.emb_text)
+    CPUwfi                                   0x0000029f   Thumb Code     4  cpu.o(.emb_text)
+    CPUbasepriSet                            0x000002a3   Thumb Code     6  cpu.o(.emb_text)
+    CPUbasepriGet                            0x000002a9   Thumb Code     6  cpu.o(.emb_text)
+    Reset_Handler                            0x000002b1   Thumb Code     8  startup_tm4c123.o(.text)
+    NMI_Handler                              0x000002b9   Thumb Code     2  startup_tm4c123.o(.text)
+    HardFault_Handler                        0x000002bb   Thumb Code     2  startup_tm4c123.o(.text)
+    MemManage_Handler                        0x000002bd   Thumb Code     2  startup_tm4c123.o(.text)
+    BusFault_Handler                         0x000002bf   Thumb Code     2  startup_tm4c123.o(.text)
+    UsageFault_Handler                       0x000002c1   Thumb Code     2  startup_tm4c123.o(.text)
+    SVC_Handler                              0x000002c3   Thumb Code     2  startup_tm4c123.o(.text)
+    DebugMon_Handler                         0x000002c5   Thumb Code     2  startup_tm4c123.o(.text)
+    PendSV_Handler                           0x000002c7   Thumb Code     2  startup_tm4c123.o(.text)
+    SysTick_Handler                          0x000002c9   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOA_Handler                            0x000002cb   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOB_Handler                            0x000002cd   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOC_Handler                            0x000002cf   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOD_Handler                            0x000002d1   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOE_Handler                            0x000002d3   Thumb Code     2  startup_tm4c123.o(.text)
+    UART0_Handler                            0x000002d5   Thumb Code     2  startup_tm4c123.o(.text)
+    UART1_Handler                            0x000002d7   Thumb Code     2  startup_tm4c123.o(.text)
+    SSI0_Handler                             0x000002d9   Thumb Code     2  startup_tm4c123.o(.text)
+    I2C0_Handler                             0x000002db   Thumb Code     2  startup_tm4c123.o(.text)
+    PMW0_FAULT_Handler                       0x000002dd   Thumb Code     2  startup_tm4c123.o(.text)
+    PWM0_0_Handler                           0x000002df   Thumb Code     2  startup_tm4c123.o(.text)
+    PWM0_1_Handler                           0x000002e1   Thumb Code     2  startup_tm4c123.o(.text)
+    PWM0_2_Handler                           0x000002e3   Thumb Code     2  startup_tm4c123.o(.text)
+    QEI0_Handler                             0x000002e5   Thumb Code     2  startup_tm4c123.o(.text)
+    ADC0SS0_Handler                          0x000002e7   Thumb Code     2  startup_tm4c123.o(.text)
+    ADC0SS1_Handler                          0x000002e9   Thumb Code     2  startup_tm4c123.o(.text)
+    ADC0SS2_Handler                          0x000002eb   Thumb Code     2  startup_tm4c123.o(.text)
+    ADC0SS3_Handler                          0x000002ed   Thumb Code     2  startup_tm4c123.o(.text)
+    WDT0_Handler                             0x000002ef   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER0A_Handler                          0x000002f1   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER0B_Handler                          0x000002f3   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER1A_Handler                          0x000002f5   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER1B_Handler                          0x000002f7   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER2A_Handler                          0x000002f9   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER2B_Handler                          0x000002fb   Thumb Code     2  startup_tm4c123.o(.text)
+    COMP0_Handler                            0x000002fd   Thumb Code     2  startup_tm4c123.o(.text)
+    COMP1_Handler                            0x000002ff   Thumb Code     2  startup_tm4c123.o(.text)
+    COMP2_Handler                            0x00000301   Thumb Code     2  startup_tm4c123.o(.text)
+    SYSCTL_Handler                           0x00000303   Thumb Code     2  startup_tm4c123.o(.text)
+    FLASH_Handler                            0x00000305   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOF_Handler                            0x00000307   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOG_Handler                            0x00000309   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOH_Handler                            0x0000030b   Thumb Code     2  startup_tm4c123.o(.text)
+    UART2_Handler                            0x0000030d   Thumb Code     2  startup_tm4c123.o(.text)
+    SSI1_Handler                             0x0000030f   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER3A_Handler                          0x00000311   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER3B_Handler                          0x00000313   Thumb Code     2  startup_tm4c123.o(.text)
+    I2C1_Handler                             0x00000315   Thumb Code     2  startup_tm4c123.o(.text)
+    QEI1_Handler                             0x00000317   Thumb Code     2  startup_tm4c123.o(.text)
+    CAN0_Handler                             0x00000319   Thumb Code     2  startup_tm4c123.o(.text)
+    CAN1_Handler                             0x0000031b   Thumb Code     2  startup_tm4c123.o(.text)
+    CAN2_Handler                             0x0000031d   Thumb Code     2  startup_tm4c123.o(.text)
+    HIB_Handler                              0x0000031f   Thumb Code     2  startup_tm4c123.o(.text)
+    USB0_Handler                             0x00000321   Thumb Code     2  startup_tm4c123.o(.text)
+    PWM0_3_Handler                           0x00000323   Thumb Code     2  startup_tm4c123.o(.text)
+    UDMA_Handler                             0x00000325   Thumb Code     2  startup_tm4c123.o(.text)
+    UDMAERR_Handler                          0x00000327   Thumb Code     2  startup_tm4c123.o(.text)
+    ADC1SS0_Handler                          0x00000329   Thumb Code     2  startup_tm4c123.o(.text)
+    ADC1SS1_Handler                          0x0000032b   Thumb Code     2  startup_tm4c123.o(.text)
+    ADC1SS2_Handler                          0x0000032d   Thumb Code     2  startup_tm4c123.o(.text)
+    ADC1SS3_Handler                          0x0000032f   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOJ_Handler                            0x00000331   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOK_Handler                            0x00000333   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOL_Handler                            0x00000335   Thumb Code     2  startup_tm4c123.o(.text)
+    SSI2_Handler                             0x00000337   Thumb Code     2  startup_tm4c123.o(.text)
+    SSI3_Handler                             0x00000339   Thumb Code     2  startup_tm4c123.o(.text)
+    UART3_Handler                            0x0000033b   Thumb Code     2  startup_tm4c123.o(.text)
+    UART4_Handler                            0x0000033d   Thumb Code     2  startup_tm4c123.o(.text)
+    UART5_Handler                            0x0000033f   Thumb Code     2  startup_tm4c123.o(.text)
+    UART6_Handler                            0x00000341   Thumb Code     2  startup_tm4c123.o(.text)
+    UART7_Handler                            0x00000343   Thumb Code     2  startup_tm4c123.o(.text)
+    I2C2_Handler                             0x00000345   Thumb Code     2  startup_tm4c123.o(.text)
+    I2C3_Handler                             0x00000347   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER4A_Handler                          0x00000349   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER4B_Handler                          0x0000034b   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER5A_Handler                          0x0000034d   Thumb Code     2  startup_tm4c123.o(.text)
+    TIMER5B_Handler                          0x0000034f   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER0A_Handler                         0x00000351   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER0B_Handler                         0x00000353   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER1A_Handler                         0x00000355   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER1B_Handler                         0x00000357   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER2A_Handler                         0x00000359   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER2B_Handler                         0x0000035b   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER3A_Handler                         0x0000035d   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER3B_Handler                         0x0000035f   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER4A_Handler                         0x00000361   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER4B_Handler                         0x00000363   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER5A_Handler                         0x00000365   Thumb Code     2  startup_tm4c123.o(.text)
+    WTIMER5B_Handler                         0x00000367   Thumb Code     2  startup_tm4c123.o(.text)
+    FPU_Handler                              0x00000369   Thumb Code     2  startup_tm4c123.o(.text)
+    I2C4_Handler                             0x0000036b   Thumb Code     2  startup_tm4c123.o(.text)
+    I2C5_Handler                             0x0000036d   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOM_Handler                            0x0000036f   Thumb Code     2  startup_tm4c123.o(.text)
+    GPION_Handler                            0x00000371   Thumb Code     2  startup_tm4c123.o(.text)
+    QEI2_Handler                             0x00000373   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOP0_Handler                           0x00000375   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOP1_Handler                           0x00000377   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOP2_Handler                           0x00000379   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOP3_Handler                           0x0000037b   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOP4_Handler                           0x0000037d   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOP5_Handler                           0x0000037f   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOP6_Handler                           0x00000381   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOP7_Handler                           0x00000383   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOQ0_Handler                           0x00000385   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOQ1_Handler                           0x00000387   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOQ2_Handler                           0x00000389   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOQ3_Handler                           0x0000038b   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOQ4_Handler                           0x0000038d   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOQ5_Handler                           0x0000038f   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOQ6_Handler                           0x00000391   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOQ7_Handler                           0x00000393   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOR_Handler                            0x00000395   Thumb Code     2  startup_tm4c123.o(.text)
+    GPIOS_Handler                            0x00000397   Thumb Code     2  startup_tm4c123.o(.text)
+    PMW1_0_Handler                           0x00000399   Thumb Code     2  startup_tm4c123.o(.text)
+    PWM1_1_Handler                           0x0000039b   Thumb Code     2  startup_tm4c123.o(.text)
+    PWM1_2_Handler                           0x0000039d   Thumb Code     2  startup_tm4c123.o(.text)
+    PWM1_3_Handler                           0x0000039f   Thumb Code     2  startup_tm4c123.o(.text)
+    PWM1_FAULT_Handler                       0x000003a1   Thumb Code     2  startup_tm4c123.o(.text)
+    __scatterload                            0x000003ad   Thumb Code    38  init.o(.text)
+    __scatterload_rt2                        0x000003ad   Thumb Code     0  init.o(.text)
+    HAL_Ultra_Dist                           0x000003dd   Thumb Code   206  ultrasonic.o(.text.HAL_Ultra_Dist)
+    HAL_Ultra_Inti                           0x000004ad   Thumb Code    72  ultrasonic.o(.text.HAL_Ultra_Inti)
+    MCAL_DelayMs                             0x000004f5   Thumb Code    68  delay.o(.text.MCAL_DelayMs)
+    MCAL_DelayUs                             0x00000539   Thumb Code    68  delay.o(.text.MCAL_DelayUs)
+    MCAL_GPIO_Pin_Init                       0x0000057d   Thumb Code   422  gpio.o(.text.MCAL_GPIO_Pin_Init)
+    MCAL_GPIO_Pin_Read                       0x00000725   Thumb Code    84  gpio.o(.text.MCAL_GPIO_Pin_Read)
+    MCAL_GPIO_Pin_Write                      0x00000779   Thumb Code   162  gpio.o(.text.MCAL_GPIO_Pin_Write)
+    MCAL_RCC_SysCtlClockExternal             0x0000081d   Thumb Code    56  rcc.o(.text.MCAL_RCC_SysCtlClockExternal)
+    MCAL_Timer_GET_VALUE                     0x00000855   Thumb Code    54  timer.o(.text.MCAL_Timer_GET_VALUE)
+    MCAL_Timer_IntClear                      0x0000088d   Thumb Code    46  timer.o(.text.MCAL_Timer_IntClear)
+    MCAL_Timer_Inti_CAP                      0x000008bd   Thumb Code   348  timer.o(.text.MCAL_Timer_Inti_CAP)
+    MCAL_Timer_SET_EVENT                     0x00000a19   Thumb Code    50  timer.o(.text.MCAL_Timer_SET_EVENT)
+    MCAL_Timer_SET_LOAD                      0x00000a4d   Thumb Code    48  timer.o(.text.MCAL_Timer_SET_LOAD)
+    MCAL_Timer_SET_PRESCALLER                0x00000a7d   Thumb Code    48  timer.o(.text.MCAL_Timer_SET_PRESCALLER)
+    MCAL_Timer_Start                         0x00000aad   Thumb Code    46  timer.o(.text.MCAL_Timer_Start)
+    MCAL_Timer_Stop                          0x00000add   Thumb Code    46  timer.o(.text.MCAL_Timer_Stop)
+    SystemInit                               0x00000b0d   Thumb Code   268  system_tm4c123.o(.text.SystemInit)
+    main                                     0x00000c19   Thumb Code   924  app.o(.text.main)
+    GPIODirModeSet                           0x00000fb5   Thumb Code    40  gpio.o(i.GPIODirModeSet)
+    GPIOPadConfigSet                         0x00000fdd   Thumb Code   354  gpio.o(i.GPIOPadConfigSet)
+    GPIOPinConfigure                         0x0000114d   Thumb Code    60  gpio.o(i.GPIOPinConfigure)
+    GPIOPinRead                              0x00001191   Thumb Code     6  gpio.o(i.GPIOPinRead)
+    GPIOPinTypeTimer                         0x00001197   Thumb Code    28  gpio.o(i.GPIOPinTypeTimer)
+    GPIOPinWrite                             0x000011b3   Thumb Code     6  gpio.o(i.GPIOPinWrite)
+    GPIOUnlockPin                            0x000011b9   Thumb Code    18  gpio.o(i.GPIOUnlockPin)
+    IntEnable                                0x000011d1   Thumb Code    92  interrupt.o(i.IntEnable)
+    IntMasterDisable                         0x00001235   Thumb Code    14  interrupt.o(i.IntMasterDisable)
+    IntMasterEnable                          0x00001243   Thumb Code    14  interrupt.o(i.IntMasterEnable)
+    IntPrioritySet                           0x00001251   Thumb Code    36  interrupt.o(i.IntPrioritySet)
+    SysCtlClockGet                           0x00001279   Thumb Code   304  sysctl.o(i.SysCtlClockGet)
+    SysCtlClockSet                           0x000013cd   Thumb Code   270  sysctl.o(i.SysCtlClockSet)
+    SysCtlPeripheralEnable                   0x000014ed   Thumb Code    36  sysctl.o(i.SysCtlPeripheralEnable)
+    SysCtlPeripheralReady                    0x00001515   Thumb Code    40  sysctl.o(i.SysCtlPeripheralReady)
+    TimerClockSourceSet                      0x00001541   Thumb Code     6  timer.o(i.TimerClockSourceSet)
+    TimerConfigure                           0x00001549   Thumb Code    88  timer.o(i.TimerConfigure)
+    TimerControlEvent                        0x000015a9   Thumb Code    18  timer.o(i.TimerControlEvent)
+    TimerDisable                             0x000015bb   Thumb Code    16  timer.o(i.TimerDisable)
+    TimerEnable                              0x000015cb   Thumb Code    14  timer.o(i.TimerEnable)
+    TimerIntClear                            0x000015d9   Thumb Code     4  timer.o(i.TimerIntClear)
+    TimerIntEnable                           0x000015dd   Thumb Code     8  timer.o(i.TimerIntEnable)
+    TimerLoadSet                             0x000015e5   Thumb Code    18  timer.o(i.TimerLoadSet)
+    TimerPrescaleSet                         0x000015f7   Thumb Code    18  timer.o(i.TimerPrescaleSet)
+    TimerValueGet                            0x00001609   Thumb Code    10  timer.o(i.TimerValueGet)
+    __scatterload_copy                       0x00001613   Thumb Code    14  handlers.o(i.__scatterload_copy)
+    __scatterload_null                       0x00001621   Thumb Code     2  handlers.o(i.__scatterload_null)
+    __scatterload_zeroinit                   0x00001623   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
+    PA6                                      0x00001bb8   Data          20  gpio_config.o(.rodata.PA6)
+    PB4                                      0x00001bcc   Data          20  gpio_config.o(.rodata.PB4)
+    PE0                                      0x00001be0   Data          20  gpio_config.o(.rodata.PE0)
+    PE1                                      0x00001bf4   Data          20  gpio_config.o(.rodata.PE1)
+    PE2                                      0x00001c08   Data          20  gpio_config.o(.rodata.PE2)
+    PE3                                      0x00001c1c   Data          20  gpio_config.o(.rodata.PE3)
+    PE4                                      0x00001c30   Data          20  gpio_config.o(.rodata.PE4)
+    PE5                                      0x00001c44   Data          20  gpio_config.o(.rodata.PE5)
+    PF1                                      0x00001c58   Data          20  gpio_config.o(.rodata.PF1)
+    RCC_config16                             0x00001c6c   Data          16  rcc_config.o(.rodata.RCC_config16)
+    Region$$Table$$Base                      0x00001c7c   Number         0  anon$$obj.o(Region$$Table)
+    Region$$Table$$Limit                     0x00001c9c   Number         0  anon$$obj.o(Region$$Table)
+    timer1A                                  0x20000000   Data          56  timer_config.o(.data.timer1A)
+    ultra1                                   0x20000038   Data          12  ultrasonic_config.o(.data.ultra1)
+    key                                      0x20000048   Data           1  app.o(.bss.key)
+    __initial_sp                             0x20000250   Data           0  startup_tm4c123.o(STACK)
+
+
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x0000026d
+
+  Load Region LR_IROM1 (Base: 0x00000000, Size: 0x00001ce8, Max: 0x00040000, ABSOLUTE)
+
+    Execution Region ER_IROM1 (Exec base: 0x00000000, Load base: 0x00000000, Size: 0x00001c9c, Max: 0x00040000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x00000000   0x00000000   0x0000026c   Data   RO          250    RESET               startup_tm4c123.o
+    0x0000026c   0x0000026c   0x00000000   Code   RO         1795  * .ARM.Collect$$$$00000000  mc_w.l(entry.o)
+    0x0000026c   0x0000026c   0x00000004   Code   RO         1800    .ARM.Collect$$$$00000001  mc_w.l(entry2.o)
+    0x00000270   0x00000270   0x00000004   Code   RO         1803    .ARM.Collect$$$$00000004  mc_w.l(entry5.o)
+    0x00000274   0x00000274   0x00000000   Code   RO         1805    .ARM.Collect$$$$00000008  mc_w.l(entry7b.o)
+    0x00000274   0x00000274   0x00000000   Code   RO         1807    .ARM.Collect$$$$0000000A  mc_w.l(entry8b.o)
+    0x00000274   0x00000274   0x00000008   Code   RO         1808    .ARM.Collect$$$$0000000B  mc_w.l(entry9a.o)
+    0x0000027c   0x0000027c   0x00000000   Code   RO         1810    .ARM.Collect$$$$0000000D  mc_w.l(entry10a.o)
+    0x0000027c   0x0000027c   0x00000000   Code   RO         1812    .ARM.Collect$$$$0000000F  mc_w.l(entry11a.o)
+    0x0000027c   0x0000027c   0x00000004   Code   RO         1801    .ARM.Collect$$$$00002712  mc_w.l(entry2.o)
+    0x00000280   0x00000280   0x00000006   Code   RO          889    .emb_text           driverlib.lib(sysctl.o)
+    0x00000286   0x00000286   0x00000002   PAD
+    0x00000288   0x00000288   0x00000026   Code   RO         1785    .emb_text           driverlib.lib(cpu.o)
+    0x000002ae   0x000002ae   0x00000002   PAD
+    0x000002b0   0x000002b0   0x000000fc   Code   RO          251    .text               startup_tm4c123.o
+    0x000003ac   0x000003ac   0x00000030   Code   RO         1814    .text               mc_w.l(init.o)
+    0x000003dc   0x000003dc   0x000000ce   Code   RO          227    .text.HAL_Ultra_Dist  ultrasonic.o
+    0x000004aa   0x000004aa   0x00000002   PAD
+    0x000004ac   0x000004ac   0x00000048   Code   RO          225    .text.HAL_Ultra_Inti  ultrasonic.o
+    0x000004f4   0x000004f4   0x00000044   Code   RO         1775    .text.MCAL_DelayMs  MCAL.lib(delay.o)
+    0x00000538   0x00000538   0x00000044   Code   RO         1777    .text.MCAL_DelayUs  MCAL.lib(delay.o)
+    0x0000057c   0x0000057c   0x000001a6   Code   RO          156    .text.MCAL_GPIO_Pin_Init  gpio.o
+    0x00000722   0x00000722   0x00000002   PAD
+    0x00000724   0x00000724   0x00000054   Code   RO          160    .text.MCAL_GPIO_Pin_Read  gpio.o
+    0x00000778   0x00000778   0x000000a2   Code   RO          158    .text.MCAL_GPIO_Pin_Write  gpio.o
+    0x0000081a   0x0000081a   0x00000002   PAD
+    0x0000081c   0x0000081c   0x00000038   Code   RO          147    .text.MCAL_RCC_SysCtlClockExternal  rcc.o
+    0x00000854   0x00000854   0x00000036   Code   RO          128    .text.MCAL_Timer_GET_VALUE  timer.o
+    0x0000088a   0x0000088a   0x00000002   PAD
+    0x0000088c   0x0000088c   0x0000002e   Code   RO          134    .text.MCAL_Timer_IntClear  timer.o
+    0x000008ba   0x000008ba   0x00000002   PAD
+    0x000008bc   0x000008bc   0x0000015c   Code   RO          118    .text.MCAL_Timer_Inti_CAP  timer.o
+    0x00000a18   0x00000a18   0x00000032   Code   RO          124    .text.MCAL_Timer_SET_EVENT  timer.o
+    0x00000a4a   0x00000a4a   0x00000002   PAD
+    0x00000a4c   0x00000a4c   0x00000030   Code   RO          126    .text.MCAL_Timer_SET_LOAD  timer.o
+    0x00000a7c   0x00000a7c   0x00000030   Code   RO          120    .text.MCAL_Timer_SET_PRESCALLER  timer.o
+    0x00000aac   0x00000aac   0x0000002e   Code   RO          130    .text.MCAL_Timer_Start  timer.o
+    0x00000ada   0x00000ada   0x00000002   PAD
+    0x00000adc   0x00000adc   0x0000002e   Code   RO          132    .text.MCAL_Timer_Stop  timer.o
+    0x00000b0a   0x00000b0a   0x00000002   PAD
+    0x00000b0c   0x00000b0c   0x0000010c   Code   RO          262    .text.SystemInit    system_tm4c123.o
+    0x00000c18   0x00000c18   0x0000039c   Code   RO            2    .text.main          app.o
+    0x00000fb4   0x00000fb4   0x00000028   Code   RO          276    i.GPIODirModeSet    driverlib.lib(gpio.o)
+    0x00000fdc   0x00000fdc   0x00000170   Code   RO          288    i.GPIOPadConfigSet  driverlib.lib(gpio.o)
+    0x0000114c   0x0000114c   0x00000044   Code   RO          289    i.GPIOPinConfigure  driverlib.lib(gpio.o)
+    0x00001190   0x00001190   0x00000006   Code   RO          290    i.GPIOPinRead       driverlib.lib(gpio.o)
+    0x00001196   0x00001196   0x0000001c   Code   RO          310    i.GPIOPinTypeTimer  driverlib.lib(gpio.o)
+    0x000011b2   0x000011b2   0x00000006   Code   RO          318    i.GPIOPinWrite      driverlib.lib(gpio.o)
+    0x000011b8   0x000011b8   0x00000018   Code   RO          319    i.GPIOUnlockPin     driverlib.lib(gpio.o)
+    0x000011d0   0x000011d0   0x00000064   Code   RO          610    i.IntEnable         driverlib.lib(interrupt.o)
+    0x00001234   0x00001234   0x0000000e   Code   RO          612    i.IntMasterDisable  driverlib.lib(interrupt.o)
+    0x00001242   0x00001242   0x0000000e   Code   RO          613    i.IntMasterEnable   driverlib.lib(interrupt.o)
+    0x00001250   0x00001250   0x00000028   Code   RO          621    i.IntPrioritySet    driverlib.lib(interrupt.o)
+    0x00001278   0x00001278   0x00000154   Code   RO          892    i.SysCtlClockGet    driverlib.lib(sysctl.o)
+    0x000013cc   0x000013cc   0x00000120   Code   RO          894    i.SysCtlClockSet    driverlib.lib(sysctl.o)
+    0x000014ec   0x000014ec   0x00000028   Code   RO          923    i.SysCtlPeripheralEnable  driverlib.lib(sysctl.o)
+    0x00001514   0x00001514   0x0000002c   Code   RO          927    i.SysCtlPeripheralReady  driverlib.lib(sysctl.o)
+    0x00001540   0x00001540   0x00000006   Code   RO         1240    i.TimerClockSourceSet  driverlib.lib(timer.o)
+    0x00001546   0x00001546   0x00000002   PAD
+    0x00001548   0x00001548   0x00000060   Code   RO         1241    i.TimerConfigure    driverlib.lib(timer.o)
+    0x000015a8   0x000015a8   0x00000012   Code   RO         1242    i.TimerControlEvent  driverlib.lib(timer.o)
+    0x000015ba   0x000015ba   0x00000010   Code   RO         1249    i.TimerDisable      driverlib.lib(timer.o)
+    0x000015ca   0x000015ca   0x0000000e   Code   RO         1250    i.TimerEnable       driverlib.lib(timer.o)
+    0x000015d8   0x000015d8   0x00000004   Code   RO         1251    i.TimerIntClear     driverlib.lib(timer.o)
+    0x000015dc   0x000015dc   0x00000008   Code   RO         1253    i.TimerIntEnable    driverlib.lib(timer.o)
+    0x000015e4   0x000015e4   0x00000012   Code   RO         1259    i.TimerLoadSet      driverlib.lib(timer.o)
+    0x000015f6   0x000015f6   0x00000012   Code   RO         1268    i.TimerPrescaleSet  driverlib.lib(timer.o)
+    0x00001608   0x00001608   0x0000000a   Code   RO         1273    i.TimerValueGet     driverlib.lib(timer.o)
+    0x00001612   0x00001612   0x0000000e   Code   RO         1818    i.__scatterload_copy  mc_w.l(handlers.o)
+    0x00001620   0x00001620   0x00000002   Code   RO         1819    i.__scatterload_null  mc_w.l(handlers.o)
+    0x00001622   0x00001622   0x0000000e   Code   RO         1820    i.__scatterload_zeroinit  mc_w.l(handlers.o)
+    0x00001630   0x00001630   0x00000228   Data   RO          321    .constdata          driverlib.lib(gpio.o)
+    0x00001858   0x00001858   0x0000010c   Data   RO          626    .constdata          driverlib.lib(interrupt.o)
+    0x00001964   0x00001964   0x00000254   Data   RO          945    .constdata          driverlib.lib(sysctl.o)
+    0x00001bb8   0x00001bb8   0x00000014   Data   RO           31    .rodata.PA6         gpio_config.o
+    0x00001bcc   0x00001bcc   0x00000014   Data   RO           35    .rodata.PB4         gpio_config.o
+    0x00001be0   0x00001be0   0x00000014   Data   RO           49    .rodata.PE0         gpio_config.o
+    0x00001bf4   0x00001bf4   0x00000014   Data   RO           50    .rodata.PE1         gpio_config.o
+    0x00001c08   0x00001c08   0x00000014   Data   RO           51    .rodata.PE2         gpio_config.o
+    0x00001c1c   0x00001c1c   0x00000014   Data   RO           52    .rodata.PE3         gpio_config.o
+    0x00001c30   0x00001c30   0x00000014   Data   RO           53    .rodata.PE4         gpio_config.o
+    0x00001c44   0x00001c44   0x00000014   Data   RO           54    .rodata.PE5         gpio_config.o
+    0x00001c58   0x00001c58   0x00000014   Data   RO           56    .rodata.PF1         gpio_config.o
+    0x00001c6c   0x00001c6c   0x00000010   Data   RO           66    .rodata.RCC_config16  rcc_config.o
+    0x00001c7c   0x00001c7c   0x00000020   Data   RO         1817    Region$$Table       anon$$obj.o
+
+
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x00001ca0, Size: 0x00000250, Max: 0x00008000, ABSOLUTE)
+
+    Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20000000   0x00001ca0   0x00000038   Data   RW           78    .data.timer1A       timer_config.o
+    0x20000038   0x00001cd8   0x0000000c   Data   RW          236    .data.ultra1        ultrasonic_config.o
+    0x20000044   0x00001ce4   0x00000004   PAD
+    0x20000048        -       0x00000001   Zero   RW           12    .bss.key            app.o
+    0x20000049   0x00001ce4   0x00000007   PAD
+    0x20000050        -       0x00000200   Zero   RW          248    STACK               startup_tm4c123.o
+
+
+==============================================================================
+
+Image component sizes
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
+
+       924          6          0          0          1       1537   app.o
+       668          0          0          0          0       2267   gpio.o
+         0          0        180          0          0       1385   gpio_config.o
+        56          0          0          0          0       1130   rcc.o
+         0          0         16          0          0        790   rcc_config.o
+       252         10        620          0        512       5440   startup_tm4c123.o
+       268          0          0          0          0       6740   system_tm4c123.o
+       686          0          0          0          0       3321   timer.o
+         0          0          0         56          0       1094   timer_config.o
+       278          0          0          0          0       1786   ultrasonic.o
+         0          0          0         12          0       1110   ultrasonic_config.o
+
+    ----------------------------------------------------------------------
+      3148         16        848         68        524      26600   Object Totals
+         0          0         32          0          0          0   (incl. Generated)
+        16          0          0          0         11          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Member Name
+
+       136          0          0          0          0        812   delay.o
+        38          0          0          0          0        572   cpu.o
+       540         28        552          0          0       9559   gpio.o
+       168         12        268          0          0       3090   interrupt.o
+       718         62        596          0          0       4919   sysctl.o
+       208          8          0          0          0       5143   timer.o
+         0          0          0          0          0          0   entry.o
+         0          0          0          0          0          0   entry10a.o
+         0          0          0          0          0          0   entry11a.o
+         8          4          0          0          0          0   entry2.o
+         4          0          0          0          0          0   entry5.o
+         0          0          0          0          0          0   entry7b.o
+         0          0          0          0          0          0   entry8b.o
+         8          4          0          0          0          0   entry9a.o
+        30          0          0          0          0          0   handlers.o
+        48         10          0          0          0         68   init.o
+
+    ----------------------------------------------------------------------
+      1912        128       1416          0          0      24163   Library Totals
+         6          0          0          0          0          0   (incl. Padding)
+
+    ----------------------------------------------------------------------
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Library Name
+
+       136          0          0          0          0        812   MCAL.lib
+      1672        110       1416          0          0      23283   driverlib.lib
+        98         18          0          0          0         68   mc_w.l
+
+    ----------------------------------------------------------------------
+      1912        128       1416          0          0      24163   Library Totals
+
+    ----------------------------------------------------------------------
+
+==============================================================================
+
+
+      Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
+
+      5060        144       2264         68        524      48647   Grand Totals
+      5060        144       2264         68        524      48647   ELF Image Totals
+      5060        144       2264         68          0          0   ROM Totals
+
+==============================================================================
+
+    Total RO  Size (Code + RO Data)                 7324 (   7.15kB)
+    Total RW  Size (RW Data + ZI Data)               592 (   0.58kB)
+    Total ROM Size (Code + RO Data + RW Data)       7392 (   7.22kB)
+
+==============================================================================
+

@@ -1,0 +1,23 @@
+--cpu=Cortex-M4.fp.sp
+".\objects\app.o"
+"C:\ti\TivaWare_C_Series-2.2.0.295\driverlib\rvmdk\driverlib.lib"
+"..\drivers\MCAL\Objects\MCAL.lib"
+".\objects\gpio_config.o"
+".\objects\rcc_config.o"
+".\objects\timer_config.o"
+".\objects\pwm_config.o"
+".\objects\timer.o"
+".\objects\rcc.o"
+".\objects\gpio.o"
+".\objects\spi.o"
+".\objects\spi_config.o"
+".\objects\lcd.o"
+".\objects\ultrasonic.o"
+".\objects\ultrasonic_config.o"
+".\objects\motor_config.o"
+".\objects\startup_tm4c123.o"
+".\objects\system_tm4c123.o"
+--library_type=microlib --strict --scatter ".\Objects\test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\test.map" -o .\Objects\test.axf

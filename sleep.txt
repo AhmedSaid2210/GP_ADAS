@@ -1,0 +1,45 @@
+The Tiva C microcontroller supports multiple power-saving modes to extend battery life and reduce energy consumption. The primary low-power modes are Sleep, Deep Sleep, and Hibernation. Here’s a detailed comparison of these modes:
+
+Sleep Mode
+Sleep Mode is the least power-saving mode among the three. In Sleep mode:
+
+The processor clock is stopped.
+All peripherals, including the SysTick timer, continue to operate.
+Interrupts can wake the processor from Sleep mode.
+The wake-up time is very short, making it suitable for applications requiring frequent and quick wake-ups.
+Deep Sleep Mode
+Deep Sleep Mode offers more significant power savings than Sleep mode. In Deep Sleep mode:
+
+The processor clock and most of the peripheral clocks are stopped.
+Selected peripherals, such as the Watchdog Timer and the Real-Time Clock (RTC), can continue operating if configured.
+The power consumption is lower than in Sleep mode but higher than in Hibernation mode.
+The wake-up time is longer than Sleep mode but shorter than Hibernation mode.
+The system can be configured to save the state of some peripherals, which allows for a faster and more efficient recovery than Hibernation mode.
+Hibernation Mode
+Hibernation Mode provides the maximum power savings. In Hibernation mode:
+
+Almost all power domains are shut down, including the processor and peripherals.
+Only the Hibernation module and any configured wake-up sources (like an RTC) remain powered.
+The power consumption is extremely low.
+The wake-up time is the longest among the three modes.
+The microcontroller can store some state information (such as the contents of the battery-backed memory) to allow the system to restore its previous state upon waking up.
+Suitable for applications that need to maintain state information across power cycles or very infrequent wake-ups.
+Summary Table
+Feature	Sleep Mode	Deep Sleep Mode	Hibernation Mode
+Processor Clock	Stopped	Stopped	Stopped
+Peripheral Clocks	Active	Selectively stopped	Stopped
+Wake-up Sources	Any interrupt	Configured interrupts	RTC, external events
+Power Consumption	Low	Lower than Sleep	Lowest
+Wake-up Time	Shortest	Longer than Sleep	Longest
+State Preservation	Not preserved	Selectively preserved	Preserved (battery-backed memory)
+Use Cases
+Sleep Mode: Ideal for applications that require frequent wake-ups and need to resume operation quickly, such as in a real-time operating system (RTOS) environment.
+Deep Sleep Mode: Suitable for applications where periodic wake-ups are required, but power consumption needs to be minimized more than what Sleep mode offers.
+Hibernation Mode: Best for applications that need to maximize battery life with very infrequent wake-ups and can afford the longer wake-up time, such as in remote sensing or long-term data logging applications.
+Understanding these modes and their characteristics helps in choosing the right mode for your application based on the trade-offs between power consumption and wake-up time.
+
+
+
+
+
+
